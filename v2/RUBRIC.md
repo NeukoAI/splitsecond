@@ -72,3 +72,11 @@ At each decision the two choices are obvious at a glance, and the glow outline s
 - Rin's backpack hides the bolt from behind, and the models move the bolt onto the backpack, then drop one or the other. Draw her without the backpack.
 - A clip that has to cover two places morphs, pans or goes black between them. One place per clip; join two places with a hard cut between two clips.
 - Anything the story needs held in place (the van beside her, the van on the ramp) needs its own pinned frame. Prompts alone do not hold it.
+- An edit that moves a character keeps the old one too: two Rins. "Remove her" is ignored. "Redraw the scene with exactly one person, Rin, now at X" works, but it can move the camera.
+- An edit that adds a vehicle keeps the old vehicle. Draw the frame fresh from the empty location plate with exact counts of people and vehicles.
+- Pins at very different sizes make a jump: a start frame much closer than the end makes her teleport in the first second, or run past the camera and snap back. Keep the two pins at the same scale, and say the camera moves with her so she stays the same size.
+- Two pins with the same composition and a run in between make the model run her away, then snap her back. Trim the take to the good stretch.
+- Neon light turns the cyan bolt magenta for a beat. Say the bolt stays cyan.
+- "Red emergency light pulses" makes the whole carriage flash red and teal. Ask for a steady red light.
+- Takes default to the same seed. Pass a new seed on a retake.
+

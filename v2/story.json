@@ -1,293 +1,292 @@
 {
-  "title": "Split Second",
-  "logline": "Rin is carrying the cure for 40,000 people. The Hound wants it buried. Every choice is a split second. Choose wrong and you flatline.",
-  "cast": {
-    "rin": "Rin, 19, street courier with a chrome left arm. Fast, cocky, out of options.",
-    "hound": "The Hound, a faceless corporate cyber-assassin. Hunts with drones and a red mono-wire blade.",
-    "dex": "Dex, Rin's fixer. Talks her through the run on her earpiece and waits with the van."
+ "title": "Split Second",
+ "logline": "Rin is carrying the cure for 40,000 people. The Hound wants it buried. Every choice is a split second. Choose wrong and you flatline.",
+ "cast": {
+  "rin": "Rin, 19, street courier with a chrome left arm. Fast, cocky, out of options.",
+  "hound": "The Hound, a faceless corporate cyber-assassin. Hunts with drones and a red mono-wire blade.",
+  "dex": "Dex, Rin's fixer. Talks her through the run on her earpiece and waits with the van."
+ },
+ "rule": "Each decision scene shows a clue for the safe route. Wrong pick or no pick in 5 seconds: the Hound catches her, then GAME OVER and try again.",
+ "decisions": [
+  {
+   "id": "d1",
+   "name": "The Edge",
+   "keyframe": "k1",
+   "safe": "jump",
+   "clue": "red hunter drones are sweeping the rooftop vents",
+   "targets": {
+    "jump": {
+     "label": "Jump to the billboard",
+     "side": "left"
+    },
+    "vent": {
+     "label": "Hide in the vent",
+     "side": "right"
+    }
+   },
+   "timeout": "vent"
   },
-  "rule": "Each decision scene shows a clue for the safe route. Wrong pick or no pick in 5 seconds: the Hound catches her, then GAME OVER and try again.",
-  "decisions": [
-    {
-      "id": "d1",
-      "name": "The Edge",
-      "keyframe": "k1",
-      "safe": "jump",
-      "clue": "red hunter drones are sweeping the rooftop vents",
-      "targets": {
-        "jump": {
-          "label": "Jump to the billboard",
-          "side": "left"
-        },
-        "vent": {
-          "label": "Hide in the vent",
-          "side": "right"
-        }
-      },
-      "timeout": "vent"
+  {
+   "id": "d2",
+   "name": "The Market",
+   "keyframe": "k2",
+   "safe": "crowd",
+   "clue": "the alley is empty except for a red drone hovering over it",
+   "targets": {
+    "crowd": {
+     "label": "Vanish into the crowd",
+     "side": "left"
     },
-    {
-      "id": "d2",
-      "name": "The Market",
-      "keyframe": "k2",
-      "safe": "crowd",
-      "clue": "the alley is empty except for a red drone hovering over it",
-      "targets": {
-        "crowd": {
-          "label": "Vanish into the crowd",
-          "side": "left"
-        },
-        "alley": {
-          "label": "Run the alley",
-          "side": "right"
-        }
-      },
-      "timeout": "alley"
-    },
-    {
-      "id": "d3",
-      "name": "The Platform",
-      "keyframe": "k3",
-      "safe": "roof",
-      "clue": "the carriage is dark and empty, lit only by red emergency light",
-      "targets": {
-        "board": {
-          "label": "Board the train",
-          "side": "left"
-        },
-        "roof": {
-          "label": "Climb to the roof",
-          "side": "right"
-        }
-      },
-      "timeout": "board"
-    },
-    {
-      "id": "d4",
-      "name": "The Drop",
-      "keyframe": "k4",
-      "safe": "van",
-      "clue": "Dex is waving her down from the van, and up ahead the highway curves away from the tracks",
-      "targets": {
-        "van": {
-          "label": "Jump for the van",
-          "side": "right"
-        }
-      },
-      "timeout": "run"
+    "alley": {
+     "label": "Run the alley",
+     "side": "right"
     }
-  ],
-  "scenes": [
-    {
-      "id": "title",
-      "kind": "i2v",
-      "from": "title",
-      "sec": 3,
-      "prompt": "The title key art comes alive: rain streaks, neon flickers, Rin runs in place toward camera with motion blur while the Hound hangs mid-leap behind her, the title letters glitch and pulse cyan. Heavy synth bass hit, rain. The camera slowly pushes in."
+   },
+   "timeout": "alley"
+  },
+  {
+   "id": "d3",
+   "name": "The Platform",
+   "keyframe": "k3",
+   "safe": "roof",
+   "clue": "the carriage is dark and empty, lit only by red emergency light",
+   "targets": {
+    "board": {
+     "label": "Board the train",
+     "side": "left"
     },
-    {
-      "id": "stakes",
-      "kind": "i2v",
-      "from": "stakes",
-      "sec": 10,
-      "prompt": "Close-up of the chip in Rin's chrome palm, the cure hologram above it. Dex on her earpiece, off screen: \"That chip is the cure, Rin. Forty thousand people die without it. Get it to me, and don't let the Hound take it.\" (Seedance 2.5, 10 s, audited: line said once, no subtitles.)",
-      "captions": [
-        [
-          0,
-          5000,
-          "That chip is the cure. Forty thousand people in the Lower City are running out of time."
-        ],
-        [
-          5000,
-          10000,
-          "The corp that made them sick wants it gone. So they sent the Hound."
-        ]
-      ]
-    },
-    {
-      "id": "intro_call",
-      "kind": "i2v",
-      "from": "k0",
-      "sec": 5,
-      "prompt": "Rin crouches on the rooftop edge holding the glowing chip. Her earpiece beeps; she presses two fingers to it to answer. Dex: \"Rin, they know you took it. The Hound is coming. Get to the rail yard.\" She closes her fist around the chip and stands.",
-      "captions": [
-        [
-          0,
-          5000,
-          "Get it to Dex at the rail yard. And don't get caught."
-        ]
-      ]
-    },
-    {
-      "id": "intro_hound",
-      "kind": "flf",
-      "sec": 6,
-      "prompt": "Rin sprints across the wet rooftop toward the edge, glancing back once; far behind her the Hound drops onto a distant roof. She skids to a stop at the edge, facing the soda billboard and the vent.",
-      "to": "k1",
-      "from": "intro_call:last"
-    },
-    {
-      "id": "d1_loop",
-      "kind": "flf",
-      "sec": 5,
-      "prompt": "Rin stands at the rooftop edge seen from behind, glancing left at the billboard ladder across the gap and right at the open vent. Red drones sweep the vents. The soda ad flickers.",
-      "captions": [
-        [
-          0,
-          5000,
-          "Tap where Rin runs. Wait too long and she's caught."
-        ]
-      ],
-      "from": "k1",
-      "to": "k1"
-    },
-    {
-      "id": "d1_jump",
-      "kind": "flf",
-      "sec": 7,
-      "prompt": "Rin leaps the gap, catches the ladder rails and instantly slides straight down, never climbing. Hard cut: Rin from behind at the fork in the street.",
-      "from": "k1",
-      "to": "k2"
-    },
-    {
-      "id": "d1_vent",
-      "kind": "flf",
-      "sec": 7,
-      "caught": true,
-      "prompt": "Rin climbs down into the rooftop vent. Hard cut: she crawls out of the vent grate on the back street and the Hound, already waiting, grabs her.",
-      "from": "k1",
-      "to": "c_vent"
-    },
-    {
-      "id": "d2_loop",
-      "kind": "flf",
-      "sec": 5,
-      "prompt": "Rin, back to camera, at the fork: the umbrella crowd left, the dark alley right with a red drone.",
-      "from": "k2",
-      "to": "k2"
-    },
-    {
-      "id": "d2_crowd",
-      "kind": "i2v",
-      "sec": 5,
-      "prompt": "Rin runs into the umbrella crowd away from the camera and disappears. Cut straight to the platform.",
-      "from": "k2"
-    },
-    {
-      "id": "d2_alley",
-      "kind": "flf",
-      "sec": 7,
-      "caught": true,
-      "prompt": "Rin runs into the alley away from the camera; deep in, the Hound drops in front of her and grabs her.",
-      "from": "k2",
-      "to": "c_alley"
-    },
-    {
-      "id": "d3_loop",
-      "kind": "flf",
-      "sec": 5,
-      "prompt": "Rin on the rainy platform, glancing at the dark red-lit carriage and the ladder to the roof.",
-      "from": "k3",
-      "to": "k3"
-    },
-    {
-      "id": "d3_roof",
-      "kind": "flf",
-      "sec": 8,
-      "prompt": "Rin climbs the fixed ladder; the train starts only once she is on the roof. Hard cut: the van, seen from behind, rises from the bottom of the frame alongside the train and opens its rear doors.",
-      "from": "k3",
-      "to": "k4"
-    },
-    {
-      "id": "d3_board",
-      "kind": "flf",
-      "sec": 7,
-      "caught": true,
-      "prompt": "Rin runs into the train. Hard cut: she sprints down the dark aisle facing forward and the Hound lunges in from the seats and grabs her mid-stride.",
-      "from": "k3",
-      "to": "c_board"
-    },
-    {
-      "id": "d4_loop",
-      "kind": "flf",
-      "sec": 5,
-      "prompt": "Train and van race forward side by side, the van seen from behind with its rear doors open and Dex at the wheel waving her in.",
-      "captions": [
-        [
-          0,
-          5000,
-          "Tap the van before it's gone."
-        ]
-      ],
-      "from": "k4",
-      "to": "k4"
-    },
-    {
-      "id": "d4_van",
-      "kind": "flf",
-      "sec": 7,
-      "prompt": "A short hop into the van's open rear doors; the van rides with the train, then pulls ahead up the exit ramp and off to the right.",
-      "from": "k4",
-      "to": "v_exit"
-    },
-    {
-      "id": "d4_run",
-      "kind": "flf",
-      "sec": 7,
-      "caught": true,
-      "prompt": "No tap: the van closes up and takes the exit without her. Rin slumps, back to camera; the Hound rests a hand on her shoulder.",
-      "from": "k4",
-      "to": "c_run"
-    },
-    {
-      "id": "finale_van",
-      "kind": "i2v",
-      "sec": 5,
-      "prompt": "Dex drives from the left-hand seat, glances over at Rin and smirks. Rin laughs, out of breath, and holds up the glowing chip, then leans back in her seat. Neon city lights streak past the windows. Engine roar, rain on the windshield. Nobody speaks.",
-      "from": "k5",
-      "captions": [
-        [
-          0,
-          2500,
-          "DEX: Cutting it close, kid."
-        ],
-        [
-          2500,
-          5000,
-          "RIN: Close is my job."
-        ]
-      ]
-    },
-    {
-      "id": "finale_hound",
-      "kind": "i2v",
-      "sec": 5,
-      "prompt": "The Hound alone on the train roof watches the yellow van take the exit into the city. His visor dims.",
-      "captions": [
-        [
-          1500,
-          5000,
-          "THE HOUND: Next time, courier."
-        ]
-      ],
-      "from": "k6"
-    },
-    {
-      "id": "win",
-      "kind": "i2v",
-      "from": "win",
-      "sec": 4,
-      "prompt": "The victory card comes alive: neon flickers, rain falls, Rin flips the glowing chip and catches it, Dex chuckles, the DELIVERED letters pulse bright cyan. Triumphant synth chord."
-    },
-    {
-      "id": "gameover",
-      "kind": "i2v",
-      "from": "gameover",
-      "sec": 4,
-      "prompt": "The game over card glitches violently: red digital noise tears across the frame, the Hound's red visor pulses, the FLATLINED letters stutter and distort. A flatline heart monitor tone, a deep distorted bass hit, static."
+    "roof": {
+     "label": "Climb to the roof",
+     "side": "right"
     }
-  ],
-  "replay": "TRY AGAIN restarts at the Hound's arrival, so the title, the stakes and Dex's call play only on a fresh start.",
-  "method": "See BIBLE.md. Every keyframe is drawn from the character sheets; every clip is pinned at both ends to keyframes; hard cuts where the place changes; dialogue in captions.",
-  "bible": "v2/BIBLE.md"
+   },
+   "timeout": "board"
+  },
+  {
+   "id": "d4",
+   "name": "The Drop",
+   "keyframe": "k4",
+   "safe": "van",
+   "clue": "Dex is waving her down from the van, and up ahead the highway curves away from the tracks",
+   "targets": {
+    "van": {
+     "label": "Jump for the van",
+     "side": "right"
+    }
+   },
+   "timeout": "run"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "title",
+   "kind": "i2v",
+   "from": "title",
+   "sec": 3,
+   "prompt": "The title key art comes alive: rain streaks, neon flickers, Rin runs in place toward camera with motion blur while the Hound hangs mid-leap behind her, the title letters glitch and pulse cyan. Heavy synth bass hit, rain. The camera slowly pushes in."
+  },
+  {
+   "id": "stakes",
+   "kind": "i2v",
+   "from": "stakes",
+   "sec": 10,
+   "prompt": "Close-up, camera locked off: Rin holds the chip steady in her chrome palm, the DNA hologram turns. Dex's line (kept from the audited take) plays off screen. (H3 Max, pinned at both ends to one sheet-drawn frame.)",
+   "captions": [
+    [
+     0,
+     5000,
+     "That chip is the cure. Forty thousand people in the Lower City are running out of time."
+    ],
+    [
+     5000,
+     10000,
+     "The corp that made them sick wants it gone. So they sent the Hound."
+    ]
+   ]
+  },
+  {
+   "id": "intro_call",
+   "kind": "i2v",
+   "from": "k0",
+   "sec": 5,
+   "prompt": "Rin stays crouched on the rooftop edge, answers her earpiece and closes her hand on the chip. Dex's call is kept from the audited take. Nobody speaks on screen.",
+   "captions": [
+    [
+     0,
+     5000,
+     "Get it to Dex at the rail yard. And don't get caught."
+    ]
+   ]
+  },
+  {
+   "id": "intro_hound",
+   "kind": "flf",
+   "sec": 2,
+   "prompt": "Rin runs across the roof toward the camera, glancing back; on the far roof the Hound lands and rises. Hard cut to her at the edge.",
+   "from": "intro_call:last"
+  },
+  {
+   "id": "d1_loop",
+   "kind": "flf",
+   "sec": 5,
+   "prompt": "Camera locked off. Rin holds at the edge, back to camera; drones sweep the vent; the billboard shows a wordless can ad.",
+   "captions": [
+    [
+     0,
+     5000,
+     "Tap where Rin runs. Wait too long and she's caught."
+    ]
+   ],
+   "from": "k1",
+   "to": "k1"
+  },
+  {
+   "id": "d1_jump",
+   "kind": "flf",
+   "sec": 3.5,
+   "prompt": "Rin leaps to the fixed ladder and slides down it. Hard cut to the market fork.",
+   "from": "k1",
+   "to": "k2"
+  },
+  {
+   "id": "d1_vent",
+   "kind": "flf",
+   "sec": 8.3,
+   "caught": true,
+   "prompt": "Rin dashes to the vent and sits on its rim to drop in. Hard cut: she crawls out of a grate on the back street; the Hound steps out of the dark and hauls her up by the collar.",
+   "from": "k1",
+   "to": "c_vent"
+  },
+  {
+   "id": "d2_loop",
+   "kind": "flf",
+   "sec": 5,
+   "prompt": "Rin, back to camera, at the fork: the umbrella crowd left, the dark alley right with a red drone.",
+   "from": "k2",
+   "to": "k2"
+  },
+  {
+   "id": "d2_crowd",
+   "kind": "i2v",
+   "sec": 5,
+   "prompt": "Camera locked off. Rin runs left into the walking umbrella crowd until only her hair shows.",
+   "from": "k2"
+  },
+  {
+   "id": "d2_alley",
+   "kind": "flf",
+   "sec": 7,
+   "caught": true,
+   "prompt": "Rin runs deep into the alley under the red drone. Hard cut inside the alley: the Hound drops from the fire escape beside her and grabs her shoulder.",
+   "from": "k2",
+   "to": "c_alley"
+  },
+  {
+   "id": "d3_loop",
+   "kind": "flf",
+   "sec": 5,
+   "prompt": "Camera locked off. Rin holds on the platform, back to camera; the red emergency light pulses in the open door.",
+   "from": "k3",
+   "to": "k3"
+  },
+  {
+   "id": "d3_roof",
+   "kind": "flf",
+   "sec": 10.2,
+   "prompt": "Rin climbs the fixed ladder. Hard cut to the train roof: the van pulls in right beside her, rear doors open, Dex waving from the driver's window.",
+   "from": "k3",
+   "to": "k4"
+  },
+  {
+   "id": "d3_board",
+   "kind": "flf",
+   "sec": 10.2,
+   "caught": true,
+   "prompt": "Rin steps into the red-lit door. Hard cut inside the carriage: she sprints down the aisle and the Hound lunges from the seats and yanks her back by her chrome arm.",
+   "from": "k3",
+   "to": "c_board"
+  },
+  {
+   "id": "d4_loop",
+   "kind": "flf",
+   "sec": 5,
+   "prompt": "Camera rides along: train and van race side by side, the van right beside her with doors open, Dex waving.",
+   "captions": [
+    [
+     0,
+     5000,
+     "Tap the van before it's gone."
+    ]
+   ],
+   "from": "k4",
+   "to": "k4"
+  },
+  {
+   "id": "d4_van",
+   "kind": "flf",
+   "sec": 10.2,
+   "prompt": "A short hop into the open cargo bay. The doors shut and the van pulls ahead up the exit ramp and away for good.",
+   "from": "k4",
+   "to": "v_exit"
+  },
+  {
+   "id": "d4_run",
+   "kind": "flf",
+   "sec": 10.2,
+   "caught": true,
+   "prompt": "No tap: the doors shut and the van takes the exit without her. The Hound walks up the train roof behind her and lays a hand on her shoulder.",
+   "from": "k4",
+   "to": "c_run"
+  },
+  {
+   "id": "finale_van",
+   "kind": "i2v",
+   "sec": 5,
+   "prompt": "Through the windshield: Dex drives and smirks, Rin laughs and lifts the chip. Nobody speaks.",
+   "from": "k5",
+   "captions": [
+    [
+     0,
+     2500,
+     "DEX: Cutting it close, kid."
+    ],
+    [
+     2500,
+     5000,
+     "RIN: Close is my job."
+    ]
+   ]
+  },
+  {
+   "id": "finale_hound",
+   "kind": "i2v",
+   "sec": 5,
+   "prompt": "The Hound alone on the train roof, back to camera, watches the van climb the ramp and disappear. His blade dims.",
+   "captions": [
+    [
+     1500,
+     5000,
+     "THE HOUND: Next time, courier."
+    ]
+   ],
+   "from": "k6"
+  },
+  {
+   "id": "win",
+   "kind": "i2v",
+   "from": "win",
+   "sec": 4,
+   "prompt": "The victory card comes alive: neon flickers, rain falls, Rin flips the glowing chip and catches it, Dex chuckles, the DELIVERED letters pulse bright cyan. Triumphant synth chord."
+  },
+  {
+   "id": "gameover",
+   "kind": "i2v",
+   "from": "gameover",
+   "sec": 4,
+   "prompt": "The game over card glitches violently: red digital noise tears across the frame, the Hound's red visor pulses, the FLATLINED letters stutter and distort. A flatline heart monitor tone, a deep distorted bass hit, static."
+  }
+ ],
+ "replay": "TRY AGAIN restarts at the Hound's arrival, so the title, the stakes and Dex's call play only on a fresh start.",
+ "method": "See BIBLE.md and RUBRIC.md. Every keyframe is drawn from the character sheets and a location plate; every take is pinned at both ends and stays in one place; two places are two takes joined by a hard cut; dialogue in captions; every clip graded by two graders before review.",
+ "bible": "v2/BIBLE.md"
 }
