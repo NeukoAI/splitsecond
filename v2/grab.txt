@@ -69,3 +69,12 @@ c_d2_alley_b https://cdn.bitebox.gg/public/patchwork/7c9d6f2b-9966-440b-994c-37e
 c_d3_board_b https://cdn.bitebox.gg/public/patchwork/8baa4c6c-6f3d-4a5a-844b-e23068f6c301.mp4
 c_finale_van https://cdn.bitebox.gg/public/patchwork/93975d61-9ec0-4a38-ab5a-a0db04375325.mp4
 c_d4_loop https://cdn.bitebox.gg/public/patchwork/8a14800e-618e-43c9-9f13-336a7ac7bb4f.mp4
+n_crun https://cdn.bitebox.gg/public/patchwork/761a585a-73b4-4fc4-b042-b35f23a8e3df.png
+n_k6 https://cdn.bitebox.gg/public/patchwork/5b81832b-0cd4-4926-823d-13bfba196122.png
+c_d1_vent_a https://cdn.bitebox.gg/public/patchwork/05692961-d958-4ef1-afa4-99aca1a39266.mp4
+c_d3_roof_a https://cdn.bitebox.gg/public/patchwork/cb9336f3-b169-400d-b84c-886aba243bdc.mp4
+c_d3_roof_b https://cdn.bitebox.gg/public/patchwork/16a5cef3-a796-49bc-890b-3cf10401cc9d.mp4
+c_d3_board_a https://cdn.bitebox.gg/public/patchwork/6b41c8b2-c7ff-46da-b0d3-4a5c357258fd.mp4
+c_d4_van_a https://cdn.bitebox.gg/public/patchwork/3604c2c3-ff49-43dd-874d-c2d1278674e5.mp4
+c_d4_van_b https://cdn.bitebox.gg/public/patchwork/354eb4d6-4fe8-47eb-91e7-5de5548ac949.mp4
+c_d4_run_a https://cdn.bitebox.gg/public/patchwork/1ca6b2c4-5061-4eb2-9025-c947ba7104ee.mp4
