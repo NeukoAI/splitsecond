@@ -25,7 +25,7 @@ flowchart LR
 Three more pieces make it a game:
 
 - **Tap the world, not a button.** SAM3 finds each object from a sentence ("the red metal door of the small stairwell hut"). The workflow grows the mask, subtracts the original and colors the ring, so each object gets its own glowing outline PNG. The player places those outlines exactly where SAM3 found the objects.
-- **Hesitation is a choice.** The idle loop plays four times. Let it run out and they catch you.
+- **Hesitation is a choice.** You get one idle loop to decide. Let it run out and they catch you.
 - **The safe route rotates.** Every object has both a safe clip and a capture clip. Each run uses a different layout (zipline then train, door then billboard, ladder then antenna), so what saved you last time gets you caught now.
 
 ## What's in here
@@ -85,7 +85,7 @@ Keyframes: Z-Image Turbo, 576×1024, 8 steps, cfg 1, res_multistep, shift 3.
 
 The hosted build runs on [bitebox](https://bitebox.gg), NEUKO's interactive video player. ComfyUI makes every pixel; bitebox does the part ComfyUI can't: branching, timing, taps and the run-to-run rotation.
 
-bitebox has no random rule, so `bitebox/build_document.py` unrolls the rotation into three copies of the run. Every capture plays into the next copy's opening. Each decision loop plays three times with the glowing SAM3 outlines on top as tap targets; let it run out and the hesitation capture plays.
+bitebox has no random rule, so `bitebox/build_document.py` unrolls the rotation into copies of the run. Every capture plays into the next copy's opening. Each decision gives you one five-second loop with the glowing SAM3 outlines on top as tap targets; let it run out and the hesitation capture plays. bitebox's publish check walks at most 200 paths, so the hosted build alternates two layouts (43 paths); the local player rotates all three.
 
 ```sh
 python3 bitebox/build_document.py bitebox/media.json > bitebox/split_second.json

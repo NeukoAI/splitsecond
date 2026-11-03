@@ -3,9 +3,14 @@
     python3 bitebox/build_document.py bitebox/media.json > bitebox/split_second.json
 
 bitebox has no random rule, so the rotation is unrolled: one copy of the run per
-layout (A, B, C). Every capture plays into the next copy's opening, so the route
-that saved you last run gets you caught this one. Each decision loop is chained
-LOOP_PLAYS times; letting the last play run out plays the hesitation capture.
+layout. Every capture plays into the next copy's opening, so the route that saved
+you last run gets you caught this one. Each decision loop plays LOOP_PLAYS times;
+letting the last play run out plays the hesitation capture.
+
+bitebox's publish check walks at most 200 paths, and a looping roguelike multiplies
+them with every copy. Two copies with one five-second decision window each is 43
+paths; three copies is 259. So the hosted build alternates the first two layouts
+(COPIES = 2); the local player in player/ rotates all three.
 
 Each loop video lists its tap targets in props.overlays (Target Overlays with the
 SAM3 glow outline as their marker) and keeps a single autoplay exit to the next
@@ -16,13 +21,14 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-LOOP_PLAYS = 3
+LOOP_PLAYS = 1
+COPIES = 2
 DUR_MS = 5167
 W, H = 576, 1024
 
 
 def build(story, media, title="Split Second"):
-    rot = story["rotation"]
+    rot = story["rotation"][:COPIES]
     copies = "ABC"[: len(rot)]
     nodes = {}
 

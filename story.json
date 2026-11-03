@@ -23,7 +23,7 @@
     {
       "id": "d1",
       "loop": "loop1",
-      "loopPlays": 4,
+      "loopPlays": 1,
       "targets": {
         "zip": {
           "label": "the zipline",
@@ -60,7 +60,7 @@
     {
       "id": "d2",
       "loop": "loop2",
-      "loopPlays": 4,
+      "loopPlays": 1,
       "targets": {
         "train": {
           "label": "the train",
