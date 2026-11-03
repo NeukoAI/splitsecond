@@ -1,0 +1,83 @@
+{
+ "frame_size": [
+  576,
+  1024
+ ],
+ "note": "Crop boxes (x, y, w, h) in keyframe pixels: the SAM3 mask's bounding box plus 12px. The train box is trimmed to the part right of the girl so tapping her does not pick the train.",
+ "crops": {
+  "zip": [
+   367,
+   319,
+   209,
+   462
+  ],
+  "ladder": [
+   1,
+   60,
+   204,
+   585
+  ],
+  "door": [
+   239,
+   368,
+   89,
+   128
+  ],
+  "train": [
+   408,
+   486,
+   168,
+   231
+  ],
+  "board": [
+   208,
+   114,
+   235,
+   324
+  ],
+  "antenna": [
+   30,
+   74,
+   75,
+   433
+  ]
+ },
+ "rects": {
+  "zip": [
+   0.8186,
+   0.5371,
+   0.3628,
+   0.4512
+  ],
+  "ladder": [
+   0.1788,
+   0.3442,
+   0.3542,
+   0.5713
+  ],
+  "door": [
+   0.4922,
+   0.4219,
+   0.1545,
+   0.125
+  ],
+  "train": [
+   0.8542,
+   0.5874,
+   0.2917,
+   0.2256
+  ],
+  "board": [
+   0.5651,
+   0.2695,
+   0.408,
+   0.3164
+  ],
+  "antenna": [
+   0.1172,
+   0.2837,
+   0.1302,
+   0.4229
+  ]
+ }
+}

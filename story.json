@@ -25,9 +25,36 @@
       "loop": "loop1",
       "loopPlays": 4,
       "targets": {
-        "zip": { "label": "the zipline", "rect": [0, 0, 0, 0], "glow": "targets/glow_zip.png" },
-        "ladder": { "label": "the water tower ladder", "rect": [0, 0, 0, 0], "glow": "targets/glow_ladder.png" },
-        "door": { "label": "the red door", "rect": [0, 0, 0, 0], "glow": "targets/glow_door.png" }
+        "zip": {
+          "label": "the zipline",
+          "rect": [
+            0.8186,
+            0.5371,
+            0.3628,
+            0.4512
+          ],
+          "glow": "targets/glow_zip.png"
+        },
+        "ladder": {
+          "label": "the water tower ladder",
+          "rect": [
+            0.1788,
+            0.3442,
+            0.3542,
+            0.5713
+          ],
+          "glow": "targets/glow_ladder.png"
+        },
+        "door": {
+          "label": "the red door",
+          "rect": [
+            0.4922,
+            0.4219,
+            0.1545,
+            0.125
+          ],
+          "glow": "targets/glow_door.png"
+        }
       }
     },
     {
@@ -35,17 +62,56 @@
       "loop": "loop2",
       "loopPlays": 4,
       "targets": {
-        "train": { "label": "the train", "rect": [0, 0, 0, 0], "glow": "targets/glow_train.png" },
-        "board": { "label": "the billboard", "rect": [0, 0, 0, 0], "glow": "targets/glow_board.png" },
-        "antenna": { "label": "the antenna", "rect": [0, 0, 0, 0], "glow": "targets/glow_antenna.png" }
+        "train": {
+          "label": "the train",
+          "rect": [
+            0.8542,
+            0.5874,
+            0.2917,
+            0.2256
+          ],
+          "glow": "targets/glow_train.png"
+        },
+        "board": {
+          "label": "the billboard",
+          "rect": [
+            0.5651,
+            0.2695,
+            0.408,
+            0.3164
+          ],
+          "glow": "targets/glow_board.png"
+        },
+        "antenna": {
+          "label": "the antenna",
+          "rect": [
+            0.1172,
+            0.2837,
+            0.1302,
+            0.4229
+          ],
+          "glow": "targets/glow_antenna.png"
+        }
       }
     }
   ],
   "rotation": [
-    { "d1": "zip", "d2": "train" },
-    { "d1": "door", "d2": "board" },
-    { "d1": "ladder", "d2": "antenna" }
+    {
+      "d1": "zip",
+      "d2": "train"
+    },
+    {
+      "d1": "door",
+      "d2": "board"
+    },
+    {
+      "d1": "ladder",
+      "d2": "antenna"
+    }
   ],
-  "hesitation": { "d1": "door", "d2": "board" },
+  "hesitation": {
+    "d1": "door",
+    "d2": "board"
+  },
   "_notes": "rect = [centerX, centerY, width, height] as fractions of the frame, measured from the SAM3 masks. A safe pick plays <decision>_<target>_safe, a wrong pick plays <decision>_<target>_cap. Run n uses rotation[n % 3]. Letting the loop run out plays the capture of the hesitation target (or the next unsafe one)."
 }

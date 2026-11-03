@@ -75,28 +75,93 @@
   }
  },
  "12": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "11",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: zip"
+   "title": "Grow: zip"
   }
  },
  "13": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "12",
     0
    ],
-   "filename_prefix": "splitsecond/mask_zip"
+   "source": [
+    "11",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: zip"
+   "title": "Ring: zip"
+  }
+ },
+ "14": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "13",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: zip"
+  }
+ },
+ "15": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "14",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: zip"
+  }
+ },
+ "16": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "15",
+    0
+   ],
+   "width": 209,
+   "height": 462,
+   "x": 367,
+   "y": 319
+  },
+  "_meta": {
+   "title": "Crop: zip"
+  }
+ },
+ "17": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "16",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_zip"
+  },
+  "_meta": {
+   "title": "Save glow: zip"
   }
  },
  "20": {
@@ -136,28 +201,93 @@
   }
  },
  "22": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "21",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: ladder"
+   "title": "Grow: ladder"
   }
  },
  "23": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "22",
     0
    ],
-   "filename_prefix": "splitsecond/mask_ladder"
+   "source": [
+    "21",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: ladder"
+   "title": "Ring: ladder"
+  }
+ },
+ "24": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: ladder"
+  }
+ },
+ "25": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "24",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: ladder"
+  }
+ },
+ "26": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "25",
+    0
+   ],
+   "width": 204,
+   "height": 585,
+   "x": 1,
+   "y": 60
+  },
+  "_meta": {
+   "title": "Crop: ladder"
+  }
+ },
+ "27": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "26",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_ladder"
+  },
+  "_meta": {
+   "title": "Save glow: ladder"
   }
  },
  "30": {
@@ -197,28 +327,93 @@
   }
  },
  "32": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "31",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: door"
+   "title": "Grow: door"
   }
  },
  "33": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "32",
     0
    ],
-   "filename_prefix": "splitsecond/mask_door"
+   "source": [
+    "31",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: door"
+   "title": "Ring: door"
+  }
+ },
+ "34": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "33",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: door"
+  }
+ },
+ "35": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "34",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: door"
+  }
+ },
+ "36": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "35",
+    0
+   ],
+   "width": 89,
+   "height": 128,
+   "x": 239,
+   "y": 368
+  },
+  "_meta": {
+   "title": "Crop: door"
+  }
+ },
+ "37": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "36",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_door"
+  },
+  "_meta": {
+   "title": "Save glow: door"
   }
  },
  "40": {
@@ -258,28 +453,93 @@
   }
  },
  "42": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "41",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: train"
+   "title": "Grow: train"
   }
  },
  "43": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "42",
     0
    ],
-   "filename_prefix": "splitsecond/mask_train"
+   "source": [
+    "41",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: train"
+   "title": "Ring: train"
+  }
+ },
+ "44": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "43",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: train"
+  }
+ },
+ "45": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "44",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: train"
+  }
+ },
+ "46": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "45",
+    0
+   ],
+   "width": 168,
+   "height": 231,
+   "x": 408,
+   "y": 486
+  },
+  "_meta": {
+   "title": "Crop: train"
+  }
+ },
+ "47": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "46",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_train"
+  },
+  "_meta": {
+   "title": "Save glow: train"
   }
  },
  "50": {
@@ -319,28 +579,93 @@
   }
  },
  "52": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "51",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: board"
+   "title": "Grow: board"
   }
  },
  "53": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "52",
     0
    ],
-   "filename_prefix": "splitsecond/mask_board"
+   "source": [
+    "51",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: board"
+   "title": "Ring: board"
+  }
+ },
+ "54": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "53",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: board"
+  }
+ },
+ "55": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "54",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: board"
+  }
+ },
+ "56": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "55",
+    0
+   ],
+   "width": 235,
+   "height": 324,
+   "x": 208,
+   "y": 114
+  },
+  "_meta": {
+   "title": "Crop: board"
+  }
+ },
+ "57": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "56",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_board"
+  },
+  "_meta": {
+   "title": "Save glow: board"
   }
  },
  "60": {
@@ -380,28 +705,93 @@
   }
  },
  "62": {
-  "class_type": "MaskToImage",
+  "class_type": "GrowMask",
   "inputs": {
    "mask": [
     "61",
     0
-   ]
+   ],
+   "expand": 9,
+   "tapered_corners": true
   },
   "_meta": {
-   "title": "Mask: antenna"
+   "title": "Grow: antenna"
   }
  },
  "63": {
-  "class_type": "SaveImage",
+  "class_type": "MaskComposite",
   "inputs": {
-   "images": [
+   "destination": [
     "62",
     0
    ],
-   "filename_prefix": "splitsecond/mask_antenna"
+   "source": [
+    "61",
+    0
+   ],
+   "x": 0,
+   "y": 0,
+   "operation": "subtract"
   },
   "_meta": {
-   "title": "Save mask: antenna"
+   "title": "Ring: antenna"
+  }
+ },
+ "64": {
+  "class_type": "InvertMask",
+  "inputs": {
+   "mask": [
+    "63",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Alpha: antenna"
+  }
+ },
+ "65": {
+  "class_type": "JoinImageWithAlpha",
+  "inputs": {
+   "image": [
+    "4",
+    0
+   ],
+   "alpha": [
+    "64",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Color ring: antenna"
+  }
+ },
+ "66": {
+  "class_type": "ImageCrop",
+  "inputs": {
+   "image": [
+    "65",
+    0
+   ],
+   "width": 75,
+   "height": 433,
+   "x": 30,
+   "y": 74
+  },
+  "_meta": {
+   "title": "Crop: antenna"
+  }
+ },
+ "67": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "66",
+    0
+   ],
+   "filename_prefix": "splitsecond/glow_antenna"
+  },
+  "_meta": {
+   "title": "Save glow: antenna"
   }
  }
 }
