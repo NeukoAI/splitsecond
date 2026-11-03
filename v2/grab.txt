@@ -78,3 +78,7 @@ c_d3_board_a https://cdn.bitebox.gg/public/patchwork/6b41c8b2-c7ff-46da-b0d3-4a5
 c_d4_van_a https://cdn.bitebox.gg/public/patchwork/3604c2c3-ff49-43dd-874d-c2d1278674e5.mp4
 c_d4_van_b https://cdn.bitebox.gg/public/patchwork/354eb4d6-4fe8-47eb-91e7-5de5548ac949.mp4
 c_d4_run_a https://cdn.bitebox.gg/public/patchwork/1ca6b2c4-5061-4eb2-9025-c947ba7104ee.mp4
+c_houndA2 https://cdn.bitebox.gg/public/patchwork/b54ef644-25fe-45e9-8a3f-bc556a779e8d.mp4
+c_alleyB2 https://cdn.bitebox.gg/public/patchwork/021baf9a-f574-4c0c-af0a-18d0610f0214.mp4
+c_d4loop2 https://cdn.bitebox.gg/public/patchwork/f7e99729-c43a-4508-8a4d-4f08165251c4.mp4
+n_k6b https://cdn.bitebox.gg/public/patchwork/8442f3f3-e670-49ee-8e46-a47a38dd28d2.png
