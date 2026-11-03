@@ -1,5 +1,50 @@
 # Split Second
 
+**A cyberpunk chase you play by tapping the world.** Rin, a courier with a chrome arm, carries the cure for 40,000 people. The Hound, a corporate hunter, wants it buried. Four split-second choices across rooftops, a night market and a speeding train. Read the clue, tap where she runs. Pick wrong, or wait too long, and you flatline.
+
+**Play it:** https://bitebox.gg/play/fcca8ed4-d460-4d24-b2fd-499931ade1f0
+
+Every character sheet, keyframe, clip, voice line and tap target is generated in ComfyUI with open-weights models: Qwen Image 2.1 Turbo, LTX 2.5 and SAM3.
+
+> Built for the [Open Source Higgsfield](https://comfy.org/open-source-higgsfield) challenge by [NEUKO](https://neuko.ai).
+
+## v2 (current): `v2/`
+
+```mermaid
+flowchart TD
+  T[Title] --> S[The chip: stakes] --> C[Dex's call] --> H[Rin runs, the Hound lands]
+  H --> D1{D1 The Edge}
+  D1 -- jump to the billboard --> D2{D2 The Market}
+  D1 -- hide in the vent / no tap --> G[FLATLINED]
+  D2 -- vanish into the crowd --> D3{D3 The Platform}
+  D2 -- run the alley / no tap --> G
+  D3 -- climb to the roof --> D4{D4 The Drop}
+  D3 -- board the train / no tap --> G
+  D4 -- jump for the van --> W[DELIVERED]
+  D4 -- keep running / no tap --> G
+  G -- TRY AGAIN --> H
+  G -- START OVER --> T
+  W -- PLAY AGAIN --> T
+```
+
+1. **Cast first.** `Qwen Image 2.1 Turbo` text to image makes one reference sheet per character (front, side, back, face): Rin, the Hound, Dex.
+2. **Keyframes from the cast.** `Qwen Image 2.1 Turbo` image edit takes the sheets as reference images, so every frame keeps the same faces and costumes. Each decision gets one frame that shows a clue for the safe route. The Hound stays out of the decision frames: he appears inside the clips, when you choose wrong.
+3. **Clips pinned to frames.** `LTX 2.5` first + last frame. A clip into a decision ends on that decision's frame. The decision loop starts and ends on it. Every escape and capture starts on it. So every cut at a decision lands on identical pixels. LTX 2.5 also makes the sound and dialogue in the same pass, and its multishot cuts carry a single escape clip from one location to the next.
+4. **Tap targets.** `SAM3` finds each object from a sentence. The mask is grown, the original subtracted and the ring colored, so each object gets its own glowing outline that the player draws exactly where SAM3 found it.
+5. **Assemble.** `v2/build_document.py` turns `v2/story.json` plus the hosted media into a bitebox document: Target Overlays for taps, the loop's autoplay exit as the 5-second timeout, and end cards that hold until you tap TRY AGAIN, START OVER or PLAY AGAIN.
+
+| Path | What it is |
+| --- | --- |
+| `v2/story.json` | Cast, the four decisions with their clues, every scene's prompt, duration and anchors |
+| `v2/cast.json` | The character descriptions and the shared style line |
+| `v2/build_document.py` | Story + media → bitebox document (spec 0.7) |
+| `v2/targets.json` | Tap target positions from the SAM3 masks |
+| `v2/review/` | The review board: every clip with first, last and next frames, and per-clip feedback |
+| `tools/review_media.sh` | GitHub Action helper that makes small review copies of every hosted clip |
+
+## v1 (first submission draft)
+
+
 **A rooftop chase you play by tapping the world.** A courier, three ninjas, one way off the roof. Tap what glows. Pick wrong and they catch you, and the chase starts over with a different safe route.
 
 Everything is made in ComfyUI with open-weights models: the keyframes, every clip, and the glowing tap targets.
