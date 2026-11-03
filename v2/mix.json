@@ -1,0 +1,51 @@
+{
+ "score": "https://cdn.bitebox.gg/public/patchwork/af31fdd3-f1a6-41f5-9b45-d0123e798494.wav",
+ "music_db": -13,
+ "voice_db": -20,
+ "voice": [
+  "stakes",
+  "intro_call"
+ ],
+ "path": [
+  "title",
+  "stakes",
+  "intro_call",
+  "intro_hound",
+  "d1_loop",
+  "d1_jump",
+  "d2_loop",
+  "d2_crowd",
+  "d3_loop",
+  "d3_roof",
+  "d4_loop",
+  "d4_van",
+  "finale_van",
+  "finale_hound"
+ ],
+ "captures": {
+  "d1_vent": "d1_jump",
+  "d2_alley": "d2_crowd",
+  "d3_board": "d3_roof",
+  "d4_run": "d4_van"
+ },
+ "sources": {
+  "title": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/52696798-085b-4eca-95f9-4925eb006b6d.mp4",
+  "stakes": "https://cdn.bitebox.gg/public/patchwork/6b8fb206-9d76-4a8e-b028-98ff249189ca.mp4",
+  "intro_call": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c945023c-4f9f-48a3-846b-aed6ac6c6062.mp4",
+  "intro_hound": "https://cdn.bitebox.gg/public/patchwork/3afad814-5937-4f5b-899a-9c332f3b7a00.mp4",
+  "d1_loop": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/37de67df-1302-4ba0-abdd-24a8e143b79e.mp4",
+  "d1_jump": "https://cdn.bitebox.gg/public/patchwork/45f58c0a-3eb7-48d0-9a81-2b083efa5ba4.mp4",
+  "d2_loop": "https://cdn.bitebox.gg/public/patchwork/5d4ff75f-73ba-4b19-a63c-949beef0b079.mp4",
+  "d2_crowd": "https://cdn.bitebox.gg/public/patchwork/0760abde-1fe9-4a7a-a88e-b03a7c6db65c.mp4",
+  "d3_loop": "https://cdn.bitebox.gg/public/patchwork/230a6f62-25e4-4285-851b-16287741c736.mp4",
+  "d3_roof": "https://cdn.bitebox.gg/public/patchwork/47e53605-8121-41b4-b8f4-8e0076ad4288.mp4",
+  "d4_loop": "https://cdn.bitebox.gg/public/patchwork/3142f270-8cce-4314-984b-6873e6c42910.mp4",
+  "d4_van": "https://cdn.bitebox.gg/public/patchwork/93209809-f91f-49ce-8508-5f62cbc0abbc.mp4",
+  "finale_van": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ac66c1c7-e347-428c-936a-cfd402d860a7.mp4",
+  "finale_hound": "https://cdn.bitebox.gg/public/patchwork/bc4ed6f1-38c9-4a4f-9e7f-b247c138c3e5.mp4",
+  "d1_vent": "https://cdn.bitebox.gg/public/patchwork/456c9dea-0232-4831-9775-38fef5de4007.mp4",
+  "d2_alley": "https://cdn.bitebox.gg/public/patchwork/bdc5bb7d-9812-4a55-932b-b328d6d97495.mp4",
+  "d3_board": "https://cdn.bitebox.gg/public/patchwork/9a72c61a-37fb-444a-930f-4542b31a0202.mp4",
+  "d4_run": "https://cdn.bitebox.gg/public/patchwork/40c4c9be-2305-469d-ab7f-0ba58027c033.mp4"
+ }
+}
