@@ -20,7 +20,7 @@ nodes = doc["nodes"]
 scene_of = {nid: Path(n["props"]["src"]).name for nid, n in nodes.items() if n["type"] == "video"}
 media = json.loads((V2 / "media.json").read_text())
 by_file = {Path(u).name: k for k, u in media.items()}
-scene_of = {nid: by_file[f] for nid, f in scene_of.items()}
+scene_of = {nid: by_file[f].removesuffix("_2") for nid, f in scene_of.items()}
 
 KEYFRAME = {"title": "Title card", "stakes": "The chip", "k0": "Rooftop, chip in hand", "k0b": "The Hound lands",
             "k1": "D1 · The Edge", "k2": "D2 · The Market", "k3": "D3 · The Platform", "k4": "D4 · The Drop",
@@ -35,7 +35,7 @@ def exits(nid):
         t = nodes[ov]
         if t["props"]["kind"] == "hotspot":
             out.append((t["title"].replace("tap · ", "tap: "), t["next"]))
-        else:
+        elif "options" in t["props"]:
             for o in t["props"]["options"]:
                 out.append((f"button: {o['label']}", o["next"]))
     nxt = n["exits"][0]["next"]
