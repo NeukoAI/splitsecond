@@ -35,8 +35,7 @@ Three more pieces make it a game:
 | `build_workflows.py` | Generates every workflow below from one place: prompts, seeds, settings |
 | `workflows/01_keyframes.json` | The three decision frames, Z-Image Turbo |
 | `workflows/02_targets.json` | SAM3 masks and glowing outline crops for the six tap targets |
-| `workflows/clips/*.json` | One Wan 2.1 first/last-frame job per clip (15 clips) |
-| `workflows/03_all_clips.json` | All 15 clips in one graph, for a GPU with no job time limit |
+| `workflows/clips/*.json` | One job per clip (15 clips), picture and sound in one pass |
 | `story.json` | The story graph: scenes, decisions, tap targets, rotation |
 | `player/index.html` | A dependency-free player for that graph |
 
@@ -49,10 +48,12 @@ Three more pieces make it a game:
 | `z_image_turbo_bf16.safetensors` | `diffusion_models` |
 | `qwen_3_4b.safetensors` | `text_encoders` |
 | `ae.safetensors` | `vae` |
-| `wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors` | `diffusion_models` |
-| `umt5_xxl_fp8_e4m3fn_scaled.safetensors` | `text_encoders` |
-| `wan_2.1_vae.safetensors` | `vae` |
-| `clip_vision_h.safetensors` | `clip_vision` |
+| `minimax_h3_fl2va_pruned_int8_convrot.safetensors` | `diffusion_models` |
+| `minimax_h3_ref2va_pruned_int8_convrot.safetensors` | `diffusion_models` |
+| `pika_h3_flex_fl2va_v1_bf16.safetensors` | `loras` |
+| `qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors` | `text_encoders` |
+| `minimax_h3_video_vae_int8_convrot.safetensors` | `vae` |
+| `minimax_h3_audio_vae_fp32.safetensors` | `vae` |
 | `sam3.1_multiplex_fp16.safetensors` | `checkpoints` |
 
 Only core ComfyUI nodes are used. No custom node packs.
@@ -61,7 +62,7 @@ Only core ComfyUI nodes are used. No custom node packs.
 
 **3. Tap targets.** Queue `workflows/02_targets.json` to get the masks. Put each object's crop box in `targets.json`, rerun `python3 build_workflows.py`, and queue it again to get the glowing outlines.
 
-**4. Clips.** Queue each file in `workflows/clips/`. On Comfy Cloud, run them one per job: a single job is capped at about 12 minutes, and each clip takes about 4 on a 14B model.
+**4. Clips.** Queue each file in `workflows/clips/`. Each takes about a minute on Comfy Cloud. Clips that must land on a decision frame (opening, the idle loops, the decision 1 escapes) use Pika H3 Flex with both ends pinned. Captures and the final escapes only need to start on the frame, so they use MiniMax H3 with the first frame as a guide.
 
 **5. Play.** Put the clips in `clips/` and the outlines in `targets/`, fill in the `rect` values in `story.json`, then serve the folder and open `player/`:
 
@@ -74,7 +75,8 @@ To change the story, edit the prompts in `build_workflows.py` and rerun it.
 
 ## Settings
 
-Video: Wan 2.1 FLF2V 14B (fp8), 480×848, 81 frames at 16 fps, 25 steps, cfg 5, uni_pc, shift 5, seed 7.
+Pinned clips: Pika H3 Flex LoRA on MiniMax H3 first/last-frame, 576×1024, 124 frames at 24 fps with audio, 6 steps lcm (manual sigmas), seed 7.
+Open-ended clips: MiniMax H3 reference-to-video with a frame 0 guide, 480×864, 124 frames at 24 fps with audio, 20 steps res_multistep, seed 7.
 Keyframes: Z-Image Turbo, 576×1024, 8 steps, cfg 1, res_multistep, shift 3.
 
 ## Play the hosted version

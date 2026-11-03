@@ -1,237 +1,228 @@
 {
- "1": {
-  "class_type": "UNETLoader",
-  "inputs": {
-   "unet_name": "wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors",
-   "weight_dtype": "default"
-  },
-  "_meta": {
-   "title": "Wan 2.1 FLF2V 14B"
-  }
- },
- "2": {
-  "class_type": "ModelSamplingSD3",
-  "inputs": {
-   "model": [
-    "1",
-    0
-   ],
-   "shift": 5
-  },
-  "_meta": {
-   "title": "Shift"
-  }
- },
- "3": {
-  "class_type": "CLIPLoader",
-  "inputs": {
-   "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-   "type": "wan"
-  },
-  "_meta": {
-   "title": "UMT5 text encoder"
-  }
- },
- "4": {
+ "119": {
   "class_type": "VAELoader",
   "inputs": {
-   "vae_name": "wan_2.1_vae.safetensors"
+   "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
   },
   "_meta": {
-   "title": "Wan VAE"
+   "title": "H3 video VAE"
   }
  },
- "5": {
-  "class_type": "CLIPVisionLoader",
+ "120": {
+  "class_type": "VAELoader",
   "inputs": {
-   "clip_name": "clip_vision_h.safetensors"
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
   },
   "_meta": {
-   "title": "CLIP Vision H"
+   "title": "H3 audio VAE"
   }
  },
- "6": {
-  "class_type": "CLIPTextEncode",
+ "128": {
+  "class_type": "CLIPLoader",
   "inputs": {
-   "clip": [
-    "3",
-    0
-   ],
-   "text": "glitch, distortion, graffiti, color shift, morphing, melting, abstract shapes, blurry, low quality, extra limbs, deformed face, text, watermark, subtitles"
+   "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+   "type": "minimax",
+   "device": "default"
   },
   "_meta": {
-   "title": "Negative"
+   "title": "Qwen3-VL 32B (H3)"
   }
  },
- "22": {
+ "129": {
+  "class_type": "RandomNoise",
+  "inputs": {
+   "noise_seed": 7
+  },
+  "_meta": {
+   "title": "Seed"
+  }
+ },
+ "148": {
   "class_type": "LoadImage",
   "inputs": {
    "image": "k1_decision1.png"
   },
   "_meta": {
-   "title": "Frame: k1_decision1"
+   "title": "First frame: k1_decision1"
   }
  },
- "23": {
-  "class_type": "CLIPVisionEncode",
-  "inputs": {
-   "clip_vision": [
-    "5",
-    0
-   ],
-   "image": [
-    "22",
-    0
-   ],
-   "crop": "center"
-  },
-  "_meta": {
-   "title": "Vision: k1_decision1"
-  }
- },
- "100": {
-  "class_type": "CLIPTextEncode",
-  "inputs": {
-   "clip": [
-    "3",
-    0
-   ],
-   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat turns and runs to the right edge of the roof, grabs the steel zipline cable with her bag strap and slides away across the street, landing on a metal catwalk in front of a giant glowing billboard. She crouches to catch her breath."
-  },
-  "_meta": {
-   "title": "Prompt: d1_zip_safe"
-  }
- },
- "24": {
+ "147": {
   "class_type": "LoadImage",
   "inputs": {
    "image": "k2_decision2.png"
   },
   "_meta": {
-   "title": "Frame: k2_decision2"
+   "title": "Last frame: k2_decision2"
   }
  },
- "25": {
-  "class_type": "CLIPVisionEncode",
+ "127": {
+  "class_type": "UNETLoader",
   "inputs": {
-   "clip_vision": [
-    "5",
-    0
-   ],
-   "image": [
-    "24",
-    0
-   ],
-   "crop": "center"
+   "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+   "weight_dtype": "default"
   },
   "_meta": {
-   "title": "Vision: k2_decision2"
+   "title": "MiniMax H3 FL2VA"
   }
  },
- "101": {
-  "class_type": "WanFirstLastFrameToVideo",
+ "134": {
+  "class_type": "LoraLoaderModelOnly",
   "inputs": {
-   "positive": [
-    "100",
+   "model": [
+    "127",
     0
    ],
-   "negative": [
-    "6",
+   "lora_name": "pika_h3_flex_fl2va_v1_bf16.safetensors",
+   "strength_model": 1
+  },
+  "_meta": {
+   "title": "Pika H3 Flex"
+  }
+ },
+ "131": {
+  "class_type": "MiniMaxH3ImageToVideo",
+  "inputs": {
+   "clip": [
+    "128",
     0
    ],
    "vae": [
-    "4",
+    "119",
     0
    ],
-   "width": 480,
-   "height": 848,
-   "length": 81,
-   "batch_size": 1,
-   "start_image": [
-    "22",
+   "first_frame": [
+    "148",
     0
    ],
-   "clip_vision_start_image": [
-    "23",
+   "last_frame": [
+    "147",
     0
    ],
-   "end_image": [
-    "24",
+   "width": 576,
+   "height": 1024,
+   "length": 124,
+   "prompt": "How the reference pictures align with the target video \u2014 Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 5.17-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Hand-painted 2D anime cel animation: clean confident linework, flat cel shading with soft painted backgrounds, rich pink and teal neon light, steady diagonal rain and wet reflective rooftops at night. The courier girl has a short black bob, a bright yellow raincoat with the hood down and a dark green messenger bag; the three ninjas wear all black with red scarves over their faces. Characters keep the same proportions, outlines and colors in every frame. The shot begins exactly on Picture 1: wide view of the rooftop, the girl standing in the center foreground seen from behind, the wooden water tower with its ladder on the left, the steel zipline cable on the right edge, the stairwell hut with the red door in the background and the three ninjas crouched on its roof. At about half a second she turns and sprints to the right edge of the roof, splashing through puddles, as the ninjas spring up behind her. At about one and a half seconds she loops her bag strap over the zipline cable and leaps, sliding fast across the street above the neon traffic, the camera following her across. At about three and a half seconds she drops onto a narrow steel catwalk in front of a giant glowing pink and blue billboard and lands in a crouch. The shot settles into the final composition of Picture 2 and holds: the girl crouched on the catwalk seen from behind, the giant glowing pink and blue billboard, the elevated train passing below on the right, the red and white antenna on the left, and the three ninjas standing at the far left end of the catwalk.\n\noverall_soundscape: Heavy rain on concrete, quick splashing footsteps, the rising metallic whine of the cable under her weight, a rush of wind, a heavy clang as she lands on the steel grating, the rumble of the train below and the distant city.\n\nnon_diegetic_music: None."
+  },
+  "_meta": {
+   "title": "Pin both ends: d1_zip_safe"
+  }
+ },
+ "126": {
+  "class_type": "BasicGuider",
+  "inputs": {
+   "model": [
+    "134",
     0
    ],
-   "clip_vision_end_image": [
-    "25",
+   "conditioning": [
+    "131",
     0
    ]
   },
   "_meta": {
-   "title": "Pin to frame: d1_zip_safe"
+   "title": "Guider"
   }
  },
- "102": {
-  "class_type": "KSampler",
+ "123": {
+  "class_type": "KSamplerSelect",
   "inputs": {
-   "model": [
-    "2",
-    0
-   ],
-   "seed": 7,
-   "steps": 25,
-   "cfg": 5,
-   "sampler_name": "uni_pc",
-   "scheduler": "simple",
-   "positive": [
-    "101",
-    0
-   ],
-   "negative": [
-    "101",
-    1
-   ],
-   "latent_image": [
-    "101",
-    2
-   ],
-   "denoise": 1
+   "sampler_name": "lcm"
   },
   "_meta": {
-   "title": "Sample: d1_zip_safe"
+   "title": "LCM"
   }
  },
- "103": {
+ "143": {
+  "class_type": "ManualSigmas",
+  "inputs": {
+   "sigmas": "1.0, 0.972973, 0.923077, 0.8, 0.571429, 0.333333, 0.0"
+  },
+  "_meta": {
+   "title": "6-step schedule"
+  }
+ },
+ "125": {
+  "class_type": "SamplerCustomAdvanced",
+  "inputs": {
+   "noise": [
+    "129",
+    0
+   ],
+   "guider": [
+    "126",
+    0
+   ],
+   "sampler": [
+    "123",
+    0
+   ],
+   "sigmas": [
+    "143",
+    0
+   ],
+   "latent_image": [
+    "131",
+    1
+   ]
+  },
+  "_meta": {
+   "title": "Sample"
+  }
+ },
+ "122": {
   "class_type": "VAEDecode",
   "inputs": {
    "samples": [
-    "102",
+    "125",
     0
    ],
    "vae": [
-    "4",
+    "119",
     0
    ]
   },
   "_meta": {
-   "title": "Decode: d1_zip_safe"
+   "title": "Decode video"
   }
  },
- "104": {
+ "121": {
+  "class_type": "VAEDecodeAudio",
+  "inputs": {
+   "samples": [
+    "125",
+    0
+   ],
+   "vae": [
+    "120",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode audio"
+  }
+ },
+ "130": {
   "class_type": "CreateVideo",
   "inputs": {
    "images": [
-    "103",
+    "122",
     0
    ],
-   "fps": 16.0
+   "audio": [
+    "121",
+    0
+   ],
+   "fps": 24
   },
   "_meta": {
-   "title": "Video: d1_zip_safe"
+   "title": "Video + audio"
   }
  },
- "105": {
+ "92": {
   "class_type": "SaveVideo",
   "inputs": {
    "video": [
-    "104",
+    "130",
     0
    ],
    "filename_prefix": "splitsecond/d1_zip_safe",

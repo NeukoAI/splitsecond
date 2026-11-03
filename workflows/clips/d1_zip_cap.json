@@ -1,203 +1,241 @@
 {
- "1": {
-  "class_type": "UNETLoader",
-  "inputs": {
-   "unet_name": "wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors",
-   "weight_dtype": "default"
-  },
-  "_meta": {
-   "title": "Wan 2.1 FLF2V 14B"
-  }
- },
- "2": {
-  "class_type": "ModelSamplingSD3",
-  "inputs": {
-   "model": [
-    "1",
-    0
-   ],
-   "shift": 5
-  },
-  "_meta": {
-   "title": "Shift"
-  }
- },
- "3": {
-  "class_type": "CLIPLoader",
-  "inputs": {
-   "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-   "type": "wan"
-  },
-  "_meta": {
-   "title": "UMT5 text encoder"
-  }
- },
- "4": {
+ "119": {
   "class_type": "VAELoader",
   "inputs": {
-   "vae_name": "wan_2.1_vae.safetensors"
+   "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors"
   },
   "_meta": {
-   "title": "Wan VAE"
+   "title": "H3 video VAE"
   }
  },
- "5": {
-  "class_type": "CLIPVisionLoader",
+ "120": {
+  "class_type": "VAELoader",
   "inputs": {
-   "clip_name": "clip_vision_h.safetensors"
+   "vae_name": "minimax_h3_audio_vae_fp32.safetensors"
   },
   "_meta": {
-   "title": "CLIP Vision H"
+   "title": "H3 audio VAE"
   }
  },
- "6": {
-  "class_type": "CLIPTextEncode",
+ "128": {
+  "class_type": "CLIPLoader",
   "inputs": {
-   "clip": [
-    "3",
-    0
-   ],
-   "text": "glitch, distortion, graffiti, color shift, morphing, melting, abstract shapes, blurry, low quality, extra limbs, deformed face, text, watermark, subtitles"
+   "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+   "type": "minimax",
+   "device": "default"
   },
   "_meta": {
-   "title": "Negative"
+   "title": "Qwen3-VL 32B (H3)"
   }
  },
- "22": {
+ "129": {
+  "class_type": "RandomNoise",
+  "inputs": {
+   "noise_seed": 7
+  },
+  "_meta": {
+   "title": "Seed"
+  }
+ },
+ "148": {
   "class_type": "LoadImage",
   "inputs": {
    "image": "k1_decision1.png"
   },
   "_meta": {
-   "title": "Frame: k1_decision1"
+   "title": "First frame: k1_decision1"
   }
  },
- "23": {
-  "class_type": "CLIPVisionEncode",
+ "127": {
+  "class_type": "UNETLoader",
   "inputs": {
-   "clip_vision": [
-    "5",
+   "unet_name": "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "_meta": {
+   "title": "MiniMax H3 ref2va"
+  }
+ },
+ "136": {
+  "class_type": "MiniMaxH3ReferenceToVideo",
+  "inputs": {
+   "clip": [
+    "128",
+    0
+   ],
+   "vae": [
+    "119",
+    0
+   ],
+   "audio_vae": [
+    "120",
+    0
+   ],
+   "prompt": "subject_definitions:\n<Subject 1> is the courier girl in <Picture 1>, a young woman with a short black bob haircut, wearing a bright yellow raincoat with the hood down and a dark green messenger bag across her body.\n<Subject 2> are the three ninjas, dressed all in black with red scarves covering their faces.\n<Picture 1> is the first frame of [Shot 1], showing a wide shot of the flat wet rooftop at night in the rain, <Subject 1> standing in the center foreground seen from behind, a wooden water tower with a ladder on the left, a steel zipline cable on the right edge, and a small stairwell hut with a red door in the background, with <Subject 2> crouched motionless on the hut roof, against a pink and teal neon city.\n\nsummary:\n[first frame continuation + reference generation] The target video is one continuous shot of a rooftop chase in hand-painted anime cel style. <Subject 1> tries the zipline and is caught.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - her face, short black bob, bright yellow raincoat and dark green messenger bag stay identical throughout.\n<Picture 1> ([Shot 1] first frame): fully_preserved - the video starts exactly from <Picture 1>'s framing, subject positions, lighting and setting.\n\ndetailed_description:\nThe target video is a single continuous shot in a hand-painted 2D anime cel style with clean linework, rich pink and teal neon light, steady rain and wet reflective surfaces. Characters keep consistent proportions and outlines in every frame.\n\n[Shot 1] The shot begins from <Picture 1>. <Subject 1> sprints to the right edge of the roof and grabs the steel zipline cable. One of <Subject 2> lands on the zipline pole above her and pins the cable, and the other two close in on both sides and seize her arms. She is caught, held between them, as the camera holds steady.\n\noverall_soundscape:\nHeavy rain, splashing footsteps, the cable twanging, a thud as a ninja lands, a sharp gasp, the distant city.\n\nnon_diegetic_music:\nNone.",
+   "width": 480,
+   "height": 864,
+   "length": 124,
+   "ref_image_size": "match",
+   "ref_images.ref_image_0": [
+    "148",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "References: d1_zip_cap"
+  }
+ },
+ "147": {
+  "class_type": "MiniMaxH3AddGuide",
+  "inputs": {
+   "positive": [
+    "136",
+    0
+   ],
+   "latent": [
+    "136",
+    1
+   ],
+   "frame_idx": 0,
+   "vae": [
+    "119",
+    0
+   ],
+   "audio_vae": [
+    "120",
     0
    ],
    "image": [
-    "22",
-    0
-   ],
-   "crop": "center"
-  },
-  "_meta": {
-   "title": "Vision: k1_decision1"
-  }
- },
- "100": {
-  "class_type": "CLIPTextEncode",
-  "inputs": {
-   "clip": [
-    "3",
-    0
-   ],
-   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat runs to the right edge of the roof and grabs the steel zipline cable. A ninja in black with a red scarf lands on the pole and holds the cable still, and the other ninjas close in around her. She is caught. Camera holds steady."
-  },
-  "_meta": {
-   "title": "Prompt: d1_zip_cap"
-  }
- },
- "101": {
-  "class_type": "WanFirstLastFrameToVideo",
-  "inputs": {
-   "positive": [
-    "100",
-    0
-   ],
-   "negative": [
-    "6",
-    0
-   ],
-   "vae": [
-    "4",
-    0
-   ],
-   "width": 480,
-   "height": 848,
-   "length": 81,
-   "batch_size": 1,
-   "start_image": [
-    "22",
-    0
-   ],
-   "clip_vision_start_image": [
-    "23",
+    "148",
     0
    ]
   },
   "_meta": {
-   "title": "Pin to frame: d1_zip_cap"
+   "title": "Pin first frame"
   }
  },
- "102": {
-  "class_type": "KSampler",
+ "126": {
+  "class_type": "BasicGuider",
   "inputs": {
    "model": [
-    "2",
+    "127",
     0
    ],
-   "seed": 7,
-   "steps": 25,
-   "cfg": 5,
-   "sampler_name": "uni_pc",
+   "conditioning": [
+    "147",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Guider"
+  }
+ },
+ "123": {
+  "class_type": "KSamplerSelect",
+  "inputs": {
+   "sampler_name": "res_multistep"
+  },
+  "_meta": {
+   "title": "res_multistep"
+  }
+ },
+ "124": {
+  "class_type": "BasicScheduler",
+  "inputs": {
+   "model": [
+    "127",
+    0
+   ],
    "scheduler": "simple",
-   "positive": [
-    "101",
-    0
-   ],
-   "negative": [
-    "101",
-    1
-   ],
-   "latent_image": [
-    "101",
-    2
-   ],
+   "steps": 20,
    "denoise": 1
   },
   "_meta": {
-   "title": "Sample: d1_zip_cap"
+   "title": "20 steps"
   }
  },
- "103": {
+ "125": {
+  "class_type": "SamplerCustomAdvanced",
+  "inputs": {
+   "noise": [
+    "129",
+    0
+   ],
+   "guider": [
+    "126",
+    0
+   ],
+   "sampler": [
+    "123",
+    0
+   ],
+   "sigmas": [
+    "124",
+    0
+   ],
+   "latent_image": [
+    "136",
+    1
+   ]
+  },
+  "_meta": {
+   "title": "Sample"
+  }
+ },
+ "122": {
   "class_type": "VAEDecode",
   "inputs": {
    "samples": [
-    "102",
+    "125",
     0
    ],
    "vae": [
-    "4",
+    "119",
     0
    ]
   },
   "_meta": {
-   "title": "Decode: d1_zip_cap"
+   "title": "Decode video"
   }
  },
- "104": {
+ "121": {
+  "class_type": "VAEDecodeAudio",
+  "inputs": {
+   "samples": [
+    "125",
+    0
+   ],
+   "vae": [
+    "120",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode audio"
+  }
+ },
+ "130": {
   "class_type": "CreateVideo",
   "inputs": {
    "images": [
-    "103",
+    "122",
     0
    ],
-   "fps": 16.0
+   "audio": [
+    "121",
+    0
+   ],
+   "fps": 24
   },
   "_meta": {
-   "title": "Video: d1_zip_cap"
+   "title": "Video + audio"
   }
  },
- "105": {
+ "92": {
   "class_type": "SaveVideo",
   "inputs": {
    "video": [
-    "104",
+    "130",
     0
    ],
    "filename_prefix": "splitsecond/d1_zip_cap",
