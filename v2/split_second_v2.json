@@ -796,57 +796,101 @@
     ]
    }
   },
-  "c_play_again": {
+  "gl_btn_try": {
+   "type": "image",
+   "title": "button \u00b7 TRY AGAIN",
+   "ui": {
+    "x": 4800,
+    "y": 1400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ab2185e7-db16-4494-9f09-f194a8924d3c.png",
+    "alt": "TRY AGAIN",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_btn_over": {
+   "type": "image",
+   "title": "button \u00b7 START OVER",
+   "ui": {
+    "x": 4800,
+    "y": 1560
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/8a410df6-6c0d-4078-97d8-e1a352b6578b.png",
+    "alt": "START OVER",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_btn_play": {
+   "type": "image",
+   "title": "button \u00b7 PLAY AGAIN",
+   "ui": {
+    "x": 4800,
+    "y": 1720
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/8276ddaf-45c8-4a1f-bfc0-6e0a3cb807fd.png",
+    "alt": "PLAY AGAIN",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "hs_win_play": {
    "type": "trigger",
-   "title": "choice \u00b7 PLAY AGAIN / REPLAY THE DROP",
+   "title": "tap \u00b7 PLAY AGAIN",
    "ui": {
     "x": 5600,
     "y": 320
    },
    "props": {
-    "kind": "choiceOverlay",
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.9
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
     "active": {
-     "startMs": 500
+     "startMs": 0
     },
     "onClick": "instant",
-    "interaction": "click",
-    "result": "branch",
-    "displayInExperience": true,
-    "interactions": [
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "PLAY AGAIN"
-     },
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "REPLAY THE DROP"
-     }
-    ],
-    "options": [
-     {
-      "id": "choice-0",
-      "label": "PLAY AGAIN",
-      "next": "v_title"
-     },
-     {
-      "id": "choice-1",
-      "label": "REPLAY THE DROP",
-      "next": "v_d4_loop"
-     }
-    ],
-    "pulseOuts": [
-     {
-      "id": "choice-0"
-     },
-     {
-      "id": "choice-1"
-     }
-    ]
-   }
+    "image": "gl_btn_play",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "hs_win2_play": {
+   "type": "trigger",
+   "title": "tap \u00b7 PLAY AGAIN",
+   "ui": {
+    "x": 6000,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.9
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_play",
+    "displayInExperience": true
+   },
+   "next": "v_title"
   },
   "v_win": {
    "type": "video",
@@ -866,117 +910,147 @@
       "id": "exit.v_win.autoplay",
       "label": "Storyline",
       "mode": "autoplay",
-      "next": null
+      "next": "v_win_2"
      }
     ],
     "overlays": [
-     "c_play_again"
+     "hs_win_play"
     ]
    }
   },
-  "c_try_again": {
+  "v_win_2": {
+   "type": "video",
+   "title": "DELIVERED (hold)",
+   "ui": {
+    "x": 6000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/29dff657-25f0-483a-b5b7-1998c664f440.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_win_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_win"
+     }
+    ],
+    "overlays": [
+     "hs_win2_play"
+    ]
+   }
+  },
+  "hs_go_try": {
    "type": "trigger",
-   "title": "choice \u00b7 TRY AGAIN / START OVER",
+   "title": "tap \u00b7 TRY AGAIN",
    "ui": {
     "x": 4800,
     "y": 960
    },
    "props": {
-    "kind": "choiceOverlay",
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.64
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
     "active": {
-     "startMs": 500
+     "startMs": 0
     },
     "onClick": "instant",
-    "interaction": "click",
-    "result": "branch",
-    "displayInExperience": true,
-    "interactions": [
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "TRY AGAIN"
-     },
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "START OVER"
-     }
-    ],
-    "options": [
-     {
-      "id": "choice-0",
-      "label": "TRY AGAIN",
-      "next": "v_intro_hound"
-     },
-     {
-      "id": "choice-1",
-      "label": "START OVER",
-      "next": "v_title"
-     }
-    ],
-    "pulseOuts": [
-     {
-      "id": "choice-0"
-     },
-     {
-      "id": "choice-1"
-     }
-    ]
-   }
+    "image": "gl_btn_try",
+    "displayInExperience": true
+   },
+   "next": "v_intro_hound"
   },
-  "c_try_again_2": {
+  "hs_go_over": {
    "type": "trigger",
-   "title": "choice \u00b7 TRY AGAIN / START OVER",
+   "title": "tap \u00b7 START OVER",
+   "ui": {
+    "x": 4800,
+    "y": 1200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.76
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_over",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "hs_go2_try": {
+   "type": "trigger",
+   "title": "tap \u00b7 TRY AGAIN",
    "ui": {
     "x": 5200,
     "y": 960
    },
    "props": {
-    "kind": "choiceOverlay",
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.64
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
     "active": {
      "startMs": 0
     },
     "onClick": "instant",
-    "interaction": "click",
-    "result": "branch",
-    "displayInExperience": true,
-    "interactions": [
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "TRY AGAIN"
-     },
-     {
-      "interaction": "click",
-      "onClick": "instant",
-      "result": "branch",
-      "name": "START OVER"
-     }
-    ],
-    "options": [
-     {
-      "id": "choice-0",
-      "label": "TRY AGAIN",
-      "next": "v_intro_hound"
-     },
-     {
-      "id": "choice-1",
-      "label": "START OVER",
-      "next": "v_title"
-     }
-    ],
-    "pulseOuts": [
-     {
-      "id": "choice-0"
-     },
-     {
-      "id": "choice-1"
-     }
-    ]
-   }
+    "image": "gl_btn_try",
+    "displayInExperience": true
+   },
+   "next": "v_intro_hound"
+  },
+  "hs_go2_over": {
+   "type": "trigger",
+   "title": "tap \u00b7 START OVER",
+   "ui": {
+    "x": 5200,
+    "y": 1200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.76
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_over",
+    "displayInExperience": true
+   },
+   "next": "v_title"
   },
   "v_gameover": {
    "type": "video",
@@ -1000,7 +1074,8 @@
      }
     ],
     "overlays": [
-     "c_try_again"
+     "hs_go_try",
+     "hs_go_over"
     ]
    }
   },
@@ -1012,7 +1087,7 @@
     "y": 640
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/650264c1-5189-48df-90ae-2907b9296d57.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/375eb290-636b-4765-8038-c8eb55d6ea36.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 4042,
@@ -1026,7 +1101,8 @@
      }
     ],
     "overlays": [
-     "c_try_again_2"
+     "hs_go2_try",
+     "hs_go2_over"
     ]
    }
   }

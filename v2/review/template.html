@@ -1,0 +1,152 @@
+<title>Split Second Review Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a dark editing-bay board. Tree on top, then one row of clip cards per beat, play order left to right. */
+:root {
+  color-scheme: dark;
+  --bg: #0b0d14; --panel: #131724; --line: #262c40; --fg: #e8ebf5; --muted: #9aa3bd;
+  --cyan: #00e5ff; --magenta: #ff2e88; --yellow: #f5e94b; --red: #ff4d6d; --green: #3ddc97;
+  --display: "Chakra Petch", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); margin: 0 }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 28px 80px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0 }
+h1 { font-size: clamp(30px, 5vw, 46px); letter-spacing: .02em; text-transform: uppercase }
+h1 span { color: var(--cyan) }
+.lede { color: var(--muted); max-width: 70ch; margin: 8px 0 0 }
+.how { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 0; padding: 0; list-style: none; color: var(--muted); font-size: 13px }
+.how b { color: var(--fg) }
+.stats { font-family: var(--mono); font-size: 13px; color: var(--muted); margin-top: 14px }
+.stats b { color: var(--yellow) }
+section { margin-top: 44px }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 16px }
+.sec-head h2 { font-size: 22px; text-transform: uppercase; letter-spacing: .04em }
+.sec-head p { margin: 0; color: var(--muted); font-size: 14px }
+.tree { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; overflow-x: auto }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 370px), 1fr)); gap: 16px }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 0 }
+.card.caught { border-top: 3px solid var(--red) }
+.card.loop { border-top: 3px solid var(--yellow) }
+.card header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap }
+.card h3 { font-size: 17px; flex: 1 1 auto }
+.card code, .len { font: 12px var(--mono); color: var(--muted) }
+.media { display: grid; grid-template-columns: 132px 1fr; gap: 10px; align-items: start }
+video { width: 132px; aspect-ratio: 9/16; background: #000; border-radius: 6px; max-width: 100% }
+.seam { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; min-width: 0 }
+.seam figure { margin: 0; width: 64px }
+.seam img { width: 64px; aspect-ratio: 9/16; object-fit: cover; border-radius: 4px; display: block; background: #000 }
+.seam figure.next img { outline: 2px solid var(--cyan); outline-offset: -2px }
+figcaption { font-size: 11px; line-height: 1.25; color: var(--muted); margin-top: 3px }
+.lbl { display: block; font: 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--cyan) }
+.arrow { width: 100%; font: 10px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 4px }
+.end { font-size: 12px; color: var(--muted); margin: 0 }
+.kind { margin: 0; font-size: 13px; color: var(--muted) }
+.kind b { color: var(--fg); font-weight: 500 }
+.caps { margin: 0; padding: 8px 10px; list-style: none; background: #0f1220; border-left: 2px solid var(--magenta); font-size: 13px }
+.caps span { font: 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--magenta) }
+details summary { cursor: pointer; font-size: 13px; color: var(--cyan) }
+.prompt { font-size: 13px; color: var(--muted); margin: 6px 0 0 }
+.sheet { width: 100%; border-radius: 6px; background: #000 }
+.fb { border-top: 1px solid var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 8px }
+.verdicts { display: flex; gap: 6px; flex-wrap: wrap }
+.verdicts button { font: 600 12px var(--body); padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--fg); cursor: pointer }
+.verdicts button[aria-pressed="true"][data-v="keep"] { background: var(--green); color: #04140c; border-color: var(--green) }
+.verdicts button[aria-pressed="true"][data-v="tweak"] { background: var(--yellow); color: #1a1700; border-color: var(--yellow) }
+.verdicts button[aria-pressed="true"][data-v="redo"] { background: var(--red); color: #1a0007; border-color: var(--red) }
+.verdicts button:focus-visible, textarea:focus-visible, .save:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px }
+textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18; color: var(--fg); border: 1px solid var(--line); border-radius: 6px; padding: 8px; font: 13px var(--body) }
+.row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap }
+.save { font: 600 12px var(--body); padding: 6px 14px; border-radius: 6px; border: 0; background: var(--cyan); color: #00171b; cursor: pointer }
+.save[disabled] { opacity: .5; cursor: default }
+.status { font: 12px var(--mono); color: var(--muted) }
+.offline { color: var(--yellow); font-size: 13px }
+@media (max-width: 480px) { .media { grid-template-columns: 1fr } video { width: 100%; max-width: 220px } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto } }
+</style>
+
+<div class="wrap">
+  <h1>Split Second <span>review board</span></h1>
+  <p class="lede">{{LOGLINE}}</p>
+  <ul class="how">
+    <li><b>Seams:</b> each card shows the clip's first and last frame, then the first frame of every scene it can cut to.</li>
+    <li><b>Feedback:</b> mark Keep, Tweak or Redo and add a note. Claude reads these and regenerates.</li>
+  </ul>
+  <p class="stats" id="stats">Loading feedback…</p>
+
+  <section id="tree-sec">
+    <div class="sec-head"><h2>Decision tree</h2><p>Yellow is a decision, red is a capture, cyan is the win.</p></div>
+    <div class="tree"><pre class="mermaid">{{TREE}}</pre></div>
+  </section>
+
+  {{SECTIONS}}
+</div>
+
+<script>
+(() => {
+  const VERDICTS = [["keep", "Keep"], ["tweak", "Tweak"], ["redo", "Redo"]];
+  const state = {};
+  let db = null, me = null;
+  const statsEl = document.getElementById("stats");
+
+  function renderStats() {
+    const vals = Object.values(state);
+    const n = (v) => vals.filter((x) => x.verdict === v).length;
+    const total = document.querySelectorAll("[data-item]").length;
+    statsEl.innerHTML = db
+      ? `<b>${vals.length}</b> of ${total} reviewed · keep ${n("keep")} · tweak ${n("tweak")} · redo ${n("redo")}`
+      : `<span class="offline">Feedback can't be saved in this view. Open the page signed in to claude.ai.</span>`;
+  }
+
+  function mount(el) {
+    const id = el.closest("[data-item]").dataset.item;
+    el.innerHTML = `<div class="verdicts" role="group" aria-label="Verdict">${VERDICTS.map(([v, l]) =>
+      `<button type="button" data-v="${v}" aria-pressed="false">${l}</button>`).join("")}</div>
+      <textarea id="note-${id}" placeholder="What should change? e.g. her arm is on the wrong side, the cut to the market feels abrupt"></textarea>
+      <div class="row"><button type="button" class="save">Save</button><span class="status" aria-live="polite"></span></div>`;
+    const ta = el.querySelector("textarea"), save = el.querySelector(".save"), status = el.querySelector(".status");
+    let verdict = null;
+    const paint = () => el.querySelectorAll(".verdicts button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.v === verdict)));
+    el.querySelectorAll(".verdicts button").forEach((b) => b.addEventListener("click", () => { verdict = verdict === b.dataset.v ? null : b.dataset.v; paint(); write(); }));
+    save.addEventListener("click", write);
+    async function write() {
+      if (!db) { status.textContent = "Not saved: sign in to claude.ai"; return; }
+      save.disabled = true; status.textContent = "Saving…";
+      try {
+        await db.doc("feedback/" + id).set({ item: id, verdict, note: ta.value.trim(), by: me, updatedAt: new Date().toISOString() });
+        status.textContent = "Saved";
+      } catch (e) { status.textContent = "Couldn't save. Try again."; }
+      save.disabled = false;
+    }
+    el._apply = (d) => { verdict = d.verdict || null; if (document.activeElement !== ta) ta.value = d.note || ""; paint(); status.textContent = d.updatedAt ? "Saved " + new Date(d.updatedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : ""; };
+  }
+
+  document.querySelectorAll("[data-fb]").forEach(mount);
+  renderStats();
+
+  (async () => {
+    try {
+      db = await window.claude?.use?.("db");
+      const user = await window.claude?.use?.("user");
+      try { me = user ? await user.id() : null; } catch (e) { me = null; }
+    } catch (e) { db = null; }
+    renderStats();
+    if (!db) return;
+    db.collection("feedback").onSnapshot((snap) => {
+      const docs = snap.docs || snap;
+      docs.forEach((d) => {
+        const data = typeof d.data === "function" ? d.data() : d.data || d;
+        const id = data.item || d.id;
+        state[id] = data;
+        const host = document.querySelector(`[data-item="${CSS.escape(id)}"] [data-fb]`);
+        if (host && host._apply) host._apply(data);
+      });
+      renderStats();
+    }, () => { statsEl.innerHTML = '<span class="offline">Couldn’t load saved feedback. Your notes still save.</span>'; });
+  })();
+})();
+</script>

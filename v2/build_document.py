@@ -20,15 +20,18 @@ def build(story, media, targets, title="Split Second"):
     scenes = {s["id"]: s for s in story["scenes"]}
     nodes = {}
 
+    def base(sid):
+        return sid[:-2] if sid.endswith("_2") else sid
+
     def dur(sid):
-        return int(round((scenes[sid]["sec"] * FPS + 1) / FPS * 1000))
+        return int(round((scenes[base(sid)]["sec"] * FPS + 1) / FPS * 1000))
 
     def video(nid, sid, x, y, nxt, overlays=None, title=None):
         props = {"src": media[sid], "width": W, "height": H, "durationMs": dur(sid), "displayInExperience": False,
                  "exits": [{"id": f"exit.{nid}.autoplay", "label": "Storyline", "mode": "autoplay", "next": nxt}]}
         if overlays:
             props["overlays"] = overlays
-        caps = scenes[sid].get("captions")
+        caps = scenes[base(sid)].get("captions")
         if caps:
             props["captions"] = {"language": "en", "cues": [{"startMs": a, "endMs": b, "text": t} for a, b, t in caps]}
         nodes[nid] = {"type": "video", "title": title or sid.replace("_", " "), "ui": {"x": x, "y": y}, "props": props}
@@ -87,13 +90,31 @@ def build(story, media, targets, title="Split Second"):
 
     video("v_finale_van", "finale_van", x, 0, "v_finale_hound")
     video("v_finale_hound", "finale_hound", x + 400, 0, "v_win")
-    choice("c_play_again", [("PLAY AGAIN", "v_title"), ("REPLAY THE DROP", "v_d4_loop")], x + 800, 320, start_ms=500)
-    video("v_win", "win", x + 800, 0, None, ["c_play_again"], title="DELIVERED")
-    # a Video cannot loop into itself, so the game over card ping-pongs between two copies
-    choice("c_try_again", [("TRY AGAIN", restart), ("START OVER", "v_title")], x, 960, start_ms=500)
-    choice("c_try_again_2", [("TRY AGAIN", restart), ("START OVER", "v_title")], x + 400, 960, start_ms=0)
-    video("v_gameover", "gameover", x, 640, "v_gameover_2", ["c_try_again"], title="GAME OVER")
-    video("v_gameover_2", "gameover", x + 400, 640, "v_gameover", ["c_try_again_2"], title="GAME OVER (hold)")
+
+    # End cards hold until a tap: each card ping-pongs between two copies of its clip
+    # (a Video cannot loop into itself) and its buttons are Target Overlays.
+    # Choice Overlays were tried first; they auto-pick a default when their window closes.
+    buttons = {"try": ("TRY AGAIN", 0.5, 0.64), "over": ("START OVER", 0.5, 0.76), "play": ("PLAY AGAIN", 0.5, 0.9)}
+    for b, (label, _, _) in buttons.items():
+        nodes[f"gl_btn_{b}"] = {"type": "image", "title": f"button · {label}", "ui": {"x": x, "y": 1400 + 160 * list(buttons).index(b)},
+                                "props": {"src": media[f"btn_{b}"], "alt": label, "displayInExperience": False}, "next": None}
+
+    def button(hid, b, dst, bx, by):
+        label, cx, cy = buttons[b]
+        nodes[hid] = {"type": "trigger", "title": f"tap · {label}", "ui": {"x": bx, "y": by},
+                      "props": {"kind": "hotspot", "position": {"x": cx, "y": cy}, "rect": {"width": 0.6, "height": 0.08},
+                                "size": 0.4, "active": {"startMs": 0}, "onClick": "instant", "image": f"gl_btn_{b}",
+                                "displayInExperience": True},
+                      "next": dst}
+        return hid
+
+    win = [button("hs_win_play", "play", "v_title", x + 800, 320), button("hs_win2_play", "play", "v_title", x + 1200, 320)]
+    video("v_win", "win", x + 800, 0, "v_win_2", [win[0]], title="DELIVERED")
+    video("v_win_2", "win_2", x + 1200, 0, "v_win", [win[1]], title="DELIVERED (hold)")
+    go1 = [button("hs_go_try", "try", restart, x, 960), button("hs_go_over", "over", "v_title", x, 1200)]
+    go2 = [button("hs_go2_try", "try", restart, x + 400, 960), button("hs_go2_over", "over", "v_title", x + 400, 1200)]
+    video("v_gameover", "gameover", x, 640, "v_gameover_2", go1, title="GAME OVER")
+    video("v_gameover_2", "gameover_2", x + 400, 640, "v_gameover", go2, title="GAME OVER (hold)")
 
     return {"spec": "0.7", "title": title, "start": "v_title", "nodes": nodes}
 
