@@ -14,11 +14,11 @@ while read -r key url; do
   src="/tmp/src/$key.$ext"
   curl -sSfL "$url" -o "$src"
   if [ "$ext" = "mp4" ]; then
-    ffmpeg -loglevel error -y -i "$src" -vf scale=270:480 -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 64k -movflags +faststart "$out/$key.mp4"
-    ffmpeg -loglevel error -y -i "$src" -vf "select=eq(n\,0),scale=270:480" -frames:v 1 -q:v 4 "$out/${key}_first.jpg"
-    ffmpeg -loglevel error -y -sseof -0.1 -i "$src" -vf scale=270:480 -frames:v 1 -update 1 -q:v 4 "$out/${key}_last.jpg"
+    ffmpeg -nostdin -loglevel error -y -i "$src" -vf scale=270:480 -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 64k -movflags +faststart "$out/$key.mp4"
+    ffmpeg -nostdin -loglevel error -y -i "$src" -vf "select=eq(n\,0),scale=270:480" -frames:v 1 -q:v 4 "$out/${key}_first.jpg"
+    ffmpeg -nostdin -loglevel error -y -sseof -0.1 -i "$src" -vf scale=270:480 -frames:v 1 -update 1 -q:v 4 "$out/${key}_last.jpg"
   else
-    ffmpeg -loglevel error -y -i "$src" -vf "scale=270:-2" -q:v 4 "$out/$key.jpg"
+    ffmpeg -nostdin -loglevel error -y -i "$src" -vf "scale=270:-2" -q:v 4 "$out/$key.jpg"
   fi
 done < /tmp/list.txt
 ls -la "$out" | head -80

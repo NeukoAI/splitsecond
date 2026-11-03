@@ -34,6 +34,7 @@ section { margin-top: 44px }
 .card.loop { border-top: 3px solid var(--yellow) }
 .card header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap }
 .card h3 { font-size: 17px; flex: 1 1 auto }
+.new { font: 600 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #04140c; background: var(--green); border-radius: 999px; padding: 2px 8px }
 .card code, .len { font: 12px var(--mono); color: var(--muted) }
 .media { display: grid; grid-template-columns: 132px 1fr; gap: 10px; align-items: start }
 video { width: 132px; aspect-ratio: 9/16; background: #000; border-radius: 6px; max-width: 100% }
@@ -81,6 +82,7 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   <section id="tree-sec">
     <div class="sec-head"><h2>Decision tree</h2><p>Yellow is a decision, red is a capture, cyan is the win.</p></div>
     <div class="tree"><pre class="mermaid">{{TREE}}</pre></div>
+    <p class="stats">Green "v2.1 redo" tags mark clips regenerated from your notes. Your old notes stay on each card; re-mark them after you watch.</p>
   </section>
 
   {{SECTIONS}}

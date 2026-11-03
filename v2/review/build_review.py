@@ -64,6 +64,10 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
+REVISED = {"intro_call", "intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_loop", "d2_crowd", "d2_alley",
+           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run"}
+
+
 def card(nid):
     sid = scene_of[nid]
     s = scenes[sid]
@@ -82,7 +86,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3><code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.1 redo</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -117,16 +121,16 @@ for title, sub, ids in GROUPS:
                     f'<div class="grid">{"".join(card(n) for n in ids)}</div></section>')
 
 TREE = """flowchart TD
-  T[Title] --> S[The chip: stakes] --> C[Dex's call] --> H[The Hound lands]
+  T[Title] --> S[The chip: stakes] --> C[Dex's call] --> H[Rin runs, the Hound lands far off]
   H --> D1{D1 The Edge}
   D1 -- jump to the billboard --> J[Leap the gap] --> D2{D2 The Market}
-  D1 -- hide in the vent / no tap --> X1[Caught in the vent]
+  D1 -- hide in the vent / no tap --> X1[He waits at the other end]
   D2 -- vanish into the crowd --> CR[Lost in the umbrellas] --> D3{D3 The Platform}
-  D2 -- run the alley / no tap --> X2[Trapped at the fence]
-  D3 -- climb to the roof --> R[Ride the roof] --> D4{D4 The Drop}
-  D3 -- board the train / no tap --> X3[He was inside]
+  D2 -- run the alley / no tap --> X2[He is in the side alley]
+  D3 -- climb to the roof --> R[Leap to the other train] --> D4{D4 The Drop}
+  D3 -- board the train / no tap --> X3[He sits across from her]
   D4 -- jump for the van --> V[Land on the van] --> F1[Cutting it close] --> F2[Next time, courier] --> W[DELIVERED]
-  D4 -- fight the Hound / no tap --> X4[Caught on the roof]
+  D4 -- keep running / no tap --> X4[He climbs up and grabs her]
   X1 & X2 & X3 & X4 --> G[FLATLINED]
   G -- TRY AGAIN --> H
   G -- START OVER --> T

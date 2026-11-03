@@ -34,6 +34,7 @@ section { margin-top: 44px }
 .card.loop { border-top: 3px solid var(--yellow) }
 .card header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap }
 .card h3 { font-size: 17px; flex: 1 1 auto }
+.new { font: 600 10px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: #04140c; background: var(--green); border-radius: 999px; padding: 2px 8px }
 .card code, .len { font: 12px var(--mono); color: var(--muted) }
 .media { display: grid; grid-template-columns: 132px 1fr; gap: 10px; align-items: start }
 video { width: 132px; aspect-ratio: 9/16; background: #000; border-radius: 6px; max-width: 100% }
@@ -81,16 +82,16 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   <section id="tree-sec">
     <div class="sec-head"><h2>Decision tree</h2><p>Yellow is a decision, red is a capture, cyan is the win.</p></div>
     <div class="tree"><pre class="mermaid">flowchart TD
-  T[Title] --&gt; S[The chip: stakes] --&gt; C[Dex&#x27;s call] --&gt; H[The Hound lands]
+  T[Title] --&gt; S[The chip: stakes] --&gt; C[Dex&#x27;s call] --&gt; H[Rin runs, the Hound lands far off]
   H --&gt; D1{D1 The Edge}
   D1 -- jump to the billboard --&gt; J[Leap the gap] --&gt; D2{D2 The Market}
-  D1 -- hide in the vent / no tap --&gt; X1[Caught in the vent]
+  D1 -- hide in the vent / no tap --&gt; X1[He waits at the other end]
   D2 -- vanish into the crowd --&gt; CR[Lost in the umbrellas] --&gt; D3{D3 The Platform}
-  D2 -- run the alley / no tap --&gt; X2[Trapped at the fence]
-  D3 -- climb to the roof --&gt; R[Ride the roof] --&gt; D4{D4 The Drop}
-  D3 -- board the train / no tap --&gt; X3[He was inside]
+  D2 -- run the alley / no tap --&gt; X2[He is in the side alley]
+  D3 -- climb to the roof --&gt; R[Leap to the other train] --&gt; D4{D4 The Drop}
+  D3 -- board the train / no tap --&gt; X3[He sits across from her]
   D4 -- jump for the van --&gt; V[Land on the van] --&gt; F1[Cutting it close] --&gt; F2[Next time, courier] --&gt; W[DELIVERED]
-  D4 -- fight the Hound / no tap --&gt; X4[Caught on the roof]
+  D4 -- keep running / no tap --&gt; X4[He climbs up and grabs her]
   X1 &amp; X2 &amp; X3 &amp; X4 --&gt; G[FLATLINED]
   G -- TRY AGAIN --&gt; H
   G -- START OVER --&gt; T
@@ -101,6 +102,7 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   class X1,X2,X3,X4,G bad
   class W,F1,F2 good
   class D1,D2,D3,D4 pick</pre></div>
+    <p class="stats">Green "v2.1 redo" tags mark clips regenerated from your notes. Your old notes stay on each card; re-mark them after you watch.</p>
   </section>
 
   <section id="cast"><div class="sec-head"><h2>Cast</h2><p>Qwen Image 2.1 Turbo sheets. Every keyframe is an edit of these, so the faces and costumes hold.</p></div>
@@ -152,12 +154,12 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
     </div>
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>The chip</b></p>
-  <ul class="caps"><span>On-screen text</span><li>This chip holds the cure. 40,000 people in the Lower City die without it.</li><li>A corp wants it buried. Their hunter, the Hound, is already on her trail.</li></ul>
+  <ul class="caps"><span>On-screen text</span><li>That chip is the cure. Forty thousand people in the Lower City are running out of time.</li><li>The corp that made them sick wants it gone. So they sent the Hound.</li></ul>
   <details><summary>Prompt</summary><p class="prompt">Extreme close-up of the girl&#x27;s open chrome palm in the rain holding the small glowing cyan data chip; above it a cyan hologram of a double helix inside a medical cross slowly rotates and flickers. Her cyan cybernetic eye glows behind it as she stares at it. A deep gruff man&#x27;s voice speaks over her earpiece, calm and serious: &quot;That chip is the cure, Rin. Forty thousand people in the Lower City die without it. Get it to me. And whatever happens, don&#x27;t let the Hound take it.&quot; She closes her chrome fingers over the chip and the hologram winks out. Rain, distant thunder, low synth drone. The camera slowly pulls back.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="intro_call" id="intro_call">
-  <header><h3>intro call</h3><code>intro_call</code><span class="len">5s</span></header>
+  <header><h3>intro call</h3><span class="new">v2.1 redo</span><code>intro_call</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/intro_call.mp4" poster="review/intro_call_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -168,12 +170,12 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
     </div>
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>Rooftop, chip in hand</b></p>
-  <ul class="caps"><span>On-screen text</span><li>Get the chip to Dex at the rail yard. Don&#x27;t let the Hound take it.</li></ul>
-  <details><summary>Prompt</summary><p class="prompt">Rin crouches on the rooftop edge turning the glowing data chip in her chrome fingers. Her earpiece crackles and a gruff man&#x27;s voice says: &quot;Rin, they know you took it. The Hound is coming. Get to the rail yard.&quot; She looks up sharply, eyes narrowing, and pockets the chip. Rain, distant sirens, city hum. Slow push in.</p></details>
+  <ul class="caps"><span>On-screen text</span><li>Get it to Dex at the rail yard. And don&#x27;t get caught.</li></ul>
+  <details><summary>Prompt</summary><p class="prompt">Rin crouches on the rooftop edge holding the glowing chip. Her earpiece beeps; she presses two fingers to it to answer. Dex: &quot;Rin, they know you took it. The Hound is coming. Get to the rail yard.&quot; She closes her fist around the chip and stands.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="intro_hound" id="intro_hound">
-  <header><h3>intro hound</h3><code>intro_hound</code><span class="len">5s</span></header>
+  <header><h3>intro hound</h3><span class="new">v2.1 redo</span><code>intro_hound</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/intro_hound.mp4" poster="review/intro_hound_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -183,14 +185,14 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
       <figure class="next"><img src="review/d1_loop_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">plays into</span>The Edge · decide</figcaption></figure>
     </div>
   </div>
-  <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>The Hound lands → D1 · The Edge</b></p>
+  <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>k0r → D1 · The Edge</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">The Hound slams down onto the rooftop with a heavy metallic impact and a burst of water, his red visor flares and his red blade hums to life. Rin spins and sprints away across the roof, the camera whipping after her until she skids to a stop at the far edge, seen from behind. Thunderous landing, electric hum, splashing footsteps, rain.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin sprints across the rooftop, glancing back. Far behind her the Hound lands on a distant roof with a heavy impact, red visor flaring. She skids to a stop at the far edge, seen from behind: billboard and its side ladder on the left, vent on the right. The Hound stays small in the distance.</p></details>
   <div class="fb" data-fb></div>
 </article></div></section>
 <section><div class="sec-head"><h2>Decision 1 · The Edge</h2><p>Safe pick: Jump to the billboard. Clue on screen: red hunter drones are sweeping the rooftop vents.</p></div><div class="grid">
 <article class="card loop" data-item="d1_loop" id="d1_loop">
-  <header><h3>The Edge · decide</h3><code>d1_loop</code><span class="len">5s</span></header>
+  <header><h3>The Edge · decide</h3><span class="new">v2.1 redo</span><code>d1_loop</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/d1_loop.mp4" poster="review/d1_loop_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -206,7 +208,7 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="d1_jump" id="d1_jump">
-  <header><h3>The Edge · Jump to the billboard</h3><code>d1_jump</code><span class="len">6s</span></header>
+  <header><h3>The Edge · Jump to the billboard</h3><span class="new">v2.1 redo</span><code>d1_jump</code><span class="len">8s</span></header>
   <div class="media">
     <video src="review/d1_jump.mp4" poster="review/d1_jump_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -218,11 +220,11 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D1 · The Edge → D2 · The Market</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin sprints and leaps across the alley gap, flying through the rain, slams onto the billboard scaffold and slides down the scaffold ladder. Cut to a high-angle shot of a crowded neon street market where she lands in the middle of the street. Whoosh, metal clang, crowd chatter, rain.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin leaps the gap and catches the yellow ladder on the side of the billboard, then slides down it all the way into the dark alley, sparks off her chrome hand. She drops out of the alley into the crowded night market and lands in the middle of the street.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card caught" data-item="d1_vent" id="d1_vent">
-  <header><h3>The Edge · caught</h3><code>d1_vent</code><span class="len">5s</span></header>
+  <header><h3>The Edge · caught</h3><span class="new">v2.1 redo</span><code>d1_vent</code><span class="len">6s</span></header>
   <div class="media">
     <video src="review/d1_vent.mp4" poster="review/d1_vent_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -234,12 +236,12 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>D1 · The Edge</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin dives into the open vent shaft and crouches in the dark. Red drone light floods the shaft from above and a drone beeps an alarm. The Hound&#x27;s black armored hand grabs the hatch and rips it open, his red visor filling the frame as he looks down at her. She gasps. Metal shriek, alarm beeps.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin dives into the open vent and crawls through the dark duct. At the far end she kicks out a grate and freezes: the Hound is already crouched there, waiting. He grabs her by the collar.</p></details>
   <div class="fb" data-fb></div>
 </article></div></section>
-<section><div class="sec-head"><h2>Decision 2 · The Market</h2><p>Safe pick: Vanish into the crowd. Clue on screen: the alley ends at a fence with a drone over it.</p></div><div class="grid">
+<section><div class="sec-head"><h2>Decision 2 · The Market</h2><p>Safe pick: Vanish into the crowd. Clue on screen: the alley is empty except for a red drone hovering over it.</p></div><div class="grid">
 <article class="card loop" data-item="d2_loop" id="d2_loop">
-  <header><h3>The Market · decide</h3><code>d2_loop</code><span class="len">5s</span></header>
+  <header><h3>The Market · decide</h3><span class="new">v2.1 redo</span><code>d2_loop</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/d2_loop.mp4" poster="review/d2_loop_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -251,11 +253,11 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D2 · The Market → D2 · The Market</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">High-angle shot of the crowded rainy neon market. Rin turns in place in the middle of the street, looking from the dense umbrella crowd on the left to the empty alley on the right where a red drone hovers over a chain-link fence. On the ledge above, the Hound scans the street, his red visor sweeping. Crowd chatter, rain, sizzling food stalls. Steady camera.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin turns in the middle of the rainy market, looking from the umbrella crowd on the left to the empty alley on the right where a red drone hovers. No Hound in sight yet.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="d2_crowd" id="d2_crowd">
-  <header><h3>The Market · Vanish into the crowd</h3><code>d2_crowd</code><span class="len">6s</span></header>
+  <header><h3>The Market · Vanish into the crowd</h3><span class="new">v2.1 redo</span><code>d2_crowd</code><span class="len">7s</span></header>
   <div class="media">
     <video src="review/d2_crowd.mp4" poster="review/d2_crowd_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -267,11 +269,11 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D2 · The Market → D3 · The Platform</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin pulls up her hood and slips into the dense crowd of glowing umbrellas. The Hound&#x27;s red visor sweeps right over her and moves on. Cut to an elevated train platform in heavy rain where Rin runs up the stairs onto the platform beside a waiting train. Crowd noise, train chime, rain.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin pulls her hood up and slips straight into the crowd of glowing umbrellas, gone. Seconds later the Hound shoves into the market behind her, searching, but loses her. She reaches the elevated train platform alone.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card caught" data-item="d2_alley" id="d2_alley">
-  <header><h3>The Market · caught</h3><code>d2_alley</code><span class="len">5s</span></header>
+  <header><h3>The Market · caught</h3><span class="new">v2.1 redo</span><code>d2_alley</code><span class="len">7s</span></header>
   <div class="media">
     <video src="review/d2_alley.mp4" poster="review/d2_alley_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -283,12 +285,12 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>D2 · The Market</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin bolts down the empty alley toward the chain-link fence. The red drone flashes and the Hound drops from above, landing between her and the fence with a heavy thud, his red blade raised. She skids to a stop, trapped. Heavy landing, electric hum, drone beeps.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin bolts down the empty alley. A red drone flashes overhead. She cuts hard into a narrow side alley, and the Hound is standing right there in the dark, waiting. He grabs her.</p></details>
   <div class="fb" data-fb></div>
 </article></div></section>
-<section><div class="sec-head"><h2>Decision 3 · The Platform</h2><p>Safe pick: Climb to the roof. Clue on screen: a red visor glows inside the train window.</p></div><div class="grid">
+<section><div class="sec-head"><h2>Decision 3 · The Platform</h2><p>Safe pick: Climb to the roof. Clue on screen: the carriage is dark and empty, lit only by red emergency light.</p></div><div class="grid">
 <article class="card loop" data-item="d3_loop" id="d3_loop">
-  <header><h3>The Platform · decide</h3><code>d3_loop</code><span class="len">5s</span></header>
+  <header><h3>The Platform · decide</h3><span class="new">v2.1 redo</span><code>d3_loop</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/d3_loop.mp4" poster="review/d3_loop_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -300,11 +302,11 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D3 · The Platform → D3 · The Platform</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin stands on the rainy train platform catching her breath, looking at the open train doors on the left and the yellow ladder up to the train roof on the right. Inside a lit train window a red visor glows and slowly turns toward her. Train door chime beeping, rain, a calm automated voice says: &quot;Doors closing.&quot; Steady camera.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin catches her breath on the rainy platform, glancing at the open doors of a dark, empty carriage lit by flickering red light, and at the yellow ladder up to the train roof. &quot;Doors closing.&quot;</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="d3_roof" id="d3_roof">
-  <header><h3>The Platform · Climb to the roof</h3><code>d3_roof</code><span class="len">6s</span></header>
+  <header><h3>The Platform · Climb to the roof</h3><span class="new">v2.1 redo</span><code>d3_roof</code><span class="len">8s</span></header>
   <div class="media">
     <video src="review/d3_roof.mp4" poster="review/d3_roof_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -316,11 +318,11 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D3 · The Platform → D4 · The Drop</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin scrambles up the yellow ladder onto the train roof as the doors slam shut below her and the train lurches forward. Cut to Rin crouching low on the roof of the speeding train at night, wind whipping her hair, a yellow van racing alongside below with Dex leaning out of its door, the Hound climbing onto the roof behind her. Train roar, wind, rain.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin climbs the yellow ladder onto the train roof, sprints along it and leaps across onto the roof of a second train racing past the other way. She lands in a crouch and spots Dex&#x27;s yellow van speeding alongside the tracks below.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card caught" data-item="d3_board" id="d3_board">
-  <header><h3>The Platform · caught</h3><code>d3_board</code><span class="len">5s</span></header>
+  <header><h3>The Platform · caught</h3><span class="new">v2.1 redo</span><code>d3_board</code><span class="len">6s</span></header>
   <div class="media">
     <video src="review/d3_board.mp4" poster="review/d3_board_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -332,28 +334,28 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>D3 · The Platform</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin jumps through the open train doors and they slam shut behind her. She turns and freezes: the Hound rises from the seats in the dark carriage, red visor blazing, inches from her face. The train lights flicker red. Door slam, electric hum, her sharp gasp.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin ducks through the closing doors into the dark carriage and drops into a seat to catch her breath. The red lights flicker on, and she sees the Hound sitting directly across from her, visor glowing. He leans forward.</p></details>
   <div class="fb" data-fb></div>
 </article></div></section>
-<section><div class="sec-head"><h2>Decision 4 · The Drop</h2><p>Safe pick: Jump for the van. Clue on screen: Dex is waving her down from the van.</p></div><div class="grid">
+<section><div class="sec-head"><h2>Decision 4 · The Drop</h2><p>Safe pick: Jump for the van. Clue on screen: Dex is waving her down from the van, and the roof ahead runs into a tunnel.</p></div><div class="grid">
 <article class="card loop" data-item="d4_loop" id="d4_loop">
-  <header><h3>The Drop · decide</h3><code>d4_loop</code><span class="len">5s</span></header>
+  <header><h3>The Drop · decide</h3><span class="new">v2.1 redo</span><code>d4_loop</code><span class="len">5s</span></header>
   <div class="media">
     <video src="review/d4_loop.mp4" poster="review/d4_loop_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
       <figure><img src="review/d4_loop_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">first frame</span></figcaption></figure>
       <figure><img src="review/d4_loop_last.jpg" alt="" loading="lazy"><figcaption><span class="lbl">last frame</span></figcaption></figure>
       <div class="arrow" aria-hidden="true">cuts to</div>
-      <figure class="next"><img src="review/d4_fight_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">tap: Fight the Hound</span>The Drop · caught</figcaption></figure><figure class="next"><img src="review/d4_van_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">tap: Jump for the van</span>The Drop · Jump for the van</figcaption></figure><figure class="next"><img src="review/d4_fight_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">no tap in time</span>The Drop · caught</figcaption></figure>
+      <figure class="next"><img src="review/d4_run_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">tap: Keep running</span>The Drop · caught</figcaption></figure><figure class="next"><img src="review/d4_van_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">tap: Jump for the van</span>The Drop · Jump for the van</figcaption></figure><figure class="next"><img src="review/d4_run_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">no tap in time</span>The Drop · caught</figcaption></figure>
     </div>
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D4 · The Drop → D4 · The Drop</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin crouches on the roof of the speeding train, wind roaring. Below on the right, Dex leans out of the racing yellow van and shouts: &quot;Jump, kid! Now!&quot; On the left, the Hound advances along the train roof, red blade drawn. City lights streak past. Train roar, wind. Steady tracking camera.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin crouches on the speeding train roof, staring down at Dex&#x27;s yellow van racing alongside, coiled to jump. Dex leans out and shouts: &quot;Jump, kid! Now!&quot; Ahead, the roof runs into a dark tunnel.</p></details>
   <div class="fb" data-fb></div>
 </article>
 <article class="card " data-item="d4_van" id="d4_van">
-  <header><h3>The Drop · Jump for the van</h3><code>d4_van</code><span class="len">6s</span></header>
+  <header><h3>The Drop · Jump for the van</h3><span class="new">v2.1 redo</span><code>d4_van</code><span class="len">6s</span></header>
   <div class="media">
     <video src="review/d4_van.mp4" poster="review/d4_van_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -365,23 +367,23 @@ textarea { width: 100%; min-height: 58px; resize: vertical; background: #0b0e18;
   </div>
   <p class="kind">Pinned both ends (LTX 2.5 first + last frame) · <b>D4 · The Drop → Van cab</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin sprints and leaps off the train roof, flying through the rain, and lands hard on the roof of the speeding yellow van, then swings in through the open side door. Cut to inside the van cab: Dex drives, grinning, as Rin drops into the passenger seat and holds up the glowing chip. Wind, a thud, door slam, engine roar.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin leaps off the train toward the moving van and dives straight through its open side door into the passenger seat. Cut to inside the cab: Dex drives, grinning, as she holds up the chip.</p></details>
   <div class="fb" data-fb></div>
 </article>
-<article class="card caught" data-item="d4_fight" id="d4_fight">
-  <header><h3>The Drop · caught</h3><code>d4_fight</code><span class="len">5s</span></header>
+<article class="card caught" data-item="d4_run" id="d4_run">
+  <header><h3>The Drop · caught</h3><span class="new">v2.1 redo</span><code>d4_run</code><span class="len">6s</span></header>
   <div class="media">
-    <video src="review/d4_fight.mp4" poster="review/d4_fight_first.jpg" controls playsinline preload="none"></video>
+    <video src="review/d4_run.mp4" poster="review/d4_run_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
-      <figure><img src="review/d4_fight_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">first frame</span></figcaption></figure>
-      <figure><img src="review/d4_fight_last.jpg" alt="" loading="lazy"><figcaption><span class="lbl">last frame</span></figcaption></figure>
+      <figure><img src="review/d4_run_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">first frame</span></figcaption></figure>
+      <figure><img src="review/d4_run_last.jpg" alt="" loading="lazy"><figcaption><span class="lbl">last frame</span></figcaption></figure>
       <div class="arrow" aria-hidden="true">cuts to</div>
       <figure class="next"><img src="review/gameover_first.jpg" alt="" loading="lazy"><figcaption><span class="lbl">plays into</span>GAME OVER</figcaption></figure>
     </div>
   </div>
   <p class="kind">Pinned start, free end (LTX 2.5 image to video) · <b>D4 · The Drop</b></p>
   
-  <details><summary>Prompt</summary><p class="prompt">Rin turns and charges the Hound along the train roof, swinging her chrome fist. The Hound catches her arm effortlessly, red blade sparking, and lifts her off her feet, his red visor close to her face. Below, the van swerves away. Metal clang, sparks, train roar.</p></details>
+  <details><summary>Prompt</summary><p class="prompt">Rin ignores the van and sprints along the train roof toward the tunnel. The Hound leaps up over the edge of the roof in front of her and grabs her by the arm, lifting her off her feet.</p></details>
   <div class="fb" data-fb></div>
 </article></div></section>
 <section><div class="sec-head"><h2>Ending</h2><p>The drop, then DELIVERED. FLATLINED plays after every capture.</p></div><div class="grid">
