@@ -11,14 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: download every listed file
+        with:
+          fetch-depth: 1
+      - name: download listed files not already on the branch
         run: |
           mkdir -p grab
+          if git fetch -q origin grab; then git checkout FETCH_HEAD -- grab || true; fi
           while read -r name url; do
             [ -z "$name" ] && continue
+            [ -s "grab/$name.${url##*.}" ] && continue
             curl -sSfL "$url" -o "grab/$name.${url##*.}" || echo "failed $name"
           done < v2/grab.txt
-          ls -la grab
+          ls -la grab | tail -50
       - name: publish to grab branch
         run: |
           git config user.name "grab"
