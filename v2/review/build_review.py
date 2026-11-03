@@ -64,7 +64,7 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
-REVISED = {"stakes", "intro_hound", "d2_crowd", "d2_alley",
+REVISED = {"title", "stakes", "intro_call", "intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_loop", "d2_crowd", "d2_alley", "d3_loop", "d3_board", "finale_van",
            "d3_roof", "d4_loop", "d4_van", "d4_run", "finale_hound"}
 
 
@@ -90,7 +90,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.6</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.7 score</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
