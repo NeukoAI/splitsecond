@@ -1,7 +1,7 @@
 {
  "score": "https://cdn.bitebox.gg/public/patchwork/af31fdd3-f1a6-41f5-9b45-d0123e798494.wav",
  "music_db": -13,
- "voice_db": -20,
+ "voice_db": -16,
  "voice": [
   "stakes",
   "intro_call"
@@ -44,7 +44,10 @@
   "d2_crowd": "https://cdn.bitebox.gg/public/patchwork/814eb7fd-60b3-4534-bb1a-a2de01b0758d.mp4",
   "d3_loop": "https://cdn.bitebox.gg/public/patchwork/6ce28b75-4d6c-42b2-acff-bc5159cb818b.mp4",
   "d3_roof": [
-   "https://cdn.bitebox.gg/public/patchwork/cb9336f3-b169-400d-b84c-886aba243bdc.mp4",
+   {
+    "url": "https://cdn.bitebox.gg/public/patchwork/cb9336f3-b169-400d-b84c-886aba243bdc.mp4",
+    "end": 4.75
+   },
    "https://cdn.bitebox.gg/public/patchwork/16a5cef3-a796-49bc-890b-3cf10401cc9d.mp4"
   ],
   "d4_loop": "https://cdn.bitebox.gg/public/patchwork/f7e99729-c43a-4508-8a4d-4f08165251c4.mp4",
