@@ -36,7 +36,9 @@ Three more pieces make it a game:
 | `workflows/01_keyframes.json` | The three decision frames, Z-Image Turbo |
 | `workflows/02_targets.json` | SAM3 masks and glowing outline crops for the six tap targets |
 | `workflows/clips/*.json` | One job per clip (15 clips), picture and sound in one pass |
-| `story.json` | The story graph: scenes, decisions, tap targets, rotation |
+| `story.json` | The story graph: scenes, decisions, tap targets, rotation (points at the hosted clips) |
+| `bitebox/build_document.py` | Unrolls `story.json` into a bitebox document: three run copies, chained decision loops, SAM3 outlines as Target Overlays |
+| `bitebox/split_second.json` | The generated bitebox document |
 | `player/index.html` | A dependency-free player for that graph |
 
 ## Run it
@@ -64,7 +66,7 @@ Only core ComfyUI nodes are used. No custom node packs.
 
 **4. Clips.** Queue each file in `workflows/clips/`. Each takes about a minute on Comfy Cloud. Clips that must land on a decision frame (opening, the idle loops, the decision 1 escapes) use Pika H3 Flex with both ends pinned. Captures and the final escapes only need to start on the frame, so they use MiniMax H3 with the first frame as a guide.
 
-**5. Play.** Put the clips in `clips/` and the outlines in `targets/`, fill in the `rect` values in `story.json`, then serve the folder and open `player/`:
+**5. Play.** `story.json` already points at the hosted clips and outlines, so the local player works as is. To use your own renders, point the `scenes` and `glow` entries at your files. Then serve the folder and open `player/`:
 
 ```sh
 python3 -m http.server 8000
@@ -79,9 +81,15 @@ Pinned clips: Pika H3 Flex LoRA on MiniMax H3 first/last-frame, 576×1024, 124 f
 Open-ended clips: MiniMax H3 reference-to-video with a frame 0 guide, 480×864, 124 frames at 24 fps with audio, 20 steps res_multistep, seed 7.
 Keyframes: Z-Image Turbo, 576×1024, 8 steps, cfg 1, res_multistep, shift 3.
 
-## Play the hosted version
+## Play it on bitebox
 
-A hosted build runs on [bitebox](https://bitebox.gg), NEUKO's interactive video player, wired from the same story graph.
+The hosted build runs on [bitebox](https://bitebox.gg), NEUKO's interactive video player. ComfyUI makes every pixel; bitebox does the part ComfyUI can't: branching, timing, taps and the run-to-run rotation.
+
+bitebox has no random rule, so `bitebox/build_document.py` unrolls the rotation into three copies of the run. Every capture plays into the next copy's opening. Each decision loop plays three times with the glowing SAM3 outlines on top as tap targets; let it run out and the hesitation capture plays.
+
+```sh
+python3 bitebox/build_document.py bitebox/media.json > bitebox/split_second.json
+```
 
 ## License
 

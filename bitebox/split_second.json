@@ -1,0 +1,2536 @@
+{
+ "spec": "0.7",
+ "title": "Split Second",
+ "start": "A_opening",
+ "nodes": {
+  "glow_zip": {
+   "type": "image",
+   "title": "glow \u00b7 zip",
+   "ui": {
+    "x": -400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5705beaa-9925-487d-87de-f274587f566a.png",
+    "alt": "the zipline",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "glow_ladder": {
+   "type": "image",
+   "title": "glow \u00b7 ladder",
+   "ui": {
+    "x": -400,
+    "y": 160
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2aa2664e-761e-42b3-b667-39c2b7a56f80.png",
+    "alt": "the water tower ladder",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "glow_door": {
+   "type": "image",
+   "title": "glow \u00b7 door",
+   "ui": {
+    "x": -400,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5075d95c-5f93-44ed-891f-afcf36152844.png",
+    "alt": "the red door",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "glow_train": {
+   "type": "image",
+   "title": "glow \u00b7 train",
+   "ui": {
+    "x": -400,
+    "y": 480
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ee00f131-e5b5-4811-92ea-be77287ad1b4.png",
+    "alt": "the train",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "glow_board": {
+   "type": "image",
+   "title": "glow \u00b7 board",
+   "ui": {
+    "x": -400,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b07f28e2-f9f7-4dac-b7eb-39c4c72d294d.png",
+    "alt": "the billboard",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "glow_antenna": {
+   "type": "image",
+   "title": "glow \u00b7 antenna",
+   "ui": {
+    "x": -400,
+    "y": 800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/7fb5dca2-9867-4c40-ae3c-c79b986c56c4.png",
+    "alt": "the antenna",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "A_d1_zip_safe": {
+   "type": "video",
+   "title": "A \u00b7 d1 zip escape",
+   "ui": {
+    "x": 2000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/9de2642d-0cde-488c-9158-76e54ad7b837.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d1_zip_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop2_1"
+     }
+    ]
+   }
+  },
+  "A_d1_ladder_cap": {
+   "type": "video",
+   "title": "A \u00b7 d1 ladder caught",
+   "ui": {
+    "x": 2000,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5966b55e-b73f-46ba-8d17-60a7ad672f7e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d1_ladder_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_opening"
+     }
+    ]
+   }
+  },
+  "A_d1_door_cap": {
+   "type": "video",
+   "title": "A \u00b7 d1 door caught",
+   "ui": {
+    "x": 2000,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/299f03e0-1833-459e-a70f-45134887e53a.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d1_door_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_opening"
+     }
+    ]
+   }
+  },
+  "A_loop1_1_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 400,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "A_d1_zip_safe"
+  },
+  "A_loop1_1_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 400,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "A_d1_ladder_cap"
+  },
+  "A_loop1_1_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 400,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "A_d1_door_cap"
+  },
+  "A_loop1_1": {
+   "type": "video",
+   "title": "A \u00b7 d1 decide 1/3",
+   "ui": {
+    "x": 400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop1_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop1_2"
+     }
+    ],
+    "overlays": [
+     "A_loop1_1_hs_zip",
+     "A_loop1_1_hs_ladder",
+     "A_loop1_1_hs_door"
+    ]
+   }
+  },
+  "A_loop1_2_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 800,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "A_d1_zip_safe"
+  },
+  "A_loop1_2_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 800,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "A_d1_ladder_cap"
+  },
+  "A_loop1_2_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 800,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "A_d1_door_cap"
+  },
+  "A_loop1_2": {
+   "type": "video",
+   "title": "A \u00b7 d1 decide 2/3",
+   "ui": {
+    "x": 800,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop1_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop1_3"
+     }
+    ],
+    "overlays": [
+     "A_loop1_2_hs_zip",
+     "A_loop1_2_hs_ladder",
+     "A_loop1_2_hs_door"
+    ]
+   }
+  },
+  "A_loop1_3_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 1200,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "A_d1_zip_safe"
+  },
+  "A_loop1_3_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 1200,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "A_d1_ladder_cap"
+  },
+  "A_loop1_3_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 1200,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "A_d1_door_cap"
+  },
+  "A_loop1_3": {
+   "type": "video",
+   "title": "A \u00b7 d1 decide 3/3",
+   "ui": {
+    "x": 1200,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop1_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_d1_door_cap"
+     }
+    ],
+    "overlays": [
+     "A_loop1_3_hs_zip",
+     "A_loop1_3_hs_ladder",
+     "A_loop1_3_hs_door"
+    ]
+   }
+  },
+  "A_d2_train_safe": {
+   "type": "video",
+   "title": "A \u00b7 d2 train escape",
+   "ui": {
+    "x": 4000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c278819b-4077-4f34-b1a4-2fea23f3b665.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d2_train_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": null
+     }
+    ]
+   }
+  },
+  "A_d2_board_cap": {
+   "type": "video",
+   "title": "A \u00b7 d2 board caught",
+   "ui": {
+    "x": 4000,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1fd7d446-11ed-4fba-a94c-98205a76ba7a.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d2_board_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_opening"
+     }
+    ]
+   }
+  },
+  "A_d2_antenna_cap": {
+   "type": "video",
+   "title": "A \u00b7 d2 antenna caught",
+   "ui": {
+    "x": 4000,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/4a7af781-9f6c-4a82-868c-e233d225ac72.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_d2_antenna_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_opening"
+     }
+    ]
+   }
+  },
+  "A_loop2_1_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2400,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "A_d2_train_safe"
+  },
+  "A_loop2_1_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2400,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "A_d2_board_cap"
+  },
+  "A_loop2_1_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2400,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "A_d2_antenna_cap"
+  },
+  "A_loop2_1": {
+   "type": "video",
+   "title": "A \u00b7 d2 decide 1/3",
+   "ui": {
+    "x": 2400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop2_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop2_2"
+     }
+    ],
+    "overlays": [
+     "A_loop2_1_hs_train",
+     "A_loop2_1_hs_board",
+     "A_loop2_1_hs_antenna"
+    ]
+   }
+  },
+  "A_loop2_2_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2800,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "A_d2_train_safe"
+  },
+  "A_loop2_2_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2800,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "A_d2_board_cap"
+  },
+  "A_loop2_2_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2800,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "A_d2_antenna_cap"
+  },
+  "A_loop2_2": {
+   "type": "video",
+   "title": "A \u00b7 d2 decide 2/3",
+   "ui": {
+    "x": 2800,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop2_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop2_3"
+     }
+    ],
+    "overlays": [
+     "A_loop2_2_hs_train",
+     "A_loop2_2_hs_board",
+     "A_loop2_2_hs_antenna"
+    ]
+   }
+  },
+  "A_loop2_3_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 3200,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "A_d2_train_safe"
+  },
+  "A_loop2_3_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 3200,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "A_d2_board_cap"
+  },
+  "A_loop2_3_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 3200,
+    "y": 800
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "A_d2_antenna_cap"
+  },
+  "A_loop2_3": {
+   "type": "video",
+   "title": "A \u00b7 d2 decide 3/3",
+   "ui": {
+    "x": 3200,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_loop2_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_d2_board_cap"
+     }
+    ],
+    "overlays": [
+     "A_loop2_3_hs_train",
+     "A_loop2_3_hs_board",
+     "A_loop2_3_hs_antenna"
+    ]
+   }
+  },
+  "A_opening": {
+   "type": "video",
+   "title": "A \u00b7 opening",
+   "ui": {
+    "x": 0,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b9c13445-bd95-45bd-a95e-358392eeac04.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.A_opening.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_loop1_1"
+     }
+    ]
+   }
+  },
+  "B_d1_zip_cap": {
+   "type": "video",
+   "title": "B \u00b7 d1 zip caught",
+   "ui": {
+    "x": 2000,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/6ef71e65-d354-4a6c-8a44-e14a8bf2007f.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d1_zip_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_opening"
+     }
+    ]
+   }
+  },
+  "B_d1_ladder_cap": {
+   "type": "video",
+   "title": "B \u00b7 d1 ladder caught",
+   "ui": {
+    "x": 2000,
+    "y": 2720
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5966b55e-b73f-46ba-8d17-60a7ad672f7e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d1_ladder_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_opening"
+     }
+    ]
+   }
+  },
+  "B_d1_door_safe": {
+   "type": "video",
+   "title": "B \u00b7 d1 door escape",
+   "ui": {
+    "x": 2000,
+    "y": 3040
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2ceb757b-faf8-4a91-901b-a188f245178c.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d1_door_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop2_1"
+     }
+    ]
+   }
+  },
+  "B_loop1_1_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 400,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "B_d1_zip_cap"
+  },
+  "B_loop1_1_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 400,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "B_d1_ladder_cap"
+  },
+  "B_loop1_1_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 400,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "B_d1_door_safe"
+  },
+  "B_loop1_1": {
+   "type": "video",
+   "title": "B \u00b7 d1 decide 1/3",
+   "ui": {
+    "x": 400,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop1_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop1_2"
+     }
+    ],
+    "overlays": [
+     "B_loop1_1_hs_zip",
+     "B_loop1_1_hs_ladder",
+     "B_loop1_1_hs_door"
+    ]
+   }
+  },
+  "B_loop1_2_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 800,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "B_d1_zip_cap"
+  },
+  "B_loop1_2_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 800,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "B_d1_ladder_cap"
+  },
+  "B_loop1_2_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 800,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "B_d1_door_safe"
+  },
+  "B_loop1_2": {
+   "type": "video",
+   "title": "B \u00b7 d1 decide 2/3",
+   "ui": {
+    "x": 800,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop1_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop1_3"
+     }
+    ],
+    "overlays": [
+     "B_loop1_2_hs_zip",
+     "B_loop1_2_hs_ladder",
+     "B_loop1_2_hs_door"
+    ]
+   }
+  },
+  "B_loop1_3_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 1200,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "B_d1_zip_cap"
+  },
+  "B_loop1_3_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 1200,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "B_d1_ladder_cap"
+  },
+  "B_loop1_3_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 1200,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "B_d1_door_safe"
+  },
+  "B_loop1_3": {
+   "type": "video",
+   "title": "B \u00b7 d1 decide 3/3",
+   "ui": {
+    "x": 1200,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop1_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_d1_zip_cap"
+     }
+    ],
+    "overlays": [
+     "B_loop1_3_hs_zip",
+     "B_loop1_3_hs_ladder",
+     "B_loop1_3_hs_door"
+    ]
+   }
+  },
+  "B_d2_train_cap": {
+   "type": "video",
+   "title": "B \u00b7 d2 train caught",
+   "ui": {
+    "x": 4000,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/08629135-3566-41b6-906e-285fd2e61d29.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d2_train_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_opening"
+     }
+    ]
+   }
+  },
+  "B_d2_board_safe": {
+   "type": "video",
+   "title": "B \u00b7 d2 board escape",
+   "ui": {
+    "x": 4000,
+    "y": 2720
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/f11a8f2e-5533-473a-8801-6a60af481928.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d2_board_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": null
+     }
+    ]
+   }
+  },
+  "B_d2_antenna_cap": {
+   "type": "video",
+   "title": "B \u00b7 d2 antenna caught",
+   "ui": {
+    "x": 4000,
+    "y": 3040
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/4a7af781-9f6c-4a82-868c-e233d225ac72.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_d2_antenna_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_opening"
+     }
+    ]
+   }
+  },
+  "B_loop2_1_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2400,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "B_d2_train_cap"
+  },
+  "B_loop2_1_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2400,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "B_d2_board_safe"
+  },
+  "B_loop2_1_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2400,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "B_d2_antenna_cap"
+  },
+  "B_loop2_1": {
+   "type": "video",
+   "title": "B \u00b7 d2 decide 1/3",
+   "ui": {
+    "x": 2400,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop2_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop2_2"
+     }
+    ],
+    "overlays": [
+     "B_loop2_1_hs_train",
+     "B_loop2_1_hs_board",
+     "B_loop2_1_hs_antenna"
+    ]
+   }
+  },
+  "B_loop2_2_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2800,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "B_d2_train_cap"
+  },
+  "B_loop2_2_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2800,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "B_d2_board_safe"
+  },
+  "B_loop2_2_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2800,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "B_d2_antenna_cap"
+  },
+  "B_loop2_2": {
+   "type": "video",
+   "title": "B \u00b7 d2 decide 2/3",
+   "ui": {
+    "x": 2800,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop2_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop2_3"
+     }
+    ],
+    "overlays": [
+     "B_loop2_2_hs_train",
+     "B_loop2_2_hs_board",
+     "B_loop2_2_hs_antenna"
+    ]
+   }
+  },
+  "B_loop2_3_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 3200,
+    "y": 2720
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "B_d2_train_cap"
+  },
+  "B_loop2_3_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 3200,
+    "y": 2960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "B_d2_board_safe"
+  },
+  "B_loop2_3_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 3200,
+    "y": 3200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "B_d2_antenna_cap"
+  },
+  "B_loop2_3": {
+   "type": "video",
+   "title": "B \u00b7 d2 decide 3/3",
+   "ui": {
+    "x": 3200,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_loop2_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_d2_train_cap"
+     }
+    ],
+    "overlays": [
+     "B_loop2_3_hs_train",
+     "B_loop2_3_hs_board",
+     "B_loop2_3_hs_antenna"
+    ]
+   }
+  },
+  "B_opening": {
+   "type": "video",
+   "title": "B \u00b7 opening",
+   "ui": {
+    "x": 0,
+    "y": 2400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b9c13445-bd95-45bd-a95e-358392eeac04.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.B_opening.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "B_loop1_1"
+     }
+    ]
+   }
+  },
+  "C_d1_zip_cap": {
+   "type": "video",
+   "title": "C \u00b7 d1 zip caught",
+   "ui": {
+    "x": 2000,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/6ef71e65-d354-4a6c-8a44-e14a8bf2007f.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d1_zip_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_opening"
+     }
+    ]
+   }
+  },
+  "C_d1_ladder_safe": {
+   "type": "video",
+   "title": "C \u00b7 d1 ladder escape",
+   "ui": {
+    "x": 2000,
+    "y": 5120
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2c4e1313-568b-4165-8247-d365c1f7080d.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d1_ladder_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop2_1"
+     }
+    ]
+   }
+  },
+  "C_d1_door_cap": {
+   "type": "video",
+   "title": "C \u00b7 d1 door caught",
+   "ui": {
+    "x": 2000,
+    "y": 5440
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/299f03e0-1833-459e-a70f-45134887e53a.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d1_door_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_opening"
+     }
+    ]
+   }
+  },
+  "C_loop1_1_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 400,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "C_d1_zip_cap"
+  },
+  "C_loop1_1_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 400,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "C_d1_ladder_safe"
+  },
+  "C_loop1_1_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 400,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "C_d1_door_cap"
+  },
+  "C_loop1_1": {
+   "type": "video",
+   "title": "C \u00b7 d1 decide 1/3",
+   "ui": {
+    "x": 400,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop1_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop1_2"
+     }
+    ],
+    "overlays": [
+     "C_loop1_1_hs_zip",
+     "C_loop1_1_hs_ladder",
+     "C_loop1_1_hs_door"
+    ]
+   }
+  },
+  "C_loop1_2_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 800,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "C_d1_zip_cap"
+  },
+  "C_loop1_2_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 800,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "C_d1_ladder_safe"
+  },
+  "C_loop1_2_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 800,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "C_d1_door_cap"
+  },
+  "C_loop1_2": {
+   "type": "video",
+   "title": "C \u00b7 d1 decide 2/3",
+   "ui": {
+    "x": 800,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop1_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop1_3"
+     }
+    ],
+    "overlays": [
+     "C_loop1_2_hs_zip",
+     "C_loop1_2_hs_ladder",
+     "C_loop1_2_hs_door"
+    ]
+   }
+  },
+  "C_loop1_3_hs_zip": {
+   "type": "trigger",
+   "title": "tap \u00b7 zip",
+   "ui": {
+    "x": 1200,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8186,
+     "y": 0.5371
+    },
+    "rect": {
+     "width": 0.3628,
+     "height": 0.4512
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_zip",
+    "displayInExperience": true
+   },
+   "next": "C_d1_zip_cap"
+  },
+  "C_loop1_3_hs_ladder": {
+   "type": "trigger",
+   "title": "tap \u00b7 ladder",
+   "ui": {
+    "x": 1200,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1788,
+     "y": 0.3442
+    },
+    "rect": {
+     "width": 0.3542,
+     "height": 0.5713
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_ladder",
+    "displayInExperience": true
+   },
+   "next": "C_d1_ladder_safe"
+  },
+  "C_loop1_3_hs_door": {
+   "type": "trigger",
+   "title": "tap \u00b7 door",
+   "ui": {
+    "x": 1200,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.4922,
+     "y": 0.4219
+    },
+    "rect": {
+     "width": 0.1545,
+     "height": 0.125
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_door",
+    "displayInExperience": true
+   },
+   "next": "C_d1_door_cap"
+  },
+  "C_loop1_3": {
+   "type": "video",
+   "title": "C \u00b7 d1 decide 3/3",
+   "ui": {
+    "x": 1200,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop1_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_d1_door_cap"
+     }
+    ],
+    "overlays": [
+     "C_loop1_3_hs_zip",
+     "C_loop1_3_hs_ladder",
+     "C_loop1_3_hs_door"
+    ]
+   }
+  },
+  "C_d2_train_cap": {
+   "type": "video",
+   "title": "C \u00b7 d2 train caught",
+   "ui": {
+    "x": 4000,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/08629135-3566-41b6-906e-285fd2e61d29.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d2_train_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_opening"
+     }
+    ]
+   }
+  },
+  "C_d2_board_cap": {
+   "type": "video",
+   "title": "C \u00b7 d2 board caught",
+   "ui": {
+    "x": 4000,
+    "y": 5120
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1fd7d446-11ed-4fba-a94c-98205a76ba7a.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d2_board_cap.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "A_opening"
+     }
+    ]
+   }
+  },
+  "C_d2_antenna_safe": {
+   "type": "video",
+   "title": "C \u00b7 d2 antenna escape",
+   "ui": {
+    "x": 4000,
+    "y": 5440
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b5f8937a-8a04-47da-ae2e-49cb5bc8b58f.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_d2_antenna_safe.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": null
+     }
+    ]
+   }
+  },
+  "C_loop2_1_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2400,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "C_d2_train_cap"
+  },
+  "C_loop2_1_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2400,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "C_d2_board_cap"
+  },
+  "C_loop2_1_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2400,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "C_d2_antenna_safe"
+  },
+  "C_loop2_1": {
+   "type": "video",
+   "title": "C \u00b7 d2 decide 1/3",
+   "ui": {
+    "x": 2400,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop2_1.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop2_2"
+     }
+    ],
+    "overlays": [
+     "C_loop2_1_hs_train",
+     "C_loop2_1_hs_board",
+     "C_loop2_1_hs_antenna"
+    ]
+   }
+  },
+  "C_loop2_2_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 2800,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "C_d2_train_cap"
+  },
+  "C_loop2_2_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 2800,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "C_d2_board_cap"
+  },
+  "C_loop2_2_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 2800,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "C_d2_antenna_safe"
+  },
+  "C_loop2_2": {
+   "type": "video",
+   "title": "C \u00b7 d2 decide 2/3",
+   "ui": {
+    "x": 2800,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop2_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop2_3"
+     }
+    ],
+    "overlays": [
+     "C_loop2_2_hs_train",
+     "C_loop2_2_hs_board",
+     "C_loop2_2_hs_antenna"
+    ]
+   }
+  },
+  "C_loop2_3_hs_train": {
+   "type": "trigger",
+   "title": "tap \u00b7 train",
+   "ui": {
+    "x": 3200,
+    "y": 5120
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8542,
+     "y": 0.5874
+    },
+    "rect": {
+     "width": 0.2917,
+     "height": 0.2256
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_train",
+    "displayInExperience": true
+   },
+   "next": "C_d2_train_cap"
+  },
+  "C_loop2_3_hs_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 board",
+   "ui": {
+    "x": 3200,
+    "y": 5360
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5651,
+     "y": 0.2695
+    },
+    "rect": {
+     "width": 0.408,
+     "height": 0.3164
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_board",
+    "displayInExperience": true
+   },
+   "next": "C_d2_board_cap"
+  },
+  "C_loop2_3_hs_antenna": {
+   "type": "trigger",
+   "title": "tap \u00b7 antenna",
+   "ui": {
+    "x": 3200,
+    "y": 5600
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.1172,
+     "y": 0.2837
+    },
+    "rect": {
+     "width": 0.1302,
+     "height": 0.4229
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "glow_antenna",
+    "displayInExperience": true
+   },
+   "next": "C_d2_antenna_safe"
+  },
+  "C_loop2_3": {
+   "type": "video",
+   "title": "C \u00b7 d2 decide 3/3",
+   "ui": {
+    "x": 3200,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_loop2_3.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_d2_board_cap"
+     }
+    ],
+    "overlays": [
+     "C_loop2_3_hs_train",
+     "C_loop2_3_hs_board",
+     "C_loop2_3_hs_antenna"
+    ]
+   }
+  },
+  "C_opening": {
+   "type": "video",
+   "title": "C \u00b7 opening",
+   "ui": {
+    "x": 0,
+    "y": 4800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b9c13445-bd95-45bd-a95e-358392eeac04.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5167,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.C_opening.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "C_loop1_1"
+     }
+    ]
+   }
+  }
+ }
+}

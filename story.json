@@ -3,21 +3,21 @@
   "logline": "A courier, three ninjas, one way off the roof. Pick wrong and the chase starts over.",
   "clipBase": "",
   "scenes": {
-    "opening": "clips/opening.mp4",
-    "loop1": "clips/loop1.mp4",
-    "loop2": "clips/loop2.mp4",
-    "d1_zip_safe": "clips/d1_zip_safe.mp4",
-    "d1_ladder_safe": "clips/d1_ladder_safe.mp4",
-    "d1_door_safe": "clips/d1_door_safe.mp4",
-    "d1_zip_cap": "clips/d1_zip_cap.mp4",
-    "d1_ladder_cap": "clips/d1_ladder_cap.mp4",
-    "d1_door_cap": "clips/d1_door_cap.mp4",
-    "d2_train_safe": "clips/d2_train_safe.mp4",
-    "d2_board_safe": "clips/d2_board_safe.mp4",
-    "d2_antenna_safe": "clips/d2_antenna_safe.mp4",
-    "d2_train_cap": "clips/d2_train_cap.mp4",
-    "d2_board_cap": "clips/d2_board_cap.mp4",
-    "d2_antenna_cap": "clips/d2_antenna_cap.mp4"
+    "opening": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b9c13445-bd95-45bd-a95e-358392eeac04.mp4",
+    "loop1": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/116b1654-2acb-4bb4-a2c7-3e15e4e11e2e.mp4",
+    "loop2": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a3a1863c-9b2c-44fe-be06-e493508e9083.mp4",
+    "d1_zip_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/9de2642d-0cde-488c-9158-76e54ad7b837.mp4",
+    "d1_ladder_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2c4e1313-568b-4165-8247-d365c1f7080d.mp4",
+    "d1_door_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2ceb757b-faf8-4a91-901b-a188f245178c.mp4",
+    "d1_zip_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/6ef71e65-d354-4a6c-8a44-e14a8bf2007f.mp4",
+    "d1_ladder_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5966b55e-b73f-46ba-8d17-60a7ad672f7e.mp4",
+    "d1_door_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/299f03e0-1833-459e-a70f-45134887e53a.mp4",
+    "d2_train_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c278819b-4077-4f34-b1a4-2fea23f3b665.mp4",
+    "d2_board_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/f11a8f2e-5533-473a-8801-6a60af481928.mp4",
+    "d2_antenna_safe": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b5f8937a-8a04-47da-ae2e-49cb5bc8b58f.mp4",
+    "d2_train_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/08629135-3566-41b6-906e-285fd2e61d29.mp4",
+    "d2_board_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1fd7d446-11ed-4fba-a94c-98205a76ba7a.mp4",
+    "d2_antenna_cap": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/4a7af781-9f6c-4a82-868c-e233d225ac72.mp4"
   },
   "decisions": [
     {
@@ -33,7 +33,7 @@
             0.3628,
             0.4512
           ],
-          "glow": "targets/glow_zip.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5705beaa-9925-487d-87de-f274587f566a.png"
         },
         "ladder": {
           "label": "the water tower ladder",
@@ -43,7 +43,7 @@
             0.3542,
             0.5713
           ],
-          "glow": "targets/glow_ladder.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2aa2664e-761e-42b3-b667-39c2b7a56f80.png"
         },
         "door": {
           "label": "the red door",
@@ -53,7 +53,7 @@
             0.1545,
             0.125
           ],
-          "glow": "targets/glow_door.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/5075d95c-5f93-44ed-891f-afcf36152844.png"
         }
       }
     },
@@ -70,7 +70,7 @@
             0.2917,
             0.2256
           ],
-          "glow": "targets/glow_train.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ee00f131-e5b5-4811-92ea-be77287ad1b4.png"
         },
         "board": {
           "label": "the billboard",
@@ -80,7 +80,7 @@
             0.408,
             0.3164
           ],
-          "glow": "targets/glow_board.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b07f28e2-f9f7-4dac-b7eb-39c4c72d294d.png"
         },
         "antenna": {
           "label": "the antenna",
@@ -90,7 +90,7 @@
             0.1302,
             0.4229
           ],
-          "glow": "targets/glow_antenna.png"
+          "glow": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/7fb5dca2-9867-4c40-ae3c-c79b986c56c4.png"
         }
       }
     }
