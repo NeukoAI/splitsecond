@@ -22,7 +22,6 @@ rin_back_a https://cdn.bitebox.gg/public/patchwork/1cad34d6-37e6-42d0-bb7e-6f19d
 n_rin_back https://cdn.bitebox.gg/public/patchwork/51843d28-7731-4941-b9a5-4d6b9a543442.png
 n_k1 https://cdn.bitebox.gg/public/patchwork/04dbca43-1b57-47e0-8b22-307695625196.png
 n_k3 https://cdn.bitebox.gg/public/patchwork/c149499b-a31c-4bb2-b5a7-f47b83f36aad.png
-n_k4 https://cdn.bitebox.gg/public/patchwork/d8a85d42-fbb2-48a4-b814-707d34a738ff.png
 n_k0 https://cdn.bitebox.gg/public/patchwork/e8077722-a51f-41f5-82bd-099cf5a8a8d3.png
 n_s1 https://cdn.bitebox.gg/public/patchwork/dd2edc28-894a-4a41-94db-bfcdf3c15973.png
 n_h_a https://cdn.bitebox.gg/public/patchwork/8acc3264-0246-4627-b440-d406585e1212.png
@@ -33,3 +32,15 @@ n_b_aisle https://cdn.bitebox.gg/public/patchwork/8d1b8796-2947-4561-964d-2add88
 n_c_crowd https://cdn.bitebox.gg/public/patchwork/c97ab75d-844d-42aa-a56b-893c328770cf.png
 n_a_deep https://cdn.bitebox.gg/public/patchwork/b5af860e-7fdf-466e-bfef-8d1b0b9a003c.png
 n_m_arrive https://cdn.bitebox.gg/public/patchwork/f6f869c6-f234-4af2-a8c7-5ecf71465f45.png
+n_k4 https://cdn.bitebox.gg/public/patchwork/79847ceb-86d6-46e7-82d8-efd735a4df97.png
+n_k0b https://cdn.bitebox.gg/public/patchwork/3e58a39c-0149-417d-bc62-4a474a273178.png
+n_h_b https://cdn.bitebox.gg/public/patchwork/51648271-fc5c-42f6-a603-b35c37b598bd.png
+n_r_run https://cdn.bitebox.gg/public/patchwork/e5804011-af9b-4c86-8c46-455faac94a89.png
+n_j_ladder https://cdn.bitebox.gg/public/patchwork/f5957108-e1c2-4f2b-be49-3a0ee90426a8.png
+n_v_in https://cdn.bitebox.gg/public/patchwork/b0e7741a-5d4d-47cf-a656-1a98fc98fa31.png
+n_c_vent https://cdn.bitebox.gg/public/patchwork/9250b52e-1ce7-4290-9258-711f476b26d2.png
+n_c_alley https://cdn.bitebox.gg/public/patchwork/9c98739c-9890-4179-b722-def4d77eec84.png
+n_l_top https://cdn.bitebox.gg/public/patchwork/004bca36-c19b-4d20-8cd0-e92f17c62843.png
+n_b_door https://cdn.bitebox.gg/public/patchwork/f88261d2-1a23-4203-8c37-da027c858e61.png
+n_c_board https://cdn.bitebox.gg/public/patchwork/66f8e823-cfbf-4d80-9d61-078cf757d720.png
+n_k5b https://cdn.bitebox.gg/public/patchwork/79b0bdba-005b-4d38-b904-7ffa98419699.png
