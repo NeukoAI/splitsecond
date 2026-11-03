@@ -24,7 +24,7 @@ scene_of = {nid: by_file[f].removesuffix("_2") for nid, f in scene_of.items()}
 
 KEYFRAME = {"title": "Title card", "stakes": "The chip", "k0": "Rooftop, chip in hand", "k0b": "The Hound lands",
             "k1": "D1 · The Edge", "k2": "D2 · The Market", "k3": "D3 · The Platform", "k4": "D4 · The Drop",
-            "k5": "Van cab", "k6": "Hound on the train", "gameover": "FLATLINED card", "win": "DELIVERED card"}
+            "k5": "Van cab, Dex driving", "k6": "Hound watches the van go", "gameover": "FLATLINED card", "win": "DELIVERED card"}
 
 
 def exits(nid):
@@ -48,7 +48,7 @@ def exits(nid):
 ORDER = ["v_title", "v_stakes", "v_intro_call", "v_intro_hound"]
 for d in story["decisions"]:
     safe = d["safe"]
-    wrong = next(t for t in d["targets"] if t != safe)
+    wrong = d["timeout"]
     ORDER += [f"v_{d['id']}_loop", f"v_{d['id']}_{safe}", f"v_{d['id']}_{wrong}"]
 ORDER += ["v_finale_van", "v_finale_hound", "v_win", "v_gameover"]
 
@@ -65,18 +65,18 @@ def esc(s):
 
 
 REVISED = {"intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_loop", "d2_crowd", "d2_alley",
-           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run", "finale_van"}
+           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run", "finale_van", "finale_hound"}
 
 
 def card(nid):
     sid = scene_of[nid]
     s = scenes[sid]
-    if s["kind"] == "flf":
+    if s["kind"] == "flf" and s.get("from") == s.get("to"):
         kind = "Decision loop, pinned to the same frame at both ends (LTX 2.5)"
+    elif s["kind"] == "flf":
+        kind = "Runs from this decision frame to the next one, hard cut where the place changes (LTX 2.5)"
     elif s["kind"] == "end":
         kind = "End pinned on the D1 frame, free start (LTX 2.5)"
-    elif ":last" in str(s.get("from", "")):
-        kind = "Starts on the last frame of " + s["from"].split(":")[0] + ", then plays out freely (LTX 2.5)"
     else:
         kind = "Starts on a keyframe, then plays out freely (LTX 2.5)"
     anchors = KEYFRAME.get(s.get("from", ""), s.get("from", "").replace(":last", " last frame"))
@@ -90,7 +90,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.2 chained</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.3</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
@@ -133,8 +133,8 @@ TREE = """flowchart TD
   D2 -- run the alley / no tap --> X2[He is in the side alley]
   D3 -- climb to the roof --> R[Leap to the other train] --> D4{D4 The Drop}
   D3 -- board the train / no tap --> X3[He sits across from her]
-  D4 -- jump for the van --> V[Land on the van] --> F1[Cutting it close] --> F2[Next time, courier] --> W[DELIVERED]
-  D4 -- keep running / no tap --> X4[He climbs up and grabs her]
+  D4 -- tap the van in time --> V[Dive into the van] --> F1[Cutting it close] --> F2[Next time, courier] --> W[DELIVERED]
+  D4 -- no tap in time --> X4[The van peels away, he grabs her]
   X1 & X2 & X3 & X4 --> G[FLATLINED]
   G -- TRY AGAIN --> H
   G -- START OVER --> T

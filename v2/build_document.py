@@ -47,7 +47,7 @@ def build(story, media, targets, title="Split Second"):
         }
 
     for i, d in enumerate(story["decisions"]):
-        for j, (t, spec) in enumerate(d["targets"].items()):
+        for j, (t, spec) in enumerate(d["targets"].items()):  # timeout routes need no glow
             nodes[f"gl_{t}"] = {
                 "type": "image", "title": f"glow · {t}", "ui": {"x": -400, "y": (i * 2 + j) * 160},
                 "props": {"src": media[f"glow_{t}"], "alt": spec["label"], "displayInExperience": False},
@@ -66,7 +66,7 @@ def build(story, media, targets, title="Split Second"):
     for di, d in enumerate(decisions):
         did = d["id"]
         safe = d["safe"]
-        wrong = next(t for t in d["targets"] if t != safe)
+        wrong = d["timeout"]  # the capture: a wrong tap, or no tap before the loop ends
         hids = []
         for k, t in enumerate(d["targets"]):
             hid = f"hs_{did}_{t}"
@@ -84,7 +84,7 @@ def build(story, media, targets, title="Split Second"):
         video(f"v_{did}_loop", f"{did}_loop", x, 0, f"v_{did}_{wrong}", hids, title=f"{d['name']} · decide")
         nxt = f"v_{decisions[di + 1]['id']}_loop" if di + 1 < len(decisions) else "v_finale_van"
         video(f"v_{did}_{safe}", f"{did}_{safe}", x + 400, 0, nxt, title=f"{d['name']} · {d['targets'][safe]['label']}")
-        video(f"v_{did}_{wrong}", f"{did}_{wrong}", x + 400, 320, "v_gameover",
+        video(f"v_{did}_{wrong}", f"{did}_{wrong}", x + 400, 320, "v_gameover",  # D4 has one target: miss the van and she's caught
               title=f"{d['name']} · caught")
         x += 800
 

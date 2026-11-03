@@ -23,7 +23,8 @@
           "label": "Hide in the vent",
           "side": "right"
         }
-      }
+      },
+      "timeout": "vent"
     },
     {
       "id": "d2",
@@ -40,7 +41,8 @@
           "label": "Run the alley",
           "side": "right"
         }
-      }
+      },
+      "timeout": "alley"
     },
     {
       "id": "d3",
@@ -57,24 +59,22 @@
           "label": "Climb to the roof",
           "side": "right"
         }
-      }
+      },
+      "timeout": "board"
     },
     {
       "id": "d4",
       "name": "The Drop",
       "keyframe": "k4",
       "safe": "van",
-      "clue": "Dex is waving her down from the van, and the roof ahead runs into a tunnel",
+      "clue": "Dex is waving her down from the van, and up ahead the highway curves away from the tracks",
       "targets": {
-        "run": {
-          "label": "Keep running",
-          "side": "left"
-        },
         "van": {
           "label": "Jump for the van",
           "side": "right"
         }
-      }
+      },
+      "timeout": "run"
     }
   ],
   "scenes": [
@@ -121,122 +121,151 @@
     {
       "id": "intro_hound",
       "kind": "end",
-      "to": "k1",
       "sec": 6,
-      "prompt": "Rin sprints across the rain-soaked rooftop toward the billboard and the vent, glancing back once; far behind her the Hound drops onto a distant roof. She skids to a stop at the edge. Only the last frame is pinned, onto the D1 frame, so both targets are in shot."
+      "prompt": "Rin sprints across the wet rooftop toward the edge, glancing back once; far behind her the Hound drops onto a distant roof. She skids to a stop at the edge, facing the billboard ad and the vent. Continuous shot, the camera follows behind her.",
+      "to": "k1"
     },
     {
       "id": "d1_loop",
       "kind": "flf",
-      "from": "k1",
-      "to": "k1",
       "sec": 5,
-      "prompt": "Rin stands at the rooftop edge seen from behind, breathing hard, glancing left at the glowing billboard scaffold across the gap and right at the open vent shaft. Two red hunter drones sweep their red scanning beams across the vents. The billboard flickers. Rain, heavy breathing, drone whine. The camera holds steady.",
+      "prompt": "Rin stands at the rooftop edge seen from behind, breathing hard, glancing left at the glowing billboard scaffold across the gap and right at the open vent shaft. Two red hunter drones sweep their red scanning beams across the vents. The holographic ad on the billboard flickers. Rain, heavy breathing, drone whine. The camera holds steady.",
       "captions": [
         [
           0,
           5000,
           "Tap where Rin runs. Wait too long and she's caught."
         ]
-      ]
+      ],
+      "from": "k1",
+      "to": "k1"
     },
     {
       "id": "d1_jump",
-      "kind": "i2v",
-      "from": "k1",
+      "kind": "flf",
       "sec": 8,
-      "prompt": "Rin leaps the gap, catches the yellow ladder on the billboard's side and slides it hand over hand to the alley floor, then runs out into the rainy market and stops. Its last frame is the D2 frame."
+      "prompt": "Rin leaps across the alley gap, grabs the yellow ladder high on the billboard's side, and slides straight down it, hands and boots on the rails, all the way to the wet alley floor. She never climbs up. She lands in a crouch, runs out into the rainy night market and stops in the middle of the street, looking around.",
+      "from": "k1",
+      "to": "k2"
     },
     {
       "id": "d1_vent",
       "kind": "i2v",
-      "from": "k1",
       "sec": 7,
       "caught": true,
-      "prompt": "Rin drops into the vent and crawls the red-lit duct; at the far grate the Hound's hand reaches in and grabs her wrist."
+      "prompt": "Rin drops into the open vent hatch and crawls fast along a narrow red-lit metal duct toward a grate. The grate bursts open, the Hound's black armored hand shoots in and seizes her by the jacket collar, and he drags her out as she struggles.",
+      "from": "k1"
     },
     {
       "id": "d2_loop",
       "kind": "flf",
-      "from": "d1_jump:last",
-      "to": "d1_jump:last",
+      "from": "k2",
+      "to": "k2",
       "sec": 5,
       "prompt": "Rin turns in the middle of the rainy market, looking from the umbrella crowd on the left to the empty alley on the right where a red drone hovers. No Hound in sight yet."
     },
     {
       "id": "d2_crowd",
-      "kind": "i2v",
-      "from": "d1_jump:last",
+      "kind": "flf",
       "sec": 8,
-      "prompt": "Rin runs into the umbrella crowd and vanishes; the Hound pushes in behind and loses her. Hard cut to the rainy train platform, where she stops by the open doors and the yellow ladder. Its last frame is the D3 frame."
+      "prompt": "Rin runs left into the umbrella crowd and vanishes among the umbrellas. Hard cut to the rainy elevated train platform: Rin runs in and stops, out of breath, between the open train doors and the yellow ladder.",
+      "from": "k2",
+      "to": "k3"
     },
     {
       "id": "d2_alley",
       "kind": "i2v",
-      "from": "d1_jump:last",
       "sec": 7,
       "caught": true,
-      "prompt": "Rin bolts down the dark side street, turns into a back alley, and the Hound steps out of a doorway and pins her to the wall."
+      "prompt": "Rin bolts into the dark alley on the right and sprints down it, the camera behind her. Halfway down, the Hound steps out of a doorway right in front of her, grabs her by the arm and slams her back against the brick wall, his red blade glowing. She struggles in his grip.",
+      "from": "k2"
     },
     {
       "id": "d3_loop",
       "kind": "flf",
-      "from": "d2_crowd:last",
-      "to": "d2_crowd:last",
+      "from": "k3",
+      "to": "k3",
       "sec": 5,
-      "prompt": "Rin catches her breath on the rainy platform, glancing at the open doors of a dark, empty carriage lit by flickering red light, and at the yellow ladder up to the train roof. \"Doors closing.\""
+      "prompt": "Rin catches her breath on the rainy platform, glancing at the open doors of the dark, empty carriage lit by flickering red light, and at the yellow ladder up to the train roof. The doors chime as if about to close."
     },
     {
       "id": "d3_roof",
-      "kind": "i2v",
-      "from": "d2_crowd:last",
+      "kind": "flf",
       "sec": 8,
-      "prompt": "Rin climbs the ladder as the train pulls out, runs along the roof and crouches, watching Dex's yellow van race alongside. Its last frame is the D4 frame."
+      "prompt": "Rin climbs the yellow ladder to the train roof as the train starts moving. Hard cut to the speeding train roof: she runs forward along the top of the train, then crouches as the bright yellow van pulls up on the highway beside the tracks, driving parallel to the train in the same direction.",
+      "from": "k3",
+      "to": "k4"
     },
     {
       "id": "d3_board",
       "kind": "i2v",
-      "from": "d2_crowd:last",
-      "sec": 8,
+      "sec": 7,
       "caught": true,
-      "prompt": "Rin ducks into the dark carriage, walks deeper down the aisle and sits; the Hound is sitting across from her."
+      "prompt": "Rin runs through the open doors into the dark red-lit carriage and sprints down the aisle between empty seats, the camera following. Ahead, the Hound rises from a seat, steps into the aisle and grabs her by the arm and collar, stopping her dead.",
+      "from": "k3"
     },
     {
       "id": "d4_loop",
       "kind": "flf",
-      "from": "d3_roof:last",
-      "to": "d3_roof:last",
       "sec": 5,
-      "prompt": "Rin crouches on the speeding train roof, staring down at Dex's yellow van racing alongside, coiled to jump. Dex leans out and shouts: \"Jump, kid! Now!\" Ahead, the roof runs into a dark tunnel."
+      "prompt": "The train speeds straight ahead. The bright yellow van keeps pace on the parallel highway right beside it, Dex leaning out of the open side door waving. Rin crouches, coiled to jump. Wind, rain, city lights streaming past.",
+      "from": "k4",
+      "to": "k4",
+      "captions": [
+        [
+          0,
+          5000,
+          "Tap the van before it's gone."
+        ]
+      ]
     },
     {
       "id": "d4_van",
       "kind": "i2v",
-      "from": "d3_roof:last",
-      "sec": 8,
-      "prompt": "Rin leaps from the train into the van's open side door. Hard cut inside: Dex drives from the right-hand seat, Rin lands in the left passenger seat and holds up the chip."
+      "sec": 6,
+      "prompt": "Rin leaps off the train roof straight through the open side door of the bright yellow van, which stays right beside the train. She disappears inside, the door slides shut and the yellow van accelerates.",
+      "from": "k4"
     },
     {
       "id": "d4_run",
       "kind": "i2v",
-      "from": "d3_roof:last",
       "sec": 8,
       "caught": true,
-      "prompt": "Rin runs along the train roof; the van's door slides shut and it peels away; the Hound vaults up over the edge and grabs her."
+      "prompt": "The bright yellow van's side door slides shut and the van pulls away, following the highway as it curves away from the tracks into the city. The train keeps going straight. Rin rises on the roof, alone. Behind her the Hound climbs up over the back edge of the train roof, runs up behind her and grabs her by the shoulders.",
+      "from": "k4"
     },
     {
       "id": "finale_van",
       "kind": "i2v",
-      "from": "d4_van:last",
       "sec": 5,
-      "prompt": "Dex, driving from the right-hand seat: \"Cutting it close, kid.\" Rin: \"Close is my job.\""
+      "prompt": "Dex drives from the left-hand seat, glances over at Rin and smirks. Rin laughs, out of breath, and holds up the glowing chip, then leans back in her seat. Neon city lights streak past the windows. Engine roar, rain on the windshield. Nobody speaks.",
+      "from": "k5",
+      "captions": [
+        [
+          0,
+          2500,
+          "DEX: Cutting it close, kid."
+        ],
+        [
+          2500,
+          5000,
+          "RIN: Close is my job."
+        ]
+      ]
     },
     {
       "id": "finale_hound",
       "kind": "i2v",
-      "from": "k6",
       "sec": 5,
-      "prompt": "The Hound stands alone on the roof of the departing train in the rain, watching the van's taillights vanish. His red visor dims slowly. He lowers his blade and it retracts with a hiss. Wind, rain, a low distorted voice says: \"Next time, courier.\""
+      "prompt": "The Hound stands alone on the speeding train roof in the rain, watching the yellow van drive away along the highway as it curves off into the city. His red visor slowly dims. His red blade retracts with a hiss. Wind and rain. Nobody speaks.",
+      "from": "k6",
+      "captions": [
+        [
+          1500,
+          5000,
+          "THE HOUND: Next time, courier."
+        ]
+      ]
     },
     {
       "id": "win",
@@ -254,5 +283,5 @@
     }
   ],
   "replay": "TRY AGAIN restarts at the Hound's arrival, so the title, the stakes and Dex's call play only on a fresh start.",
-  "method": "Chained: every escape starts on the real last frame of the clip before it and plays out freely (image to video). Each decision frame is that last frame. Decision loops are pinned to the same frame at both ends so they hold still. Only the Hound's arrival is end-pinned, onto the D1 frame, so the rooftop targets are in shot."
+  "method": "Every decision frame is a clean keyframe drawn from the character sheets, so the style never drifts. Escapes run from one decision frame to the next, with a hard cut where the location changes. Captures start on the decision frame and play out freely. Decision loops are pinned to their frame at both ends. D4 is timed: tap the van before the loop ends, or the van leaves without her."
 }
