@@ -17,3 +17,5 @@ plate_market https://cdn.bitebox.gg/public/patchwork/e05243ad-cc3c-4b7d-8d4c-a19
 plate_trainroof https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png
 plate_street https://cdn.bitebox.gg/public/patchwork/d54aaca5-4e9e-4ec5-9c17-9c719598a10a.png
 poster_title https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c26143e5-cd6e-41b6-b817-5ae6d36ecfe7.png
+rin_front_a https://cdn.bitebox.gg/public/patchwork/29bb363f-b91b-48bd-913b-ae30c37c3fa4.png
+rin_back_a https://cdn.bitebox.gg/public/patchwork/1cad34d6-37e6-42d0-bb7e-6f19df658709.png
