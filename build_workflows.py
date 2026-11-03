@@ -30,7 +30,7 @@ KEYFRAMES = {
         f"Low wide shot across a flat wet rooftop. {GIRL} sprints toward the camera, mid-stride, splashing through "
         "puddles, looking back over her shoulder in fear. Behind her the rooftop stretches back: a tall wooden water "
         "tower with a metal ladder on the left, a small stairwell hut with a red metal door in the center, a short "
-        "pole on the right edge. Behind the roof rises the dark wall of a taller building. No other people."), [4242, 77]),
+        "pole on the right edge. Behind the roof rises the dark wall of a taller building. No other people."), [4242]),
     "k1_decision1": (STYLE + (
         f"High three-quarter shot from behind. {GIRL} stands alone in the middle of a flat wet rooftop, seen from "
         "behind, facing a tall neon skyscraper across the street at the top of the frame. On the left, a tall "
@@ -38,15 +38,15 @@ KEYFRAMES = {
         "door, and from the top of the hut an enclosed glass skybridge stretches across the street to the "
         "skyscraper. On the right edge, a short pole with a taut steel zipline cable that slopes down across the "
         "street to a lit catwalk on the skyscraper. Far away in the upper left, small, on the parapet of a taller "
-        f"neighboring building, {NINJAS} crouch, watching her. Lots of empty wet roof between her and everything."), [4242, 31]),
+        f"neighboring building, {NINJAS} crouch, watching her. Lots of empty wet roof between her and everything."), [4242]),
     "k2_decision2": (STYLE + (
         f"Shot from behind and slightly above. {GIRL} crouches on a narrow steel catwalk bolted to the side of a "
-        "skyscraper, high above the street. On the left, the catwalk runs past a giant glowing billboard of abstract "
-        "pink and blue light shapes with no words. Above the billboard, on the skyscraper roof, a tall red and white "
-        "radio antenna mast with a ladder. Far below on the right, an elevated train with lit windows runs on its "
-        "track. Across the street on the right, much lower and far away, a small flat rooftop with a water tower, "
-        f"where {NINJAS} stand tiny in the distance; a steel cable slopes from that rooftop up to the catwalk. "
-        "She is alone on the catwalk."), [11, 97]),
+        "skyscraper, high above the street. On the left, a giant glowing billboard of abstract pink and blue light "
+        "shapes with no words. Above the billboard, on the skyscraper roof, a tall red and white radio antenna mast. "
+        "Below on the right, an elevated train with lit windows runs on its track. In the lower right corner, across "
+        "the street and lower down, the flat wet rooftop she escaped from, with a wooden water tower and a small hut "
+        "with a red door; on that rooftop stand three tiny ninjas in black, far away. A steel zipline cable slopes "
+        "from that rooftop up to the catwalk. She is alone on the catwalk."), [97]),
 }
 KF_NEGATIVE = "text, letters, words, watermark, signature, blurry, extra limbs, deformed"
 

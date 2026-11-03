@@ -72,7 +72,7 @@
     "3",
     0
    ],
-   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. Wide shot of a flat wet rooftop. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body sprints into the frame from the lower left, mid-stride, splashing through puddles, looking back over her shoulder. On the left side of the rooftop stands a tall wooden water tower with a metal ladder up its side. On the right edge of the roof, a taut steel zipline cable runs from a short pole out across the street. In the background center, a small rooftop stairwell hut with a red metal door. The rooftop is otherwise empty."
+   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. Low wide shot across a flat wet rooftop. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body sprints toward the camera, mid-stride, splashing through puddles, looking back over her shoulder in fear. Behind her the rooftop stretches back: a tall wooden water tower with a metal ladder on the left, a small stairwell hut with a red metal door in the center, a short pole on the right edge. Behind the roof rises the dark wall of a taller building. No other people."
   },
   "_meta": {
    "title": "Prompt: k0_approach"
@@ -105,7 +105,7 @@
    "denoise": 1
   },
   "_meta": {
-   "title": "Sample: k0_approach"
+   "title": "Sample: k0_approach seed 4242"
   }
  },
  "12": {
@@ -121,7 +121,7 @@
    ]
   },
   "_meta": {
-   "title": "Decode: k0_approach"
+   "title": "Decode: k0_approach seed 4242"
   }
  },
  "13": {
@@ -131,10 +131,10 @@
     "12",
     0
    ],
-   "filename_prefix": "splitsecond/k0_approach"
+   "filename_prefix": "splitsecond/k0_approach_s4242"
   },
   "_meta": {
-   "title": "Save: k0_approach"
+   "title": "Save: k0_approach seed 4242"
   }
  },
  "20": {
@@ -144,7 +144,7 @@
     "3",
     0
    ],
-   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. Wide shot of a flat wet rooftop. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body stands in the center foreground, seen from behind at a three-quarter angle, cornered and catching her breath. On the left side of the rooftop stands a tall wooden water tower with a metal ladder up its side. On the right edge of the roof, a taut steel zipline cable runs from a short pole out across the street. In the background center, a small rooftop stairwell hut with a red metal door. At the far back edge of the roof, three ninjas dressed all in black with red scarves crouch on the ledge, watching her, motionless. The lower quarter of the frame is wet rooftop with puddles and reflections."
+   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. High three-quarter shot from behind. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body stands alone in the middle of a flat wet rooftop, seen from behind, facing a tall neon skyscraper across the street at the top of the frame. On the left, a tall wooden water tower with a metal ladder up its side. In the center, a small stairwell hut with a red metal door, and from the top of the hut an enclosed glass skybridge stretches across the street to the skyscraper. On the right edge, a short pole with a taut steel zipline cable that slopes down across the street to a lit catwalk on the skyscraper. Far away in the upper left, small, on the parapet of a taller neighboring building, three ninjas dressed all in black with red scarves crouch, watching her. Lots of empty wet roof between her and everything."
   },
   "_meta": {
    "title": "Prompt: k1_decision1"
@@ -177,7 +177,7 @@
    "denoise": 1
   },
   "_meta": {
-   "title": "Sample: k1_decision1"
+   "title": "Sample: k1_decision1 seed 4242"
   }
  },
  "22": {
@@ -193,7 +193,7 @@
    ]
   },
   "_meta": {
-   "title": "Decode: k1_decision1"
+   "title": "Decode: k1_decision1 seed 4242"
   }
  },
  "23": {
@@ -203,10 +203,10 @@
     "22",
     0
    ],
-   "filename_prefix": "splitsecond/k1_decision1"
+   "filename_prefix": "splitsecond/k1_decision1_s4242"
   },
   "_meta": {
-   "title": "Save: k1_decision1"
+   "title": "Save: k1_decision1 seed 4242"
   }
  },
  "30": {
@@ -216,7 +216,7 @@
     "3",
     0
    ],
-   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body crouches on a narrow metal catwalk high above the street, seen from behind at a three-quarter angle, in front of a giant glowing billboard with abstract pink and blue light shapes and no words. Below on the right, an elevated subway train with lit windows passes on its track. On the left, a tall red and white radio antenna tower with a ladder. Far away on the left end of the catwalk, three ninjas dressed all in black with red scarves stand still in a row, watching her. The lower quarter of the frame is the steel catwalk grating, wet with rain."
+   "text": "Anime film still, hand-painted cel style, cinematic lighting, rich color, clean linework, vertical 9:16 frame, night, steady rain, dense neon city in pink and teal. Shot from behind and slightly above. a young courier girl in a bright yellow raincoat with the hood down, short black bob haircut, a dark green messenger bag across her body crouches on a narrow steel catwalk bolted to the side of a skyscraper, high above the street. On the left, a giant glowing billboard of abstract pink and blue light shapes with no words. Above the billboard, on the skyscraper roof, a tall red and white radio antenna mast. Below on the right, an elevated train with lit windows runs on its track. In the lower right corner, across the street and lower down, the flat wet rooftop she escaped from, with a wooden water tower and a small hut with a red door; on that rooftop stand three tiny ninjas in black, far away. A steel zipline cable slopes from that rooftop up to the catwalk. She is alone on the catwalk."
   },
   "_meta": {
    "title": "Prompt: k2_decision2"
@@ -229,7 +229,7 @@
     "2",
     0
    ],
-   "seed": 11,
+   "seed": 97,
    "steps": 8,
    "cfg": 1,
    "sampler_name": "res_multistep",
@@ -249,7 +249,7 @@
    "denoise": 1
   },
   "_meta": {
-   "title": "Sample: k2_decision2"
+   "title": "Sample: k2_decision2 seed 97"
   }
  },
  "32": {
@@ -265,7 +265,7 @@
    ]
   },
   "_meta": {
-   "title": "Decode: k2_decision2"
+   "title": "Decode: k2_decision2 seed 97"
   }
  },
  "33": {
@@ -275,10 +275,10 @@
     "32",
     0
    ],
-   "filename_prefix": "splitsecond/k2_decision2"
+   "filename_prefix": "splitsecond/k2_decision2_s97"
   },
   "_meta": {
-   "title": "Save: k2_decision2"
+   "title": "Save: k2_decision2 seed 97"
   }
  }
 }
