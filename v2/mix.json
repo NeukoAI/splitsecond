@@ -29,7 +29,7 @@
   "d4_run": "d4_van"
  },
  "sources": {
-  "title": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/52696798-085b-4eca-95f9-4925eb006b6d.mp4",
+  "title": "https://cdn.bitebox.gg/public/patchwork/ad02add3-64fd-4a66-89b5-7d4d48c59fce.mp4",
   "stakes": "https://cdn.bitebox.gg/public/patchwork/c5ed18e0-dc31-40c9-8526-aa3708aaf6b7.mp4",
   "intro_call": "https://cdn.bitebox.gg/public/patchwork/f452a787-7ab8-4d99-a2c6-786d4ed632af.mp4",
   "intro_hound": [
@@ -38,13 +38,8 @@
     "end": 2.0
    }
   ],
-  "d1_loop": "https://cdn.bitebox.gg/public/patchwork/568cd29d-327c-4a0d-89cb-141dde1fe096.mp4",
-  "d1_jump": [
-   {
-    "url": "https://cdn.bitebox.gg/public/patchwork/83ba4318-c7bb-4321-8b73-15815c02f45e.mp4",
-    "end": 3.6
-   }
-  ],
+  "d1_loop": "https://cdn.bitebox.gg/public/patchwork/cd8f5dfc-9cd1-4497-be8a-db535f153b9f.mp4",
+  "d1_jump": "https://cdn.bitebox.gg/public/patchwork/decf9bcf-bf46-445b-a184-b9e593716d99.mp4",
   "d2_loop": "https://cdn.bitebox.gg/public/patchwork/0c429816-e1d1-4683-a5bf-434ebe43c833.mp4",
   "d2_crowd": "https://cdn.bitebox.gg/public/patchwork/814eb7fd-60b3-4534-bb1a-a2de01b0758d.mp4",
   "d3_loop": "https://cdn.bitebox.gg/public/patchwork/6ce28b75-4d6c-42b2-acff-bc5159cb818b.mp4",
@@ -61,8 +56,8 @@
   "finale_hound": "https://cdn.bitebox.gg/public/patchwork/8165c5c2-f394-49c6-b851-bde76fa0ecb6.mp4",
   "d1_vent": [
    {
-    "url": "https://cdn.bitebox.gg/public/patchwork/05692961-d958-4ef1-afa4-99aca1a39266.mp4",
-    "end": 3.3
+    "url": "https://cdn.bitebox.gg/public/patchwork/3b126108-8e3c-40e1-b088-dafbe6d4d399.mp4",
+    "end": 2.4
    },
    "https://cdn.bitebox.gg/public/patchwork/446634e3-4eed-4821-9da1-5e704b2b6393.mp4"
   ],
@@ -110,5 +105,11 @@
   "intro_call": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c945023c-4f9f-48a3-846b-aed6ac6c6062.mp4"
  },
  "clip_db": {},
- "own_lufs": -26
+ "own_lufs": -26,
+ "loop_close": [
+  "d1_loop",
+  "d2_loop",
+  "d3_loop",
+  "d4_loop"
+ ]
 }

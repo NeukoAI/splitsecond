@@ -82,8 +82,8 @@
    "id": "title",
    "kind": "i2v",
    "from": "title",
-   "sec": 3,
-   "prompt": "The title key art comes alive: rain streaks, neon flickers, Rin runs in place toward camera with motion blur while the Hound hangs mid-leap behind her, the title letters glitch and pulse cyan. Heavy synth bass hit, rain. The camera slowly pushes in."
+   "sec": 5,
+   "prompt": "Camera locked off: the title key art comes alive, rain, flickering neon, Rin and the Hound hold their leap, the SPLIT SECOND letters stay sharp with a soft cyan pulse. (H3 Max, pinned at both ends to the redrawn key art.)"
   },
   {
    "id": "stakes",
@@ -121,7 +121,7 @@
   {
    "id": "intro_hound",
    "kind": "flf",
-   "sec": 2,
+   "sec": 2.0,
    "prompt": "Rin runs across the roof toward the camera, glancing back; on the far roof the Hound lands and rises. Hard cut to her at the edge.",
    "from": "intro_call:last"
   },
@@ -143,7 +143,7 @@
   {
    "id": "d1_jump",
    "kind": "flf",
-   "sec": 3.5,
+   "sec": 5,
    "prompt": "Rin leaps to the fixed ladder and slides down it. Hard cut to the market fork.",
    "from": "k1",
    "to": "k2"
@@ -151,9 +151,9 @@
   {
    "id": "d1_vent",
    "kind": "flf",
-   "sec": 8.3,
+   "sec": 7.3,
    "caught": true,
-   "prompt": "Rin dashes to the vent and sits on its rim to drop in. Hard cut: she crawls out of a grate on the back street; the Hound steps out of the dark and hauls her up by the collar.",
+   "prompt": "Rin dives for the vent. Hard cut: she crawls out of a grate on the back street; the Hound steps out of the dark and hauls her up by the collar.",
    "from": "k1",
    "to": "c_vent"
   },
@@ -175,7 +175,7 @@
   {
    "id": "d2_alley",
    "kind": "flf",
-   "sec": 7,
+   "sec": 7.1,
    "caught": true,
    "prompt": "Rin runs deep into the alley under the red drone. Hard cut inside the alley: the Hound drops from the fire escape beside her and grabs her shoulder.",
    "from": "k2",
@@ -192,7 +192,7 @@
   {
    "id": "d3_roof",
    "kind": "flf",
-   "sec": 10.2,
+   "sec": 10.3,
    "prompt": "Rin climbs the fixed ladder. Hard cut to the train roof: the van pulls in right beside her, rear doors open, Dex waving from the driver's window.",
    "from": "k3",
    "to": "k4"
@@ -200,7 +200,7 @@
   {
    "id": "d3_board",
    "kind": "flf",
-   "sec": 10.2,
+   "sec": 10.3,
    "caught": true,
    "prompt": "Rin steps into the red-lit door. Hard cut inside the carriage: she sprints down the aisle and the Hound lunges from the seats and yanks her back by her chrome arm.",
    "from": "k3",
@@ -224,7 +224,7 @@
   {
    "id": "d4_van",
    "kind": "flf",
-   "sec": 10.2,
+   "sec": 10.3,
    "prompt": "A short hop into the open cargo bay. The doors shut and the van pulls ahead up the exit ramp and away for good.",
    "from": "k4",
    "to": "v_exit"
@@ -232,7 +232,7 @@
   {
    "id": "d4_run",
    "kind": "flf",
-   "sec": 10.2,
+   "sec": 10.3,
    "caught": true,
    "prompt": "No tap: the doors shut and the van takes the exit without her. The Hound walks up the train roof behind her and lays a hand on her shoulder.",
    "from": "k4",

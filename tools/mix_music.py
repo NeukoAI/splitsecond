@@ -75,6 +75,16 @@ def prepare(key):
         clip = src / f"{key}_joined.mp4"
         run([*ins, "-filter_complex", graph, "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
              "-preset", "veryfast", "-crf", "18", "-c:a", "aac", "-b:a", "160k", str(clip)])
+    if key in cfg.get("loop_close", []):
+        # ease the last 0.3 s back into the first frame, so a decision loop wraps without a pop
+        d = duration(clip)
+        w, h = (probe(clip, "stream=width,height")["streams"][0][k] for k in ("width", "height"))
+        closed = src / f"{key}_closed.mp4"
+        graph = (f"[0:v]fps=24,format=yuv420p,setsar=1,split[a][b];[b]trim=end_frame=1,loop=loop=8:size=1,"
+                 f"setpts=N/24/TB,scale={w}:{h}[first];[a][first]xfade=transition=fade:duration=0.3:offset={d - 0.3:.3f}[v]")
+        run(["-i", str(clip), "-filter_complex", graph, "-map", "[v]", "-map", "0:a?", "-c:v", "libx264",
+             "-preset", "veryfast", "-crf", "18", "-c:a", "copy", "-t", f"{d:.3f}", str(closed)])
+        clip = closed
     if key in cfg.get("audio_from", {}):
         voice = fetch(cfg["audio_from"][key], f"{key}_voice.mp4")
         swapped = src / f"{key}_voiced.mp4"
