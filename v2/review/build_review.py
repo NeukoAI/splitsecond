@@ -64,21 +64,21 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
-REVISED = {"d1_jump", "d2_loop", "d2_crowd", "d2_alley",
-           "d3_roof", "d4_loop", "d4_van", "d4_run"}
+REVISED = {"title", "stakes", "intro_call", "intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_crowd", "d2_alley",
+           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run", "finale_van", "finale_hound"}
 
 
 def card(nid):
     sid = scene_of[nid]
     s = scenes[sid]
     if s["kind"] == "flf" and s.get("from") == s.get("to"):
-        kind = "Decision loop, pinned to the same frame at both ends (LTX 2.5)"
+        kind = "Decision loop, pinned to the same frame at both ends (H3 Max)"
     elif s["kind"] == "flf":
-        kind = "Pinned at both ends to sheet-drawn keyframes, hard cut where the place changes (LTX 2.5)"
+        kind = "Pinned at both ends to sheet-drawn keyframes, hard cut where the place changes (H3 Max)"
     elif s["kind"] == "end":
-        kind = "End pinned on the D1 frame, free start (LTX 2.5)"
+        kind = "End pinned on the D1 frame, free start (H3 Max)"
     else:
-        kind = "Starts on a keyframe, then plays out freely (LTX 2.5)"
+        kind = "Starts on a keyframe, then plays out freely (H3 Max)"
     anchors = KEYFRAME.get(s.get("from", ""), s.get("from", "").replace(":last", " last frame"))
     outs = []
     for label, tgt in exits(nid):
@@ -90,7 +90,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.8</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.9</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
