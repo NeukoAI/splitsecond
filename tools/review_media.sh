@@ -16,7 +16,9 @@ while read -r key url; do
   if [ "$ext" = "mp4" ]; then
     ffmpeg -nostdin -loglevel error -y -i "$src" -vf scale=270:480 -c:v libx264 -preset veryfast -crf 30 -c:a aac -b:a 64k -movflags +faststart "$out/$key.mp4"
     ffmpeg -nostdin -loglevel error -y -i "$src" -vf "select=eq(n\,0),scale=270:480" -frames:v 1 -q:v 4 "$out/${key}_first.jpg"
-    ffmpeg -nostdin -loglevel error -y -sseof -0.1 -i "$src" -vf scale=270:480 -frames:v 1 -update 1 -q:v 4 "$out/${key}_last.jpg"
+    for back in 0.1 0.3 0.6 1.0; do
+      ffmpeg -nostdin -loglevel error -y -sseof -$back -i "$src" -vf scale=270:480 -frames:v 1 -update 1 -q:v 4 "$out/${key}_last.jpg" && break || true
+    done
   else
     ffmpeg -nostdin -loglevel error -y -i "$src" -vf "scale=270:-2" -q:v 4 "$out/$key.jpg"
   fi
