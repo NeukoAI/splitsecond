@@ -19,3 +19,17 @@ plate_street https://cdn.bitebox.gg/public/patchwork/d54aaca5-4e9e-4ec5-9c17-9c7
 poster_title https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c26143e5-cd6e-41b6-b817-5ae6d36ecfe7.png
 rin_front_a https://cdn.bitebox.gg/public/patchwork/29bb363f-b91b-48bd-913b-ae30c37c3fa4.png
 rin_back_a https://cdn.bitebox.gg/public/patchwork/1cad34d6-37e6-42d0-bb7e-6f19df658709.png
+n_rin_back https://cdn.bitebox.gg/public/patchwork/51843d28-7731-4941-b9a5-4d6b9a543442.png
+n_k1 https://cdn.bitebox.gg/public/patchwork/04dbca43-1b57-47e0-8b22-307695625196.png
+n_k3 https://cdn.bitebox.gg/public/patchwork/c149499b-a31c-4bb2-b5a7-f47b83f36aad.png
+n_k4 https://cdn.bitebox.gg/public/patchwork/d8a85d42-fbb2-48a4-b814-707d34a738ff.png
+n_k0 https://cdn.bitebox.gg/public/patchwork/e8077722-a51f-41f5-82bd-099cf5a8a8d3.png
+n_s1 https://cdn.bitebox.gg/public/patchwork/dd2edc28-894a-4a41-94db-bfcdf3c15973.png
+n_h_a https://cdn.bitebox.gg/public/patchwork/8acc3264-0246-4627-b440-d406585e1212.png
+n_k5 https://cdn.bitebox.gg/public/patchwork/96206ec4-32c1-4e82-9f0e-d26167dffbe2.png
+n_a_in https://cdn.bitebox.gg/public/patchwork/7f4f819f-887b-4f6a-8b83-ff61c88f65c9.png
+n_s_out https://cdn.bitebox.gg/public/patchwork/5feb6342-38de-4540-8e1f-cbb30143cf01.png
+n_b_aisle https://cdn.bitebox.gg/public/patchwork/8d1b8796-2947-4561-964d-2add88f26632.png
+n_c_crowd https://cdn.bitebox.gg/public/patchwork/c97ab75d-844d-42aa-a56b-893c328770cf.png
+n_a_deep https://cdn.bitebox.gg/public/patchwork/b5af860e-7fdf-466e-bfef-8d1b0b9a003c.png
+n_m_arrive https://cdn.bitebox.gg/public/patchwork/f6f869c6-f234-4af2-a8c7-5ecf71465f45.png
