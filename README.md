@@ -28,8 +28,8 @@ flowchart TD
 ```
 
 1. **Cast first.** `Qwen Image 2.1 Turbo` text to image makes one reference sheet per character (front, side, back, face): Rin, the Hound, Dex.
-2. **Keyframes from the cast.** `Qwen Image 2.1 Turbo` image edit takes the sheets as reference images, so every frame keeps the same faces and costumes. Each decision gets one frame that shows a clue for the safe route. The Hound stays out of the decision frames: he appears inside the clips, when you choose wrong.
-3. **Clips pinned to frames.** `LTX 2.5` first + last frame. A clip into a decision ends on that decision's frame. The decision loop starts and ends on it. Every escape and capture starts on it. So every cut at a decision lands on identical pixels. LTX 2.5 also makes the sound and dialogue in the same pass, and its multishot cuts carry a single escape clip from one location to the next.
+2. **Keyframes from the cast.** `Qwen Image 2.1 Turbo` image edit takes the sheets as reference images, so every frame keeps the same faces and costumes. Only the first decision gets a made keyframe. The Hound stays out of the decision frames: he appears inside the clips, when you choose wrong.
+3. **Chained clips.** `LTX 2.5` image to video. Each escape starts on the real last frame of the clip before it and plays out freely, and its last frame becomes the next decision frame. The decision loop is the one clip pinned at both ends, to that same frame, so it holds still while you choose, and both outcomes start on it. So every cut lands on identical pixels without forcing two different scenes to meet in the middle. LTX 2.5 also makes the sound in the same pass.
 4. **Tap targets.** `SAM3` finds each object from a sentence. The mask is grown, the original subtracted and the ring colored, so each object gets its own glowing outline that the player draws exactly where SAM3 found it.
 5. **Assemble.** `v2/build_document.py` turns `v2/story.json` plus the hosted media into a bitebox document: Target Overlays for taps, the loop's autoplay exit as the 5-second timeout, and end cards that hold until you tap TRY AGAIN, START OVER or PLAY AGAIN.
 
