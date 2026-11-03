@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Split Second</title>
+<style>
+  :root { --glow: #00e5ff; --bg: #07080c; --ink: #f4f6fb; --dim: #9aa3b5; --danger: #ff3b5c; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
+    font: 500 16px/1.4 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  body { display: grid; place-items: center; }
+  .stage { position: relative; height: min(100dvh, 177.78vw); aspect-ratio: 9 / 16; overflow: hidden; background: #000; }
+  video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+  video.on { opacity: 1; }
+  .target { position: absolute; transform: translate(-50%, -50%); border: 0; padding: 0; background: none;
+    cursor: pointer; display: none; }
+  .target img { width: 100%; height: 100%; display: block; filter: drop-shadow(0 0 6px var(--glow)) drop-shadow(0 0 14px var(--glow));
+    animation: pulse 1.2s ease-in-out infinite; pointer-events: none; }
+  .deciding .target { display: block; }
+  .target:focus-visible { outline: 2px solid var(--glow); outline-offset: 4px; border-radius: 8px; }
+  @keyframes pulse { 50% { opacity: .45; } }
+  .hud { position: absolute; top: 12px; left: 12px; right: 12px; display: flex; justify-content: space-between;
+    font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); pointer-events: none; }
+  .timer { position: absolute; left: 0; bottom: 0; height: 4px; background: var(--glow); width: 0; }
+  .card { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 14px;
+    background: rgb(7 8 12 / .72); padding: 24px; }
+  .card[hidden] { display: none; }
+  .card h1 { margin: 0; font-size: clamp(32px, 9vw, 56px); letter-spacing: .04em; }
+  .card p { margin: 0; color: var(--dim); max-width: 28ch; justify-self: center; }
+  .card.caught h1 { color: var(--danger); }
+  .card button { justify-self: center; margin-top: 6px; font: inherit; font-weight: 700; color: var(--bg);
+    background: var(--glow); border: 0; border-radius: 999px; padding: 12px 26px; cursor: pointer; }
+  @media (prefers-reduced-motion: reduce) { .target img { animation: none; } }
+</style>
+</head>
+<body>
+<main class="stage" id="stage">
+  <video id="v0" playsinline muted preload="auto"></video>
+  <video id="v1" playsinline muted preload="auto"></video>
+  <div id="targets"></div>
+  <div class="hud"><span id="run">Run 1</span><span id="hint"></span></div>
+  <div class="timer" id="timer"></div>
+  <section class="card" id="card">
+    <h1 id="cardTitle">Split Second</h1>
+    <p id="cardText">Three ninjas. One way off the roof. Tap what glows. Hesitate and they catch you.</p>
+    <button id="cardBtn">Run</button>
+  </section>
+</main>
+<script>
+(async () => {
+  const story = await (await fetch(new URL('../story.json', location.href))).json();
+  const base = story.clipBase || new URL('../', location.href).href;
+  const src = (p) => /^https?:/.test(p) ? p : base + p;
+  const $ = (id) => document.getElementById(id);
+  const vids = [$('v0'), $('v1')];
+  let front = 0, run = 0;
+
+  // Two video elements: the next clip loads behind the current one, so every cut lands on a ready frame.
+  function play(scene, { loop = false } = {}) {
+    return new Promise((resolve) => {
+      const back = vids[1 - front];
+      back.src = src(story.scenes[scene]);
+      back.loop = false;
+      back.currentTime = 0;
+      const start = () => {
+        back.play().catch(() => {});
+        back.classList.add('on');
+        vids[front].classList.remove('on');
+        vids[front].pause();
+        front = 1 - front;
+      };
+      back.addEventListener('canplay', start, { once: true });
+      back.onended = () => resolve('ended');
+      play.cancel = () => { back.onended = null; resolve('cancelled'); };
+    });
+  }
+
+  function showCard(kind, title, text, label) {
+    const card = $('card');
+    card.className = 'card ' + kind;
+    $('cardTitle').textContent = title; $('cardText').textContent = text; $('cardBtn').textContent = label;
+    card.hidden = false;
+    return new Promise((r) => { $('cardBtn').onclick = () => { card.hidden = true; r(); }; });
+  }
+
+  // Draw the decision's tap targets: SAM3 outline PNGs placed on the objects they were cut from.
+  function setTargets(decision, onPick) {
+    const box = $('targets'); box.innerHTML = '';
+    for (const [id, t] of Object.entries(decision.targets)) {
+      const [cx, cy, w, h] = t.rect;
+      const b = document.createElement('button');
+      b.className = 'target'; b.setAttribute('aria-label', t.label);
+      Object.assign(b.style, { left: cx * 100 + '%', top: cy * 100 + '%', width: w * 100 + '%', height: h * 100 + '%' });
+      const img = new Image(); img.src = src(t.glow); img.alt = ''; b.append(img);
+      b.onclick = () => onPick(id);
+      box.append(b);
+    }
+  }
+
+  async function decide(decision, safe) {
+    const stage = $('stage');
+    let picked = null;
+    setTargets(decision, (id) => { picked = id; play.cancel && play.cancel(); });
+    stage.classList.add('deciding');
+    $('hint').textContent = 'Tap what glows';
+    const total = decision.loopPlays;
+    for (let i = 0; i < total && !picked; i++) {
+      $('timer').style.transition = 'none'; $('timer').style.width = (100 - (i / total) * 100) + '%';
+      requestAnimationFrame(() => { $('timer').style.transition = 'width 5s linear'; $('timer').style.width = (100 - ((i + 1) / total) * 100) + '%'; });
+      await play(decision.loop);
+    }
+    stage.classList.remove('deciding'); $('hint').textContent = ''; $('timer').style.width = '0';
+    if (!picked) {
+      const h = story.hesitation[decision.id];
+      picked = h !== safe ? h : Object.keys(decision.targets).find((k) => k !== safe);
+    }
+    return picked;
+  }
+
+  async function runOnce() {
+    const layout = story.rotation[run % story.rotation.length];
+    $('run').textContent = 'Run ' + (run + 1);
+    await play('opening');
+    for (const decision of story.decisions) {
+      const safe = layout[decision.id];
+      const picked = await decide(decision, safe);
+      if (picked !== safe) {
+        await play(`${decision.id}_${picked}_cap`);
+        return false;
+      }
+      await play(`${decision.id}_${picked}_safe`);
+    }
+    return true;
+  }
+
+  await showCard('', story.title, $('cardText').textContent, 'Run');
+  for (;;) {
+    const escaped = await runOnce();
+    if (escaped) {
+      await showCard('won', 'Escaped', `You got off the roof in ${run + 1} run${run ? 's' : ''}. The safe route changes every run.`, 'Run again');
+      run = 0;
+    } else {
+      run += 1;
+      await showCard('caught', 'Caught', 'They knew that route. It will be different next time.', 'Run again');
+    }
+  }
+})();
+</script>
+</body>
+</html>

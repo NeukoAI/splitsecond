@@ -1,0 +1,1977 @@
+{
+ "1": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "wan2.1_flf2v_720p_14B_fp8_e4m3fn.safetensors",
+   "weight_dtype": "default"
+  },
+  "_meta": {
+   "title": "Wan 2.1 FLF2V 14B"
+  }
+ },
+ "2": {
+  "class_type": "ModelSamplingSD3",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "shift": 5
+  },
+  "_meta": {
+   "title": "Shift"
+  }
+ },
+ "3": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "type": "wan"
+  },
+  "_meta": {
+   "title": "UMT5 text encoder"
+  }
+ },
+ "4": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "wan_2.1_vae.safetensors"
+  },
+  "_meta": {
+   "title": "Wan VAE"
+  }
+ },
+ "5": {
+  "class_type": "CLIPVisionLoader",
+  "inputs": {
+   "clip_name": "clip_vision_h.safetensors"
+  },
+  "_meta": {
+   "title": "CLIP Vision H"
+  }
+ },
+ "6": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "glitch, distortion, graffiti, color shift, morphing, melting, abstract shapes, blurry, low quality, extra limbs, deformed face, text, watermark, subtitles"
+  },
+  "_meta": {
+   "title": "Negative"
+  }
+ },
+ "20": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "k0_approach.png"
+  },
+  "_meta": {
+   "title": "Frame: k0_approach"
+  }
+ },
+ "21": {
+  "class_type": "CLIPVisionEncode",
+  "inputs": {
+   "clip_vision": [
+    "5",
+    0
+   ],
+   "image": [
+    "20",
+    0
+   ],
+   "crop": "center"
+  },
+  "_meta": {
+   "title": "Vision: k0_approach"
+  }
+ },
+ "100": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat sprints across the wet rooftop, splashing through puddles, glancing back. ninjas in black with red scarves leap down onto the roof of the stairwell hut and crouch. She skids to a stop in the middle of the roof, cornered. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: opening"
+  }
+ },
+ "22": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "k1_decision1.png"
+  },
+  "_meta": {
+   "title": "Frame: k1_decision1"
+  }
+ },
+ "23": {
+  "class_type": "CLIPVisionEncode",
+  "inputs": {
+   "clip_vision": [
+    "5",
+    0
+   ],
+   "image": [
+    "22",
+    0
+   ],
+   "crop": "center"
+  },
+  "_meta": {
+   "title": "Vision: k1_decision1"
+  }
+ },
+ "101": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "100",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "20",
+    0
+   ],
+   "clip_vision_start_image": [
+    "21",
+    0
+   ],
+   "end_image": [
+    "22",
+    0
+   ],
+   "clip_vision_end_image": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: opening"
+  }
+ },
+ "102": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "101",
+    0
+   ],
+   "negative": [
+    "101",
+    1
+   ],
+   "latent_image": [
+    "101",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: opening"
+  }
+ },
+ "103": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "102",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: opening"
+  }
+ },
+ "104": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "103",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: opening"
+  }
+ },
+ "105": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "104",
+    0
+   ],
+   "filename_prefix": "splitsecond/opening",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: opening"
+  }
+ },
+ "110": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. Locked-off camera. the girl in the yellow raincoat stands still, breathing hard, shoulders rising and falling. The ninjas in black with red scarves crouch motionless on the hut roof. Steady rain, rippling puddles. Gentle idle motion only."
+  },
+  "_meta": {
+   "title": "Prompt: loop1"
+  }
+ },
+ "111": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "110",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ],
+   "end_image": [
+    "22",
+    0
+   ],
+   "clip_vision_end_image": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: loop1"
+  }
+ },
+ "112": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "111",
+    0
+   ],
+   "negative": [
+    "111",
+    1
+   ],
+   "latent_image": [
+    "111",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: loop1"
+  }
+ },
+ "113": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "112",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: loop1"
+  }
+ },
+ "114": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "113",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: loop1"
+  }
+ },
+ "115": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "114",
+    0
+   ],
+   "filename_prefix": "splitsecond/loop1",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: loop1"
+  }
+ },
+ "120": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat turns and runs to the right edge of the roof, grabs the steel zipline cable with her bag strap and slides away across the street, landing on a metal catwalk in front of a giant glowing billboard. She crouches to catch her breath."
+  },
+  "_meta": {
+   "title": "Prompt: d1_zip_safe"
+  }
+ },
+ "24": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "k2_decision2.png"
+  },
+  "_meta": {
+   "title": "Frame: k2_decision2"
+  }
+ },
+ "25": {
+  "class_type": "CLIPVisionEncode",
+  "inputs": {
+   "clip_vision": [
+    "5",
+    0
+   ],
+   "image": [
+    "24",
+    0
+   ],
+   "crop": "center"
+  },
+  "_meta": {
+   "title": "Vision: k2_decision2"
+  }
+ },
+ "121": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "120",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ],
+   "end_image": [
+    "24",
+    0
+   ],
+   "clip_vision_end_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_zip_safe"
+  }
+ },
+ "122": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "121",
+    0
+   ],
+   "negative": [
+    "121",
+    1
+   ],
+   "latent_image": [
+    "121",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_zip_safe"
+  }
+ },
+ "123": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "122",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_zip_safe"
+  }
+ },
+ "124": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "123",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_zip_safe"
+  }
+ },
+ "125": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "124",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_zip_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_zip_safe"
+  }
+ },
+ "130": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat runs to the wooden water tower, climbs its ladder fast, and leaps from the top across the street, landing on a metal catwalk in front of a giant glowing billboard. She crouches to catch her breath."
+  },
+  "_meta": {
+   "title": "Prompt: d1_ladder_safe"
+  }
+ },
+ "131": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "130",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ],
+   "end_image": [
+    "24",
+    0
+   ],
+   "clip_vision_end_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_ladder_safe"
+  }
+ },
+ "132": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "131",
+    0
+   ],
+   "negative": [
+    "131",
+    1
+   ],
+   "latent_image": [
+    "131",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_ladder_safe"
+  }
+ },
+ "133": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "132",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_ladder_safe"
+  }
+ },
+ "134": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "133",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_ladder_safe"
+  }
+ },
+ "135": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "134",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_ladder_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_ladder_safe"
+  }
+ },
+ "140": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat dashes through the red metal door of the stairwell hut, races up a dark stairwell and bursts out onto a metal catwalk in front of a giant glowing billboard. She crouches to catch her breath."
+  },
+  "_meta": {
+   "title": "Prompt: d1_door_safe"
+  }
+ },
+ "141": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "140",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ],
+   "end_image": [
+    "24",
+    0
+   ],
+   "clip_vision_end_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_door_safe"
+  }
+ },
+ "142": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "141",
+    0
+   ],
+   "negative": [
+    "141",
+    1
+   ],
+   "latent_image": [
+    "141",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_door_safe"
+  }
+ },
+ "143": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "142",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_door_safe"
+  }
+ },
+ "144": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "143",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_door_safe"
+  }
+ },
+ "145": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "144",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_door_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_door_safe"
+  }
+ },
+ "150": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat runs to the right edge of the roof and grabs the steel zipline cable. A ninja in black with a red scarf lands on the pole and holds the cable still, and the other ninjas close in around her. She is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d1_zip_cap"
+  }
+ },
+ "151": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "150",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_zip_cap"
+  }
+ },
+ "152": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "151",
+    0
+   ],
+   "negative": [
+    "151",
+    1
+   ],
+   "latent_image": [
+    "151",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_zip_cap"
+  }
+ },
+ "153": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "152",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_zip_cap"
+  }
+ },
+ "154": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "153",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_zip_cap"
+  }
+ },
+ "155": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "154",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_zip_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_zip_cap"
+  }
+ },
+ "160": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat runs to the wooden water tower and climbs its ladder. At the top, a ninja in black with a red scarf rises up and grabs her wrist. She is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d1_ladder_cap"
+  }
+ },
+ "161": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "160",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_ladder_cap"
+  }
+ },
+ "162": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "161",
+    0
+   ],
+   "negative": [
+    "161",
+    1
+   ],
+   "latent_image": [
+    "161",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_ladder_cap"
+  }
+ },
+ "163": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "162",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_ladder_cap"
+  }
+ },
+ "164": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "163",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_ladder_cap"
+  }
+ },
+ "165": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "164",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_ladder_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_ladder_cap"
+  }
+ },
+ "170": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat runs to the stairwell hut and pulls the red metal door open. Two ninjas in black with red scarves burst out of the doorway and seize her arms. She is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d1_door_cap"
+  }
+ },
+ "171": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "170",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "22",
+    0
+   ],
+   "clip_vision_start_image": [
+    "23",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d1_door_cap"
+  }
+ },
+ "172": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "171",
+    0
+   ],
+   "negative": [
+    "171",
+    1
+   ],
+   "latent_image": [
+    "171",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d1_door_cap"
+  }
+ },
+ "173": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "172",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d1_door_cap"
+  }
+ },
+ "174": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "173",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d1_door_cap"
+  }
+ },
+ "175": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "174",
+    0
+   ],
+   "filename_prefix": "splitsecond/d1_door_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d1_door_cap"
+  }
+ },
+ "180": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. Locked-off camera. the girl in the yellow raincoat crouches still on the catwalk, breathing hard. The ninjas in black with red scarves stand motionless at the far end. The train keeps rolling past below, the billboard glows. Gentle idle motion only."
+  },
+  "_meta": {
+   "title": "Prompt: loop2"
+  }
+ },
+ "181": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "180",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ],
+   "end_image": [
+    "24",
+    0
+   ],
+   "clip_vision_end_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: loop2"
+  }
+ },
+ "182": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "181",
+    0
+   ],
+   "negative": [
+    "181",
+    1
+   ],
+   "latent_image": [
+    "181",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: loop2"
+  }
+ },
+ "183": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "182",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: loop2"
+  }
+ },
+ "184": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "183",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: loop2"
+  }
+ },
+ "185": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "184",
+    0
+   ],
+   "filename_prefix": "splitsecond/loop2",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: loop2"
+  }
+ },
+ "190": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat vaults over the catwalk railing and drops onto the roof of the passing train below. She lands in a crouch and rides away into the neon city as the ninjas in black with red scarves are left behind on the catwalk. Camera follows the train."
+  },
+  "_meta": {
+   "title": "Prompt: d2_train_safe"
+  }
+ },
+ "191": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "190",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_train_safe"
+  }
+ },
+ "192": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "191",
+    0
+   ],
+   "negative": [
+    "191",
+    1
+   ],
+   "latent_image": [
+    "191",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_train_safe"
+  }
+ },
+ "193": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "192",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_train_safe"
+  }
+ },
+ "194": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "193",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_train_safe"
+  }
+ },
+ "195": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "194",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_train_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_train_safe"
+  }
+ },
+ "200": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat slips behind the glowing billboard, slides down a drainpipe into a dark alley, and runs off into the crowded neon street, safe. The ninjas look around the catwalk, losing her."
+  },
+  "_meta": {
+   "title": "Prompt: d2_board_safe"
+  }
+ },
+ "201": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "200",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_board_safe"
+  }
+ },
+ "202": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "201",
+    0
+   ],
+   "negative": [
+    "201",
+    1
+   ],
+   "latent_image": [
+    "201",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_board_safe"
+  }
+ },
+ "203": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "202",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_board_safe"
+  }
+ },
+ "204": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "203",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_board_safe"
+  }
+ },
+ "205": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "204",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_board_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_board_safe"
+  }
+ },
+ "210": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat climbs the red and white radio antenna tower, then leaps from it onto the roof of a neighboring building and disappears into the rainy city, safe. The ninjas are left behind on the catwalk."
+  },
+  "_meta": {
+   "title": "Prompt: d2_antenna_safe"
+  }
+ },
+ "211": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "210",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_antenna_safe"
+  }
+ },
+ "212": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "211",
+    0
+   ],
+   "negative": [
+    "211",
+    1
+   ],
+   "latent_image": [
+    "211",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_antenna_safe"
+  }
+ },
+ "213": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "212",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_antenna_safe"
+  }
+ },
+ "214": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "213",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_antenna_safe"
+  }
+ },
+ "215": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "214",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_antenna_safe",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_antenna_safe"
+  }
+ },
+ "220": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat vaults over the catwalk railing toward the passing train, but a ninja in black with a red scarf leaps and catches her mid-air, pulling her back onto the catwalk. She is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d2_train_cap"
+  }
+ },
+ "221": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "220",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_train_cap"
+  }
+ },
+ "222": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "221",
+    0
+   ],
+   "negative": [
+    "221",
+    1
+   ],
+   "latent_image": [
+    "221",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_train_cap"
+  }
+ },
+ "223": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "222",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_train_cap"
+  }
+ },
+ "224": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "223",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_train_cap"
+  }
+ },
+ "225": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "224",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_train_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_train_cap"
+  }
+ },
+ "230": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat slips behind the glowing billboard to hide. A ninja's shadow falls across her, then a ninja in black with a red scarf steps around the edge and grabs her shoulder. She is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d2_board_cap"
+  }
+ },
+ "231": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "230",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_board_cap"
+  }
+ },
+ "232": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "231",
+    0
+   ],
+   "negative": [
+    "231",
+    1
+   ],
+   "latent_image": [
+    "231",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_board_cap"
+  }
+ },
+ "233": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "232",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_board_cap"
+  }
+ },
+ "234": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "233",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_board_cap"
+  }
+ },
+ "235": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "234",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_board_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_board_cap"
+  }
+ },
+ "240": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "3",
+    0
+   ],
+   "text": "Anime film, hand-painted cel style, consistent character, stable scene, smooth natural motion, rainy neon city rooftops at night. the girl in the yellow raincoat climbs the red and white radio antenna tower. The ninjas in black with red scarves surround its base and one climbs up after her. At the top she has nowhere to go and is caught. Camera holds steady."
+  },
+  "_meta": {
+   "title": "Prompt: d2_antenna_cap"
+  }
+ },
+ "241": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "positive": [
+    "240",
+    0
+   ],
+   "negative": [
+    "6",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ],
+   "width": 480,
+   "height": 848,
+   "length": 81,
+   "batch_size": 1,
+   "start_image": [
+    "24",
+    0
+   ],
+   "clip_vision_start_image": [
+    "25",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Pin to frame: d2_antenna_cap"
+  }
+ },
+ "242": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "2",
+    0
+   ],
+   "seed": 7,
+   "steps": 25,
+   "cfg": 5,
+   "sampler_name": "uni_pc",
+   "scheduler": "simple",
+   "positive": [
+    "241",
+    0
+   ],
+   "negative": [
+    "241",
+    1
+   ],
+   "latent_image": [
+    "241",
+    2
+   ],
+   "denoise": 1
+  },
+  "_meta": {
+   "title": "Sample: d2_antenna_cap"
+  }
+ },
+ "243": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "242",
+    0
+   ],
+   "vae": [
+    "4",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Decode: d2_antenna_cap"
+  }
+ },
+ "244": {
+  "class_type": "CreateVideo",
+  "inputs": {
+   "images": [
+    "243",
+    0
+   ],
+   "fps": 16.0
+  },
+  "_meta": {
+   "title": "Video: d2_antenna_cap"
+  }
+ },
+ "245": {
+  "class_type": "SaveVideo",
+  "inputs": {
+   "video": [
+    "244",
+    0
+   ],
+   "filename_prefix": "splitsecond/d2_antenna_cap",
+   "format": "mp4",
+   "format.codec": "h264"
+  },
+  "_meta": {
+   "title": "Save: d2_antenna_cap"
+  }
+ }
+}

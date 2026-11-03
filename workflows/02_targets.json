@@ -1,0 +1,407 @@
+{
+ "1": {
+  "class_type": "CheckpointLoaderSimple",
+  "inputs": {
+   "ckpt_name": "sam3.1_multiplex_fp16.safetensors"
+  },
+  "_meta": {
+   "title": "SAM3"
+  }
+ },
+ "2": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "k1_decision1.png"
+  },
+  "_meta": {
+   "title": "Decision 1 frame"
+  }
+ },
+ "3": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "k2_decision2.png"
+  },
+  "_meta": {
+   "title": "Decision 2 frame"
+  }
+ },
+ "4": {
+  "class_type": "EmptyImage",
+  "inputs": {
+   "width": 576,
+   "height": 1024,
+   "batch_size": 1,
+   "color": 58879
+  },
+  "_meta": {
+   "title": "Glow color"
+  }
+ },
+ "10": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the steel zipline cable and its pole on the right edge of the roof"
+  },
+  "_meta": {
+   "title": "Find: zip"
+  }
+ },
+ "11": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "2",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "10",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: zip"
+  }
+ },
+ "12": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "11",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: zip"
+  }
+ },
+ "13": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "12",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_zip"
+  },
+  "_meta": {
+   "title": "Save mask: zip"
+  }
+ },
+ "20": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the wooden water tower with a ladder"
+  },
+  "_meta": {
+   "title": "Find: ladder"
+  }
+ },
+ "21": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "2",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "20",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: ladder"
+  }
+ },
+ "22": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "21",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: ladder"
+  }
+ },
+ "23": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "22",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_ladder"
+  },
+  "_meta": {
+   "title": "Save mask: ladder"
+  }
+ },
+ "30": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the red metal door of the small stairwell hut"
+  },
+  "_meta": {
+   "title": "Find: door"
+  }
+ },
+ "31": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "2",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "30",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: door"
+  }
+ },
+ "32": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "31",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: door"
+  }
+ },
+ "33": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "32",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_door"
+  },
+  "_meta": {
+   "title": "Save mask: door"
+  }
+ },
+ "40": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the elevated subway train"
+  },
+  "_meta": {
+   "title": "Find: train"
+  }
+ },
+ "41": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "3",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "40",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: train"
+  }
+ },
+ "42": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "41",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: train"
+  }
+ },
+ "43": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "42",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_train"
+  },
+  "_meta": {
+   "title": "Save mask: train"
+  }
+ },
+ "50": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the giant glowing billboard"
+  },
+  "_meta": {
+   "title": "Find: board"
+  }
+ },
+ "51": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "3",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "50",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: board"
+  }
+ },
+ "52": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "51",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: board"
+  }
+ },
+ "53": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "52",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_board"
+  },
+  "_meta": {
+   "title": "Save mask: board"
+  }
+ },
+ "60": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "1",
+    1
+   ],
+   "text": "the red and white radio antenna tower"
+  },
+  "_meta": {
+   "title": "Find: antenna"
+  }
+ },
+ "61": {
+  "class_type": "SAM3_Detect",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "image": [
+    "3",
+    0
+   ],
+   "threshold": 0.35,
+   "refine_iterations": 2,
+   "individual_masks": false,
+   "conditioning": [
+    "60",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Segment: antenna"
+  }
+ },
+ "62": {
+  "class_type": "MaskToImage",
+  "inputs": {
+   "mask": [
+    "61",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "Mask: antenna"
+  }
+ },
+ "63": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "62",
+    0
+   ],
+   "filename_prefix": "splitsecond/mask_antenna"
+  },
+  "_meta": {
+   "title": "Save mask: antenna"
+  }
+ }
+}

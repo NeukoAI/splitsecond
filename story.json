@@ -1,0 +1,51 @@
+{
+  "title": "Split Second",
+  "logline": "A courier, three ninjas, one way off the roof. Pick wrong and the chase starts over.",
+  "clipBase": "",
+  "scenes": {
+    "opening": "clips/opening.mp4",
+    "loop1": "clips/loop1.mp4",
+    "loop2": "clips/loop2.mp4",
+    "d1_zip_safe": "clips/d1_zip_safe.mp4",
+    "d1_ladder_safe": "clips/d1_ladder_safe.mp4",
+    "d1_door_safe": "clips/d1_door_safe.mp4",
+    "d1_zip_cap": "clips/d1_zip_cap.mp4",
+    "d1_ladder_cap": "clips/d1_ladder_cap.mp4",
+    "d1_door_cap": "clips/d1_door_cap.mp4",
+    "d2_train_safe": "clips/d2_train_safe.mp4",
+    "d2_board_safe": "clips/d2_board_safe.mp4",
+    "d2_antenna_safe": "clips/d2_antenna_safe.mp4",
+    "d2_train_cap": "clips/d2_train_cap.mp4",
+    "d2_board_cap": "clips/d2_board_cap.mp4",
+    "d2_antenna_cap": "clips/d2_antenna_cap.mp4"
+  },
+  "decisions": [
+    {
+      "id": "d1",
+      "loop": "loop1",
+      "loopPlays": 4,
+      "targets": {
+        "zip": { "label": "the zipline", "rect": [0, 0, 0, 0], "glow": "targets/glow_zip.png" },
+        "ladder": { "label": "the water tower ladder", "rect": [0, 0, 0, 0], "glow": "targets/glow_ladder.png" },
+        "door": { "label": "the red door", "rect": [0, 0, 0, 0], "glow": "targets/glow_door.png" }
+      }
+    },
+    {
+      "id": "d2",
+      "loop": "loop2",
+      "loopPlays": 4,
+      "targets": {
+        "train": { "label": "the train", "rect": [0, 0, 0, 0], "glow": "targets/glow_train.png" },
+        "board": { "label": "the billboard", "rect": [0, 0, 0, 0], "glow": "targets/glow_board.png" },
+        "antenna": { "label": "the antenna", "rect": [0, 0, 0, 0], "glow": "targets/glow_antenna.png" }
+      }
+    }
+  ],
+  "rotation": [
+    { "d1": "zip", "d2": "train" },
+    { "d1": "door", "d2": "board" },
+    { "d1": "ladder", "d2": "antenna" }
+  ],
+  "hesitation": { "d1": "door", "d2": "board" },
+  "_notes": "rect = [centerX, centerY, width, height] as fractions of the frame, measured from the SAM3 masks. A safe pick plays <decision>_<target>_safe, a wrong pick plays <decision>_<target>_cap. Run n uses rotation[n % 3]. Letting the loop run out plays the capture of the hesitation target (or the next unsafe one)."
+}
