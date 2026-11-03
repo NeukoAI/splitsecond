@@ -69,3 +69,6 @@ At each decision the two choices are obvious at a glance, and the glow outline s
 - Passing an approved scene as a "style reference" makes the model copy that scene's layout.
 - Scene-to-scene first/last frame clips morph. Use a hard cut, or end on a frame in the same place.
 - Quoted dialogue in a video prompt brings burned-in subtitles. Put lines in captions or the off-screen audio sentence.
+- Rin's backpack hides the bolt from behind, and the models move the bolt onto the backpack, then drop one or the other. Draw her without the backpack.
+- A clip that has to cover two places morphs, pans or goes black between them. One place per clip; join two places with a hard cut between two clips.
+- Anything the story needs held in place (the van beside her, the van on the ramp) needs its own pinned frame. Prompts alone do not hold it.
