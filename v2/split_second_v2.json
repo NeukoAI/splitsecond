@@ -132,7 +132,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/36685cf3-d019-4891-9b35-a19c5f7e4d36.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1c070ac0-39dd-4aff-836f-3107ff7900d6.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 10042,
@@ -170,7 +170,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/410f55d4-91da-496e-a293-1257e66c5d31.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1931e1f8-6bee-499d-870e-ed460ce315ca.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
@@ -571,10 +571,10 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/362fca76-1da6-4d6e-99f6-e0f0e2fb67e8.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c515092f-6b88-44d7-824d-9ff32f82cbf7.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 10342,
+    "durationMs": 9942,
     "displayInExperience": false,
     "exits": [
      {
