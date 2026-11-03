@@ -26,7 +26,9 @@ Every frame that shows a character is drawn with that character's sheet as a ref
 
 ## How frames and clips are made
 
-1. **Keyframes** (Qwen Image 2.1 Turbo edit): every decision frame and every capture frame is drawn from the character sheets plus one approved frame as the style reference. A keyframe at the same place as another (the capture at the vent, the van leaving) uses that approved keyframe as its base.
-2. **Clips** (LTX 2.5): every clip is pinned at both ends to keyframes. LTX has no character reference input, so a character it invents mid-clip drifts. Pinning both ends to sheet-drawn frames is what keeps faces and costumes on model. Where the place changes inside a clip, the prompt calls a hard cut.
-3. **Loops** start and end on the decision frame, so the tap targets hold still.
-4. **Dialogue** is captions, never spoken lines in the prompt (LTX burns spoken lines in as subtitles).
+1. **Location plates** (Nano Banana Pro): one empty reference image per place (rooftop, market fork, back street, platform, carriage, train roof with the highway and exit ramp), drawn in the style of an approved frame. Crowds and extras are drawn in the same flat anime style, never painterly.
+2. **Keyframes** (Qwen Image 2.1 Turbo edit, then Nano Banana Pro): every decision frame and every capture frame is drawn from that place's location plate plus the sheets of the characters in it. A keyframe later in the same shot (the van leaving, the grab on the roof) uses the earlier keyframe as its base.
+3. **Dex is always inside the van**, at the wheel or waving from the driver's window. Never on the train.
+4. **Clips** (MiniMax H3 Max in bitebox, earlier LTX 2.5 in Comfy): every clip is pinned at both ends to keyframes. The video model gets no character sheet, so a character it invents mid-clip drifts. Pinning both ends to sheet-drawn frames is what keeps faces and costumes on model. Where the place changes inside a clip, the prompt calls a hard cut.
+5. **Loops** start and end on the decision frame, so the tap targets hold still.
+6. **Dialogue** is captions, never spoken lines in the prompt (LTX burns spoken lines in as subtitles).

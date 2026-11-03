@@ -151,9 +151,9 @@
     {
       "id": "d1_vent",
       "kind": "flf",
-      "sec": 6,
+      "sec": 7,
       "caught": true,
-      "prompt": "Rin runs to the open vent and starts to climb in. Hard cut: half inside, the Hound grabs her ankle and hauls her out.",
+      "prompt": "Rin climbs down into the rooftop vent. Hard cut: she crawls out of the vent grate on the back street and the Hound, already waiting, grabs her.",
       "from": "k1",
       "to": "c_vent"
     },
@@ -203,7 +203,7 @@
       "kind": "flf",
       "sec": 7,
       "caught": true,
-      "prompt": "Rin runs into the train. Hard cut: she sprints down the dark aisle and the Hound grabs her.",
+      "prompt": "Rin runs into the train. Hard cut: she sprints down the dark aisle facing forward and the Hound lunges in from the seats and grabs her mid-stride.",
       "from": "k3",
       "to": "c_board"
     },
