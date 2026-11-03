@@ -60,3 +60,12 @@ n_roofa https://cdn.bitebox.gg/public/patchwork/d0d7fc4e-c8e5-4a5e-bf94-83ad8e01
 n_vinside https://cdn.bitebox.gg/public/patchwork/42ccce95-bfe0-42d4-a331-63ccb69bae14.png
 n_vexit https://cdn.bitebox.gg/public/patchwork/90c05188-d78c-4685-8c86-092ad69d053a.png
 n_vgone https://cdn.bitebox.gg/public/patchwork/a7f4b596-1fc2-4e63-aafd-f5cf4e1302ab.png
+c_intro_call https://cdn.bitebox.gg/public/patchwork/f452a787-7ab8-4d99-a2c6-786d4ed632af.mp4
+c_intro_hound_a https://cdn.bitebox.gg/public/patchwork/61b9cb33-c256-4f4e-8ad6-fc239fe4be1e.mp4
+c_intro_hound_b https://cdn.bitebox.gg/public/patchwork/9ee87160-243b-42b2-9132-2376f6b37e02.mp4
+c_d1_jump_a https://cdn.bitebox.gg/public/patchwork/83ba4318-c7bb-4321-8b73-15815c02f45e.mp4
+c_d1_vent_b https://cdn.bitebox.gg/public/patchwork/446634e3-4eed-4821-9da1-5e704b2b6393.mp4
+c_d2_alley_b https://cdn.bitebox.gg/public/patchwork/7c9d6f2b-9966-440b-994c-37e9b9608c1b.mp4
+c_d3_board_b https://cdn.bitebox.gg/public/patchwork/8baa4c6c-6f3d-4a5a-844b-e23068f6c301.mp4
+c_finale_van https://cdn.bitebox.gg/public/patchwork/93975d61-9ec0-4a38-ab5a-a0db04375325.mp4
+c_d4_loop https://cdn.bitebox.gg/public/patchwork/8a14800e-618e-43c9-9f13-336a7ac7bb4f.mp4
