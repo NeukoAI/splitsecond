@@ -74,7 +74,10 @@
    }
   ],
   "d3_board": [
-   "https://cdn.bitebox.gg/public/patchwork/6b41c8b2-c7ff-46da-b0d3-4a5c357258fd.mp4",
+   {
+    "url": "https://cdn.bitebox.gg/public/patchwork/6b41c8b2-c7ff-46da-b0d3-4a5c357258fd.mp4",
+    "end": 4.5
+   },
    "https://cdn.bitebox.gg/public/patchwork/8baa4c6c-6f3d-4a5a-844b-e23068f6c301.mp4"
   ],
   "d4_run": [
@@ -106,7 +109,6 @@
   "stakes": "https://cdn.bitebox.gg/public/patchwork/6b8fb206-9d76-4a8e-b028-98ff249189ca.mp4",
   "intro_call": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c945023c-4f9f-48a3-846b-aed6ac6c6062.mp4"
  },
- "clip_db": {
-  "title": -10
- }
+ "clip_db": {},
+ "own_lufs": -26
 }

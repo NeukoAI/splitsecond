@@ -38,6 +38,10 @@ def run(args):
     subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-y", *args], check=True)
 
 
+# every take's own sound is brought to one loudness, so cuts and joins don't jump
+LEVEL = f"loudnorm=I={cfg.get('own_lufs', -26)}:TP=-2:LRA=11,"
+
+
 def prepare(key):
     """One local file per clip: parts joined by hard cuts, sound swapped if asked."""
     entry = media[key]
@@ -62,7 +66,7 @@ def prepare(key):
             ins += ["-i", str(f)]
             chains.append(f"[{i}:v]scale={w}:{h},setsar=1,fps=24,format=yuv420p[v{i}]")
             if has_audio(f):
-                chains.append(f"[{i}:a]aresample=44100,aformat=channel_layouts=stereo[a{i}]")
+                chains.append(f"[{i}:a]{LEVEL}aresample=44100,aformat=channel_layouts=stereo[a{i}]")
             else:
                 d = duration(f)
                 chains.append(f"anullsrc=r=44100:cl=stereo,atrim=duration={d:.3f}[a{i}]")
@@ -112,7 +116,8 @@ for key, start in at.items():
     music = f"[1:a]atrim=start={start:.3f},asetpts=PTS-STARTPTS,volume={db}dB,afade=t=in:d=0.08[m]"
     own = cfg.get("clip_db", {}).get(key, 0)
     if has_audio(clip):
-        graph = f"{music};[0:a]volume={own}dB[c];[c][m]amix=inputs=2:duration=first:normalize=0[a]"
+        level = "" if key in cfg["voice"] else LEVEL
+        graph = f"{music};[0:a]{level}aresample=44100,volume={own}dB[c];[c][m]amix=inputs=2:duration=first:normalize=0[a]"
     else:
         graph = f"{music};[m]anull[a]"
     target = out / f"{key}.mp4"
