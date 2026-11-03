@@ -89,17 +89,17 @@
       "id": "stakes",
       "kind": "i2v",
       "from": "stakes",
-      "sec": 7,
-      "prompt": "Extreme close-up of the girl's open chrome palm in the rain holding the small glowing cyan data chip; above it a cyan hologram of a double helix inside a medical cross slowly rotates and flickers. Her cyan cybernetic eye glows behind it as she stares at it. A deep gruff man's voice speaks over her earpiece, calm and serious: \"That chip is the cure, Rin. Forty thousand people in the Lower City die without it. Get it to me. And whatever happens, don't let the Hound take it.\" She closes her chrome fingers over the chip and the hologram winks out. Rain, distant thunder, low synth drone. The camera slowly pulls back.",
+      "sec": 10,
+      "prompt": "Close-up of the chip in Rin's chrome palm, the cure hologram above it. Dex on her earpiece, off screen: \"That chip is the cure, Rin. Forty thousand people die without it. Get it to me, and don't let the Hound take it.\" (Seedance 2.5, 10 s, audited: line said once, no subtitles.)",
       "captions": [
         [
           0,
-          3500,
+          5000,
           "That chip is the cure. Forty thousand people in the Lower City are running out of time."
         ],
         [
-          3500,
-          7000,
+          5000,
+          10000,
           "The corp that made them sick wants it gone. So they sent the Hound."
         ]
       ]
@@ -120,10 +120,11 @@
     },
     {
       "id": "intro_hound",
-      "kind": "end",
+      "kind": "flf",
       "sec": 6,
       "prompt": "Rin sprints across the wet rooftop toward the edge, glancing back once; far behind her the Hound drops onto a distant roof. She skids to a stop at the edge, facing the soda billboard and the vent.",
-      "to": "k1"
+      "to": "k1",
+      "from": "intro_call:last"
     },
     {
       "id": "d1_loop",
@@ -167,18 +168,17 @@
     },
     {
       "id": "d2_crowd",
-      "kind": "flf",
-      "sec": 7,
-      "prompt": "Rin runs left into the umbrella crowd and vanishes. Hard cut to the train platform, Rin from behind between the open doors and the ladder.",
-      "from": "k2",
-      "to": "k3"
+      "kind": "i2v",
+      "sec": 5,
+      "prompt": "Rin runs into the umbrella crowd away from the camera and disappears. Cut straight to the platform.",
+      "from": "k2"
     },
     {
       "id": "d2_alley",
       "kind": "flf",
       "sec": 7,
       "caught": true,
-      "prompt": "Rin runs right into the dark alley, deep in, alone. At the end the Hound drops from a fire escape and pins her to the wall.",
+      "prompt": "Rin runs into the alley away from the camera; deep in, the Hound drops in front of her and grabs her.",
       "from": "k2",
       "to": "c_alley"
     },
@@ -194,7 +194,7 @@
       "id": "d3_roof",
       "kind": "flf",
       "sec": 8,
-      "prompt": "Rin climbs the ladder all the way up as the train moves. Hard cut: on the roof she crouches as the yellow van rises into frame from the bottom alongside the train and its side door slides open.",
+      "prompt": "Rin climbs the fixed ladder; the train starts only once she is on the roof. Hard cut: the van, seen from behind, rises from the bottom of the frame alongside the train and opens its rear doors.",
       "from": "k3",
       "to": "k4"
     },
@@ -211,7 +211,7 @@
       "id": "d4_loop",
       "kind": "flf",
       "sec": 5,
-      "prompt": "Train and van race forward side by side, the city streaking past. Rin crouches, coiled.",
+      "prompt": "Train and van race forward side by side, the van seen from behind with its rear doors open and Dex at the wheel waving her in.",
       "captions": [
         [
           0,
@@ -226,7 +226,7 @@
       "id": "d4_van",
       "kind": "flf",
       "sec": 7,
-      "prompt": "Rin dives through the van's open door, it slides shut, the van rides with the train, then peels off onto the exit ramp.",
+      "prompt": "A short hop into the van's open rear doors; the van rides with the train, then pulls ahead up the exit ramp and off to the right.",
       "from": "k4",
       "to": "v_exit"
     },
@@ -235,7 +235,7 @@
       "kind": "flf",
       "sec": 7,
       "caught": true,
-      "prompt": "No tap: the van can't wait and peels off the exit without her. The Hound climbs up behind her on the roof and grabs her.",
+      "prompt": "No tap: the van closes up and takes the exit without her. Rin slumps, back to camera; the Hound rests a hand on her shoulder.",
       "from": "k4",
       "to": "c_run"
     },
