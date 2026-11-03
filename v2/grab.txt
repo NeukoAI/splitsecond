@@ -88,3 +88,9 @@ c_finaleHound2 https://cdn.bitebox.gg/public/patchwork/8165c5c2-f394-49c6-b851-b
 n_k1c https://cdn.bitebox.gg/public/patchwork/279e6bab-0ffc-47dc-9b5c-4cb7ad8039e3.png
 n_title https://cdn.bitebox.gg/public/patchwork/012e30ed-de17-49dd-88a1-72826fc1a471.png
 n_k5f https://cdn.bitebox.gg/public/patchwork/82cd88d7-3194-408c-9ade-ecb50e56a9bb.png
+n_k1p https://cdn.bitebox.gg/public/patchwork/21735938-f594-42ce-8dfa-93f2731c3384.png
+n_jl3 https://cdn.bitebox.gg/public/patchwork/6f97985d-95a4-40b8-a56c-40ccbc3b73bb.png
+n_vin3 https://cdn.bitebox.gg/public/patchwork/162db1dc-314f-45bf-bd0e-2654448e8ee3.png
+n_k5m https://cdn.bitebox.gg/public/patchwork/b5a5686d-0afb-474a-be83-8836869f4158.png
+n_k5bm https://cdn.bitebox.gg/public/patchwork/72395fb8-f4a3-4432-bc22-57c340805e85.png
+c_title2 https://cdn.bitebox.gg/public/patchwork/ad02add3-64fd-4a66-89b5-7d4d48c59fce.mp4
