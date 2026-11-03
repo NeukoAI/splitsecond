@@ -24,7 +24,7 @@ scene_of = {nid: by_file[f].removesuffix("_2") for nid, f in scene_of.items()}
 
 KEYFRAME = {"title": "Title card", "stakes": "The chip", "k0": "Rooftop, chip in hand", "k0b": "The Hound lands",
             "k1": "D1 · The Edge", "k2": "D2 · The Market", "k3": "D3 · The Platform", "k4": "D4 · The Drop",
-            "k5": "Van cab, Dex driving", "k6": "Hound watches the van go", "gameover": "FLATLINED card", "win": "DELIVERED card"}
+            "k5": "Van cab, Dex driving", "k6": "Hound watches the van go", "c_vent": "Capture at the vent", "c_alley": "Capture in the alley", "c_board": "Capture in the carriage", "c_run": "Capture on the train roof", "v_exit": "Van takes the exit", "gameover": "FLATLINED card", "win": "DELIVERED card"}
 
 
 def exits(nid):
@@ -74,7 +74,7 @@ def card(nid):
     if s["kind"] == "flf" and s.get("from") == s.get("to"):
         kind = "Decision loop, pinned to the same frame at both ends (LTX 2.5)"
     elif s["kind"] == "flf":
-        kind = "Runs from this decision frame to the next one, hard cut where the place changes (LTX 2.5)"
+        kind = "Pinned at both ends to sheet-drawn keyframes, hard cut where the place changes (LTX 2.5)"
     elif s["kind"] == "end":
         kind = "End pinned on the D1 frame, free start (LTX 2.5)"
     else:
@@ -90,7 +90,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.3</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.4</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">
