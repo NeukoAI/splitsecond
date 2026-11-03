@@ -66,6 +66,8 @@ Only core ComfyUI nodes are used. No custom node packs.
 
 **4. Clips.** Queue each file in `workflows/clips/`. Each takes about a minute on Comfy Cloud. Clips that must land on a decision frame (opening, the idle loops, the decision 1 escapes) use Pika H3 Flex with both ends pinned. Captures and the final escapes only need to start on the frame, so they use MiniMax H3 with the first frame as a guide.
 
+**4b. Seam pass.** MiniMax H3 treats the first frame as a guide, not a pin, and renders at 480×864, so cutting into it from a Pika loop pops. Run `python3 seamfix.py`, put each H3 render in `input/` as `h3_<clip>.mp4`, and queue its graph in `workflows/seamfix/`. It scales the clip to 576×1024 and dissolves from the anchor keyframe over the first quarter second, so every cut starts on the frame the loop ends on.
+
 **5. Play.** `story.json` already points at the hosted clips and outlines, so the local player works as is. To use your own renders, point the `scenes` and `glow` entries at your files. Then serve the folder and open `player/`:
 
 ```sh
@@ -78,7 +80,7 @@ To change the story, edit the prompts in `build_workflows.py` and rerun it.
 ## Settings
 
 Pinned clips: Pika H3 Flex LoRA on MiniMax H3 first/last-frame, 576×1024, 124 frames at 24 fps with audio, 6 steps lcm (manual sigmas), seed 7.
-Open-ended clips: MiniMax H3 reference-to-video with a frame 0 guide, 480×864, 124 frames at 24 fps with audio, 20 steps res_multistep, seed 7.
+Open-ended clips: MiniMax H3 reference-to-video with a frame 0 guide, 480×864, 124 frames at 24 fps with audio, 20 steps res_multistep, seed 7; then the seam pass (lanczos to 576×1024, 6-frame dissolve from the anchor).
 Keyframes: Z-Image Turbo, 576×1024, 8 steps, cfg 1, res_multistep, shift 3.
 
 ## Play it on bitebox
