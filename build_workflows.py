@@ -21,28 +21,32 @@ GIRL = ("a young courier girl in a bright yellow raincoat with the hood down, sh
         "a dark green messenger bag across her body")
 NINJAS = "three ninjas dressed all in black with red scarves"
 
+# The map (script v2): she starts on the low EAST ROOF. Across the street is the WEST TOWER, with a billboard
+# catwalk on its face, the elevated train below and a radio antenna on top. Zipline, water-tower jump and the
+# stairwell's skybridge all lead to that catwalk. The ninjas are never within reach in a decision frame.
 KEYFRAMES = {
-    # name: (prompt, seed)
+    # name: (prompt, seeds)
     "k0_approach": (STYLE + (
-        f"Wide shot of a flat wet rooftop. {GIRL} sprints into the frame from the lower left, mid-stride, "
-        "splashing through puddles, looking back over her shoulder. On the left side of the rooftop stands a "
-        "tall wooden water tower with a metal ladder up its side. On the right edge of the roof, a taut steel "
-        "zipline cable runs from a short pole out across the street. In the background center, a small rooftop "
-        "stairwell hut with a red metal door. The rooftop is otherwise empty."), 4242),
+        f"Low wide shot across a flat wet rooftop. {GIRL} sprints toward the camera, mid-stride, splashing through "
+        "puddles, looking back over her shoulder in fear. Behind her the rooftop stretches back: a tall wooden water "
+        "tower with a metal ladder on the left, a small stairwell hut with a red metal door in the center, a short "
+        "pole on the right edge. Behind the roof rises the dark wall of a taller building. No other people."), [4242, 77]),
     "k1_decision1": (STYLE + (
-        f"Wide shot of a flat wet rooftop. {GIRL} stands in the center foreground, seen from behind at a "
-        "three-quarter angle, cornered and catching her breath. On the left side of the rooftop stands a tall "
-        "wooden water tower with a metal ladder up its side. On the right edge of the roof, a taut steel zipline "
-        "cable runs from a short pole out across the street. In the background center, a small rooftop stairwell "
-        f"hut with a red metal door. At the far back edge of the roof, {NINJAS} crouch on the ledge, watching "
-        "her, motionless. The lower quarter of the frame is wet rooftop with puddles and reflections."), 4242),
+        f"High three-quarter shot from behind. {GIRL} stands alone in the middle of a flat wet rooftop, seen from "
+        "behind, facing a tall neon skyscraper across the street at the top of the frame. On the left, a tall "
+        "wooden water tower with a metal ladder up its side. In the center, a small stairwell hut with a red metal "
+        "door, and from the top of the hut an enclosed glass skybridge stretches across the street to the "
+        "skyscraper. On the right edge, a short pole with a taut steel zipline cable that slopes down across the "
+        "street to a lit catwalk on the skyscraper. Far away in the upper left, small, on the parapet of a taller "
+        f"neighboring building, {NINJAS} crouch, watching her. Lots of empty wet roof between her and everything."), [4242, 31]),
     "k2_decision2": (STYLE + (
-        f"{GIRL} crouches on a narrow metal catwalk high above the street, seen from behind at a three-quarter "
-        "angle, in front of a giant glowing billboard with abstract pink and blue light shapes and no words. "
-        "Below on the right, an elevated subway train with lit windows passes on its track. On the left, a tall "
-        f"red and white radio antenna tower with a ladder. Far away on the left end of the catwalk, {NINJAS} "
-        "stand still in a row, watching her. The lower quarter of the frame is the steel catwalk grating, wet "
-        "with rain."), 11),
+        f"Shot from behind and slightly above. {GIRL} crouches on a narrow steel catwalk bolted to the side of a "
+        "skyscraper, high above the street. On the left, the catwalk runs past a giant glowing billboard of abstract "
+        "pink and blue light shapes with no words. Above the billboard, on the skyscraper roof, a tall red and white "
+        "radio antenna mast with a ladder. Far below on the right, an elevated train with lit windows runs on its "
+        "track. Across the street on the right, much lower and far away, a small flat rooftop with a water tower, "
+        f"where {NINJAS} stand tiny in the distance; a steel cable slopes from that rooftop up to the catwalk. "
+        "She is alone on the catwalk."), [11, 97]),
 }
 KF_NEGATIVE = "text, letters, words, watermark, signature, blurry, extra limbs, deformed"
 
@@ -57,13 +61,16 @@ def keyframes_graph():
         "6": node("EmptySD3LatentImage", "576x1024", width=576, height=1024, batch_size=1),
     }
     n = 10
-    for name, (prompt, seed) in KEYFRAMES.items():
+    for name, (prompt, seeds) in KEYFRAMES.items():
         g[str(n)] = node("CLIPTextEncode", f"Prompt: {name}", clip=["3", 0], text=prompt)
-        g[str(n + 1)] = node("KSampler", f"Sample: {name}", model=["2", 0], seed=seed, steps=8, cfg=1,
+        for k, seed in enumerate(seeds):
+            m = n + 1 + 3 * k
+            g[str(m)] = node("KSampler", f"Sample: {name} seed {seed}", model=["2", 0], seed=seed, steps=8, cfg=1,
                              sampler_name="res_multistep", scheduler="simple", positive=[str(n), 0],
                              negative=["5", 0], latent_image=["6", 0], denoise=1)
-        g[str(n + 2)] = node("VAEDecode", f"Decode: {name}", samples=[str(n + 1), 0], vae=["4", 0])
-        g[str(n + 3)] = node("SaveImage", f"Save: {name}", images=[str(n + 2), 0], filename_prefix=f"splitsecond/{name}")
+            g[str(m + 1)] = node("VAEDecode", f"Decode: {name} seed {seed}", samples=[str(m), 0], vae=["4", 0])
+            g[str(m + 2)] = node("SaveImage", f"Save: {name} seed {seed}", images=[str(m + 1), 0],
+                                 filename_prefix=f"splitsecond/{name}_s{seed}")
         n += 10
     return g
 
