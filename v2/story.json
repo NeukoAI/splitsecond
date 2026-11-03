@@ -143,7 +143,7 @@
     {
       "id": "d1_jump",
       "kind": "flf",
-      "sec": 8,
+      "sec": 7,
       "prompt": "Rin leaps the gap, catches the ladder rails and instantly slides straight down, never climbing. Hard cut: Rin from behind at the fork in the street.",
       "from": "k1",
       "to": "k2"
@@ -151,7 +151,7 @@
     {
       "id": "d1_vent",
       "kind": "flf",
-      "sec": 7,
+      "sec": 6,
       "caught": true,
       "prompt": "Rin runs to the open vent and starts to climb in. Hard cut: half inside, the Hound grabs her ankle and hauls her out.",
       "from": "k1",
@@ -168,7 +168,7 @@
     {
       "id": "d2_crowd",
       "kind": "flf",
-      "sec": 8,
+      "sec": 7,
       "prompt": "Rin runs left into the umbrella crowd and vanishes. Hard cut to the train platform, Rin from behind between the open doors and the ladder.",
       "from": "k2",
       "to": "k3"
@@ -225,7 +225,7 @@
     {
       "id": "d4_van",
       "kind": "flf",
-      "sec": 6,
+      "sec": 7,
       "prompt": "Rin dives through the van's open door, it slides shut, the van rides with the train, then peels off onto the exit ramp.",
       "from": "k4",
       "to": "v_exit"
@@ -233,7 +233,7 @@
     {
       "id": "d4_run",
       "kind": "flf",
-      "sec": 8,
+      "sec": 7,
       "caught": true,
       "prompt": "No tap: the van can't wait and peels off the exit without her. The Hound climbs up behind her on the roof and grabs her.",
       "from": "k4",
