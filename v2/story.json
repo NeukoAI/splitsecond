@@ -151,7 +151,7 @@
   {
    "id": "d1_vent",
    "kind": "flf",
-   "sec": 7.3,
+   "sec": 7.5,
    "caught": true,
    "prompt": "Rin dives for the vent. Hard cut: she crawls out of a grate on the back street; the Hound steps out of the dark and hauls her up by the collar.",
    "from": "k1",
@@ -200,7 +200,7 @@
   {
    "id": "d3_board",
    "kind": "flf",
-   "sec": 10.3,
+   "sec": 9.7,
    "caught": true,
    "prompt": "Rin steps into the red-lit door. Hard cut inside the carriage: she sprints down the aisle and the Hound lunges from the seats and yanks her back by her chrome arm.",
    "from": "k3",
