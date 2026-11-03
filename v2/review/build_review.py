@@ -64,18 +64,22 @@ def esc(s):
     return html.escape(str(s), quote=True)
 
 
-REVISED = {"intro_call", "intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_loop", "d2_crowd", "d2_alley",
-           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run"}
+REVISED = {"intro_hound", "d1_loop", "d1_jump", "d1_vent", "d2_loop", "d2_crowd", "d2_alley",
+           "d3_loop", "d3_roof", "d3_board", "d4_loop", "d4_van", "d4_run", "finale_van"}
 
 
 def card(nid):
     sid = scene_of[nid]
     s = scenes[sid]
-    kind = ("Pinned both ends (LTX 2.5 first + last frame)" if s["kind"] == "flf"
-            else "Pinned start, free end (LTX 2.5 image to video)")
-    anchors = KEYFRAME.get(s["from"], s["from"])
     if s["kind"] == "flf":
-        anchors += " → " + KEYFRAME.get(s["to"], s["to"])
+        kind = "Decision loop, pinned to the same frame at both ends (LTX 2.5)"
+    elif s["kind"] == "end":
+        kind = "End pinned on the D1 frame, free start (LTX 2.5)"
+    elif ":last" in str(s.get("from", "")):
+        kind = "Starts on the last frame of " + s["from"].split(":")[0] + ", then plays out freely (LTX 2.5)"
+    else:
+        kind = "Starts on a keyframe, then plays out freely (LTX 2.5)"
+    anchors = KEYFRAME.get(s.get("from", ""), s.get("from", "").replace(":last", " last frame"))
     outs = []
     for label, tgt in exits(nid):
         tsid = scene_of[tgt]
@@ -86,7 +90,7 @@ def card(nid):
     tag = "caught" if s.get("caught") else ("loop" if sid.endswith("_loop") else "")
     return f'''
 <article class="card {tag}" data-item="{esc(sid)}" id="{esc(sid)}">
-  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.1 redo</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
+  <header><h3>{esc(nodes[nid]["title"])}</h3>{'<span class="new">v2.2 chained</span>' if sid in REVISED else ''}<code>{esc(sid)}</code><span class="len">{s["sec"]}s</span></header>
   <div class="media">
     <video src="review/{sid}.mp4" poster="review/{sid}_first.jpg" controls playsinline preload="none"></video>
     <div class="seam">

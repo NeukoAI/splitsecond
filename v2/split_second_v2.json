@@ -39,7 +39,7 @@
     "y": 320
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/dcb61c12-9d89-4bd9-bc01-68b91dd09cff.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d2523bca-d202-4139-be22-cba85f41b598.png",
     "alt": "Vanish into the crowd",
     "displayInExperience": false
    },
@@ -53,7 +53,7 @@
     "y": 480
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/bed6472a-2c85-4b5f-8817-1c269bb3c440.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2f5e4bfd-ba3d-4721-85ac-18cf961bd692.png",
     "alt": "Run the alley",
     "displayInExperience": false
    },
@@ -67,7 +67,7 @@
     "y": 640
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/4a627b17-b3e9-4cb4-9e91-f84be7cd1bb4.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/3783b251-2578-44a2-9395-be2870167bd7.png",
     "alt": "Board the train",
     "displayInExperience": false
    },
@@ -81,7 +81,7 @@
     "y": 800
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b2ae0ddd-69ee-4cfe-af20-b4c4b55a0faa.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/17ccbdf1-6fca-4d10-bb7d-10312f020fc2.png",
     "alt": "Climb to the roof",
     "displayInExperience": false
    },
@@ -95,7 +95,7 @@
     "y": 960
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d7902d81-2c44-4200-b1db-5633b7175b70.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c0c65fce-39a9-47c0-98ff-133a67794e12.png",
     "alt": "Keep running",
     "displayInExperience": false
    },
@@ -109,7 +109,7 @@
     "y": 1120
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/94707d63-b30c-4a5d-bad6-f841b881a473.png",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/95200e1a-92cc-4ca1-b0f7-b01164d0ad01.png",
     "alt": "Jump for the van",
     "displayInExperience": false
    },
@@ -217,10 +217,10 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/0ec00e04-3271-4caa-af2b-b0df28b8a80f.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/e4f19e62-acff-4393-a826-a1410b32abec.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 5042,
+    "durationMs": 6042,
     "displayInExperience": false,
     "exits": [
      {
@@ -294,7 +294,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/51d72116-dc86-445a-9a0c-59307653079f.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/0462618c-94b8-4e44-be36-2c62cb9aa494.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
@@ -331,7 +331,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d6dfb56c-f689-418c-b145-e06b433d0af5.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/52d115a8-13e7-4b94-aa8b-68f35f3edbfd.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 8042,
@@ -354,10 +354,10 @@
     "y": 320
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ab239711-eb86-46ff-95ce-6d99129d1eff.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1b1360e4-9c0d-45de-8a6c-7b5032a61785.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 6042,
+    "durationMs": 7042,
     "displayInExperience": false,
     "exits": [
      {
@@ -379,12 +379,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.3236,
-     "y": 0.5105
+     "x": 0.3038,
+     "y": 0.6641
     },
     "rect": {
-     "width": 0.6472,
-     "height": 0.9773
+     "width": 0.6076,
+     "height": 0.4727
     },
     "size": 0.4,
     "active": {
@@ -406,12 +406,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.8507,
-     "y": 0.3672
+     "x": 0.82,
+     "y": 0.55
     },
     "rect": {
-     "width": 0.2958,
-     "height": 0.4781
+     "width": 0.32,
+     "height": 0.5
     },
     "size": 0.4,
     "active": {
@@ -431,7 +431,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/89f5413e-f1a1-4b0e-b9f4-20e20912a106.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/7a8e1c03-60c0-45d3-986a-e2ece041b26b.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
@@ -458,10 +458,10 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1e4ee4dd-405f-4298-be7a-46520b93faa2.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/fc9419f8-f62e-4db8-b16e-48638944f300.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 7042,
+    "durationMs": 8042,
     "displayInExperience": false,
     "exits": [
      {
@@ -481,7 +481,7 @@
     "y": 320
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/2607e392-ca85-4eb1-bbda-755718da90d3.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a26b821e-9a7c-4634-a99c-dd67864e57f4.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 7042,
@@ -506,12 +506,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.3069,
-     "y": 0.4688
+     "x": 0.2,
+     "y": 0.52
     },
     "rect": {
-     "width": 0.6139,
-     "height": 0.8469
+     "width": 0.36,
+     "height": 0.36
     },
     "size": 0.4,
     "active": {
@@ -533,12 +533,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.7833,
-     "y": 0.4445
+     "x": 0.73,
+     "y": 0.42
     },
     "rect": {
-     "width": 0.4222,
-     "height": 0.8484
+     "width": 0.3,
+     "height": 0.66
     },
     "size": 0.4,
     "active": {
@@ -558,7 +558,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b72c21bc-68b2-450b-8ba0-f4ae15804e2e.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/e3317b48-1e6b-467f-990c-8fd72b456722.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
@@ -585,7 +585,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/6d28a4eb-164d-411e-909d-6555c3b6f058.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/0a14d2f7-2ede-4141-a416-6bdf3d7ee1e2.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 8042,
@@ -608,10 +608,10 @@
     "y": 320
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/13f96ac4-8a1b-4463-beeb-03c3fcc0f8d4.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/1c3856e4-e19e-42cb-9595-c9c4554b4353.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 6042,
+    "durationMs": 8042,
     "displayInExperience": false,
     "exits": [
      {
@@ -633,12 +633,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.3,
-     "y": 0.72
+     "x": 0.75,
+     "y": 0.86
     },
     "rect": {
      "width": 0.45,
-     "height": 0.4
+     "height": 0.22
     },
     "size": 0.4,
     "active": {
@@ -660,12 +660,12 @@
    "props": {
     "kind": "hotspot",
     "position": {
-     "x": 0.7729,
-     "y": 0.5813
+     "x": 0.86,
+     "y": 0.41
     },
     "rect": {
-     "width": 0.4514,
-     "height": 0.4813
+     "width": 0.28,
+     "height": 0.2
     },
     "size": 0.4,
     "active": {
@@ -685,7 +685,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/9af49556-98f0-4dbd-af79-603477b30ebf.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/3aa79d3a-afc5-44a7-943c-01410fc0447a.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
@@ -712,10 +712,10 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/eac90fa9-cfc0-4eac-a0b2-4e2b20f07a4e.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/7ab86dd3-9283-4bd8-bb65-290dc4486142.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 6042,
+    "durationMs": 8042,
     "displayInExperience": false,
     "exits": [
      {
@@ -735,10 +735,10 @@
     "y": 320
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d41139e9-329f-435c-bd42-2b3fb3d8950c.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d34caebe-7b10-4a8d-bb2a-dfdd9b15204f.mp4",
     "width": 576,
     "height": 1024,
-    "durationMs": 6042,
+    "durationMs": 8042,
     "displayInExperience": false,
     "exits": [
      {
@@ -758,7 +758,7 @@
     "y": 0
    },
    "props": {
-    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/df6bf3f7-92fd-4ab5-b95e-378640703ac4.mp4",
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c87a1daf-7f7b-46cf-a9a8-c3f9418a3cce.mp4",
     "width": 576,
     "height": 1024,
     "durationMs": 5042,
