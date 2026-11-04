@@ -28,7 +28,10 @@
  },
  "sources": {
   "title": [
-   "https://cdn.bitebox.gg/public/patchwork/ed80bac2-cab3-49be-9be8-d3f6f82e4504.mp4",
+   {
+    "url": "https://cdn.bitebox.gg/public/patchwork/ed80bac2-cab3-49be-9be8-d3f6f82e4504.mp4",
+    "end": 3.7
+   },
    {
     "url": "https://cdn.bitebox.gg/public/patchwork/ad02add3-64fd-4a66-89b5-7d4d48c59fce.mp4",
     "end": 3.0
@@ -38,15 +41,24 @@
    "https://cdn.bitebox.gg/public/patchwork/b939fa4c-0a33-47b6-b11c-353bffa5d86d.mp4",
    "https://cdn.bitebox.gg/public/patchwork/60904720-cc66-4711-9be2-72722882c411.mp4"
   ],
-  "intro_hound": "https://cdn.bitebox.gg/public/patchwork/ed80bac2-cab3-49be-9be8-d3f6f82e4504.mp4",
+  "intro_hound": [
+   {
+    "url": "https://cdn.bitebox.gg/public/patchwork/ed80bac2-cab3-49be-9be8-d3f6f82e4504.mp4",
+    "end": 3.7
+   }
+  ],
   "d1_loop": "https://cdn.bitebox.gg/public/patchwork/378770b4-f1ce-44c4-bccc-e7d333fae5b0.mp4",
   "d1_jump": [
    "https://cdn.bitebox.gg/public/patchwork/1b987e1a-4548-4ec3-94bb-a638b952cafb.mp4",
    {
     "url": "https://cdn.bitebox.gg/public/patchwork/4b07ed8b-27d0-4ef8-9278-fc2cfdc1a6ec.mp4",
-    "start": 1.5
+    "start": 1.5,
+    "end": 4.5
    },
-   "https://cdn.bitebox.gg/public/patchwork/49220c19-662a-4b9e-a01a-eec165473686.mp4"
+   {
+    "url": "https://cdn.bitebox.gg/public/patchwork/49220c19-662a-4b9e-a01a-eec165473686.mp4",
+    "start": 2.4
+   }
   ],
   "d1_vent": [
    "https://cdn.bitebox.gg/public/patchwork/4a0f8bb0-80e5-416b-a9ce-8ff55897cae0.mp4",
@@ -59,12 +71,12 @@
    }
   ],
   "d2_crowd": [
-   "https://cdn.bitebox.gg/public/patchwork/4903dbc1-6b6a-4890-ac97-769dbe94facf.mp4",
+   "https://cdn.bitebox.gg/public/patchwork/b1d86b76-8cc5-43fd-b2b3-e3f28c0fadc3.mp4",
    "https://cdn.bitebox.gg/public/patchwork/0f984d90-ca16-499a-b535-bb293b6f8a32.mp4"
   ],
   "d2_alley": [
-   "https://cdn.bitebox.gg/public/patchwork/22143615-d398-4c78-a004-9326106024c3.mp4",
-   "https://cdn.bitebox.gg/public/patchwork/a4cccb82-6499-40e9-9c8a-dd39a2dca6dc.mp4"
+   "https://cdn.bitebox.gg/public/patchwork/8f4860eb-1a67-432e-9689-1664780eb5e1.mp4",
+   "https://cdn.bitebox.gg/public/patchwork/308031f0-225c-4e58-b7d4-e719b66d5258.mp4"
   ],
   "d3_loop": [
    {
@@ -93,7 +105,7 @@
   ],
   "d4_loop": [
    {
-    "url": "https://cdn.bitebox.gg/public/patchwork/145d1b78-4352-4de8-b02f-d4de8b2aaf48.mp4",
+    "url": "https://cdn.bitebox.gg/public/patchwork/de65d07a-5359-4172-92b2-484e952eaa09.mp4",
     "end": 2.0
    }
   ],
@@ -102,10 +114,12 @@
    "https://cdn.bitebox.gg/public/patchwork/1c2077fe-761c-4930-b7df-b2a84f6aeb03.mp4"
   ],
   "d4_run": [
-   "https://cdn.bitebox.gg/public/patchwork/c2ca0fd6-1366-4418-a823-bcc04ac554e2.mp4",
-   "https://cdn.bitebox.gg/public/patchwork/197253c7-f91a-413a-8939-7ae456ceb55d.mp4"
+   "https://cdn.bitebox.gg/public/patchwork/da952a36-6f12-4c77-bb22-557682e78794.mp4",
+   "https://cdn.bitebox.gg/public/patchwork/371cc9bf-ff90-4c07-8067-5dab65dcd2ca.mp4"
   ],
-  "finale_van": "https://cdn.bitebox.gg/public/patchwork/c321c90c-85ee-4708-a539-5dff3ec385ea.mp4",
+  "finale_van": [
+   "https://cdn.bitebox.gg/public/patchwork/4a936eb3-4a5b-4a83-801c-ec3af95276c4.mp4"
+  ],
   "finale_hound": "https://cdn.bitebox.gg/public/patchwork/8b3f71b3-44f9-428b-8d89-cbe4da5f154e.mp4"
  },
  "audio_from": {
