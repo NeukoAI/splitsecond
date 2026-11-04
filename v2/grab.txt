@@ -99,3 +99,8 @@ n_k5mb https://cdn.bitebox.gg/public/patchwork/fae48e38-b0c5-46f7-b8bd-b76ccae02
 n_k5bmb https://cdn.bitebox.gg/public/patchwork/088a777c-cb60-4788-8eff-a0fd129fb4cc.png
 c_d1jump3 https://cdn.bitebox.gg/public/patchwork/decf9bcf-bf46-445b-a184-b9e593716d99.mp4
 c_d1vent3 https://cdn.bitebox.gg/public/patchwork/3b126108-8e3c-40e1-b088-dafbe6d4d399.mp4
+r3_rin_f https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png
+r3_rin_b https://cdn.bitebox.gg/public/patchwork/02495d9d-9135-45ee-bd6e-a6cea9a197b2.png
+r3_hound_f https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png
+r3_hound_b https://cdn.bitebox.gg/public/patchwork/c4f1c047-d409-4f7e-beb3-583c838c5407.png
+r3_dex_f https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png
