@@ -198,3 +198,4 @@ r2_d4_run_a_da952a36 https://cdn.bitebox.gg/public/patchwork/da952a36-6f12-4c77-
 r2_d2_crowd_a_b1d86b76 https://cdn.bitebox.gg/public/patchwork/b1d86b76-8cc5-43fd-b2b3-e3f28c0fadc3.mp4
 r2_d2_alley_a_8f4860eb https://cdn.bitebox.gg/public/patchwork/8f4860eb-1a67-432e-9689-1664780eb5e1.mp4
 r2_d2_alley_b_308031f0 https://cdn.bitebox.gg/public/patchwork/308031f0-225c-4e58-b7d4-e719b66d5258.mp4
+r2_d4_run_b_371cc9bf https://cdn.bitebox.gg/public/patchwork/371cc9bf-ff90-4c07-8067-5dab65dcd2ca.mp4
