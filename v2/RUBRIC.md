@@ -80,3 +80,8 @@ At each decision the two choices are obvious at a glance, and the glow outline s
 - "Red emergency light pulses" makes the whole carriage flash red and teal. Ask for a steady red light.
 - Takes default to the same seed. Pass a new seed on a retake.
 
+- (v3) The Hound's blade lands on screen-right whichever way he faces. A small edit asking to move it to his other forearm is ignored. Accept it on capture frames or redraw with the blade named as "on the left side of the picture, near the left edge".
+- (v3) A take that starts halfway up a ladder climbs up first before it slides down. Start the pin at the top of the ladder, or trim the climb in the mix.
+- (v3) A follow-cam take on a running character can jump to a close-up for a frame and lose fixed props for a second. Trim to the stretch after it settles.
+- (v3) The grab Action skips files whose name is already on the branch. A retake pulled under the same name comes back as the old picture. Put the media id in every pulled file name.
+- (v3) Hand-traced glow outlines (a polygon per object on the decision frame, drawn with PIL) are fine when SAM3 is not run. Draw them on the final decision frame, never an earlier version.
