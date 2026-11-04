@@ -117,3 +117,4 @@ p4_roofedge https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b9
 p4_alley https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png
 r4_rin_b https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png
 p4_ladderside https://cdn.bitebox.gg/public/patchwork/2b86cb90-4cb6-4e03-910f-3808f1aa9e3a.png
+p4_market https://cdn.bitebox.gg/public/patchwork/675492c1-9077-4246-be7b-d8560090b937.png
