@@ -202,3 +202,4 @@ r2_d4_run_b_371cc9bf https://cdn.bitebox.gg/public/patchwork/371cc9bf-ff90-4c07-
 kf_v_exit_01516059 https://cdn.bitebox.gg/public/patchwork/01516059-fedd-4eac-8ae5-4442e631b519.png
 r3_van_a_d67ab69a https://cdn.bitebox.gg/public/patchwork/d67ab69a-9ad3-4d1e-bd42-88720867fb6e.mp4
 r3_van_a_117a2534 https://cdn.bitebox.gg/public/patchwork/117a2534-4065-480a-8c60-68cba65e1c02.mp4
+r3_van_b_7f1e1504 https://cdn.bitebox.gg/public/patchwork/7f1e1504-cc27-4c8a-80e0-43c593dbfcda.mp4
