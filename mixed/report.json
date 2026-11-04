@@ -1,0 +1,70 @@
+{
+ "title": {
+  "at": 0.0,
+  "own_audio": true
+ },
+ "stakes": {
+  "at": 6.9,
+  "own_audio": true
+ },
+ "d1_loop": {
+  "at": 16.95,
+  "own_audio": true
+ },
+ "d1_jump": {
+  "at": 22.13,
+  "own_audio": true
+ },
+ "d2_loop": {
+  "at": 33.22,
+  "own_audio": true
+ },
+ "d2_crowd": {
+  "at": 37.22,
+  "own_audio": true
+ },
+ "d3_loop": {
+  "at": 47.62,
+  "own_audio": true
+ },
+ "d3_roof": {
+  "at": 50.62,
+  "own_audio": true
+ },
+ "d4_loop": {
+  "at": 63.32,
+  "own_audio": true
+ },
+ "d4_van": {
+  "at": 65.32,
+  "own_audio": true
+ },
+ "finale_van": {
+  "at": 75.72,
+  "own_audio": true
+ },
+ "finale_hound": {
+  "at": 80.9,
+  "own_audio": true
+ },
+ "d1_vent": {
+  "at": 22.13,
+  "own_audio": true
+ },
+ "d2_alley": {
+  "at": 37.22,
+  "own_audio": true
+ },
+ "d3_board": {
+  "at": 50.62,
+  "own_audio": true
+ },
+ "d4_run": {
+  "at": 65.32,
+  "own_audio": true
+ },
+ "intro_hound": {
+  "at": 0.0,
+  "own_audio": true
+ }
+}
