@@ -1,0 +1,611 @@
+{
+ "o_run_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist. The far rooftop behind her is dark and wet. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "o_run_b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist, glancing back over her shoulder. Far behind her across the gap, one thin red line glows in the dark on the far rooftop. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "s_tank_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sits on the wet roof with her back against the water tank, knees up, catching her breath, her chrome hand open in her lap with the glowing cyan chip on the palm and a small cyan DNA hologram floating above it. The water tank fills the right side of the frame. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "s_tank_b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sits on the wet roof with her back against the water tank, knees up, her chrome hand closed tight around the glowing chip, looking up and off to the side, alert. The water tank fills the right side of the frame. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "s_peek_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches at the left edge of the water tank in the foreground, back to the camera, peering around it toward the far rooftop. The far rooftop across the gap is empty and wet. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "s_peek_b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches at the left edge of the water tank in the foreground, back to the camera, peering around it toward the far rooftop. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-left side of the picture, a small white hexagon on his left shoulder on the screen-right side. He crouches on the far rooftop across the gap, one hand on the roof, just landed, facing her. Rain falls between the two rooftops. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k1": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She stands at the roof edge in the center of the frame, back to the camera, between the billboard and the vent. The open vent on the right steams in the rain. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "j_ladder": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She grips the yellow ladder on the side panel of the billboard, just below its top, sliding down, hands and feet on the outside of the rails, back to the camera. The open vent on the right steams in the rain. The center of the rooftop is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "sl_top": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2b86cb90-4cb6-4e03-910f-3808f1aa9e3a.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the side of a tall building at night seen from across the market street: a fixed yellow steel ladder runs the full height of the wall, from a billboard at the roof edge straight down to the street; glowing umbrellas on the street below. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She slides down the yellow ladder near the top of the building, hands and feet on the outside of the rails, back to the camera. The market street at the bottom of the frame is busy with umbrellas. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "sl_land": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2b86cb90-4cb6-4e03-910f-3808f1aa9e3a.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the side of a tall building at night seen from across the market street: a fixed yellow steel ladder runs the full height of the wall, from a billboard at the roof edge straight down to the street; glowing umbrellas on the street below. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She lands in a crouch on the street at the foot of the yellow ladder, back to the camera, one hand on the ground. The ladder above her is empty all the way up to the billboard. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "v_in": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sits on the rim of the open vent on the right, legs down inside it, gripping its edge, back to the camera. The center of the rooftop is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "h_perch_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He stands at the roof edge in the center of the frame, back to the camera, looking down at the city. Far across the city an elevated train line glows on its tracks. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "h_perch_b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He stands at the roof edge in the center of the frame, back to the camera, his head turned toward the elevated train line on the right. Far across the city an elevated train line glows on its tracks. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "m_land": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/675492c1-9077-4246-be7b-d8560090b937.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a night market street that forks: a dense crowd under glowing umbrellas on the left, the dark mouth of an alley on the right, red lanterns overhead. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She runs up the middle of the street toward the fork, in the lower part of the frame, back to the camera. The crowd walks under the umbrellas. The alley mouth on the right is dark. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k2": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/675492c1-9077-4246-be7b-d8560090b937.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a night market street that forks: a dense crowd under glowing umbrellas on the left, the dark mouth of an alley on the right, red lanterns overhead. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She stands at the fork in the middle of the street, back to the camera, between the crowd on the left and the alley on the right. The crowd walks under the umbrellas. The alley mouth on the right is dark. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "c_crowd": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/675492c1-9077-4246-be7b-d8560090b937.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a night market street that forks: a dense crowd under glowing umbrellas on the left, the dark mouth of an alley on the right, red lanterns overhead. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She is deep in the crowd on the left, half hidden between a magenta umbrella and a cyan umbrella, only her yellow-tipped hair and one shoulder showing. The crowd walks on around her under the umbrellas. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "a_deep": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/675492c1-9077-4246-be7b-d8560090b937.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a night market street that forks: a dense crowd under glowing umbrellas on the left, the dark mouth of an alley on the right, red lanterns overhead. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She runs deep into the alley mouth on the right, small, back to the camera. The alley swallows her in shadow. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "s_out": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent low on the left wall with its grate hanging open, puddles reflecting neon. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crawls out of the vent grate low on the left wall on her hands and knees, toward the camera. Steam curls out of the open vent. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "c_vent": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png",
+   "https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent low on the left wall with its grate hanging open, puddles reflecting neon. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She is half out of the grate, struggling, her chrome arm pushing against him. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-left side of the picture, a small white hexagon on his left shoulder on the screen-right side. He stands over her and hauls her up by the collar of her jacket with his left hand. Steam curls out of the open vent. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "a_in": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent low on the left wall with its grate hanging open, puddles reflecting neon. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She runs down the middle of the alley away from the camera. Neon reflects in the puddles around her. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "c_alley": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent low on the left wall with its grate hanging open, puddles reflecting neon. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She is slammed face down on the wet ground in the middle of the alley, head away from the camera, arms out. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He has tackled her from behind and pins her down, one knee on the ground beside her, both hands on her shoulders. Water splashes up from the puddle around them. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k3": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She stands on the platform in the center of the frame, back to the camera, between the open red-lit door on the left and the ladder on the right. Inside the open door the empty carriage glows red. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "l_top": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She is high on the yellow ladder on the right, near the top of the car, both hands on the rails, back to the camera. Inside the open door the empty carriage glows red. The platform below is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "b_door": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She steps through the open red-lit door on the left, one foot inside, back to the camera. The empty carriage glows red inside. The platform behind her is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "p_hound_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He sprints down the middle of the empty platform after the train, back to the camera. The train is pulling away to the left, its door closed, the ladder moving with the car. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "p_hound_b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He is in mid-leap off the end of the platform onto the back of the last car, back to the camera. The train is farther along the track, the last car close. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "b_aisle": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/8f3dd533-2f03-4ec9-8a13-53096cc730ea.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: inside a dark empty subway carriage at night: the aisle runs straight away from the camera, rows of seats on both sides, grab poles, steady red emergency light. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She runs down the middle of the aisle away from the camera. The steady red emergency light fills the empty carriage. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "c_board": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/8f3dd533-2f03-4ec9-8a13-53096cc730ea.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: inside a dark empty subway carriage at night: the aisle runs straight away from the camera, rows of seats on both sides, grab poles, steady red emergency light. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She is yanked backward off balance in the aisle, one sneaker off the floor. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-left side of the picture, a small white hexagon on his left shoulder on the screen-right side. He has lunged out from the seats on the right and grips her chrome arm and her shoulder. The steady red emergency light fills the carriage. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "roof_a": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches on the left half of the train roof in the lower part of the frame, back to the camera. The highway beside the train is empty, wet lane lines streaming past. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k4": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches on the left half of the train roof in the lower part of the frame, back to the camera, ready to jump right. Dex: heavyset, bald, gray-streaked beard, orange goggles pushed up on his forehead, chrome jaw, teal bomber with patches. He leans out of the van's driver's window on its left side, near the top right of the van, waving her in. Exactly one boxy bright-yellow panel van drives on the highway directly beside her, level with her, filling the lower right of the frame, seen from behind, both rear doors wide open on an empty cargo bay. The highway ahead is empty up to the exit ramp. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "v_inside": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png",
+   "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-right side of the picture and a brown-skinned right arm on the screen-left side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She kneels inside the van's open cargo bay facing back toward the camera, one hand on a door, grinning. Dex: heavyset, bald, gray-streaked beard, orange goggles pushed up on his forehead, chrome jaw, teal bomber with patches. He leans out of the driver's window, looking back. Exactly one yellow panel van beside the train, rear doors open. The train roof is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "v_exit": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There are exactly 0 people in the whole picture.  Exactly one yellow panel van, small and far ahead, climbing the exit ramp up and to the right, rear doors shut, two red taillights. The train roof is empty. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "v_gone": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There is exactly one person in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches alone on the left half of the train roof, back to the camera, shoulders dropped, watching the van go. Exactly one yellow panel van, small and far ahead, climbing the exit ramp up and to the right, rear doors shut, two red taillights. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "c_run": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There are exactly 2 people in the whole picture. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She crouches on the left half of the train roof, back to the camera. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He stands right behind her on the roof, back to the camera, his left hand on her shoulder. The van's taillights are tiny at the top of the exit ramp. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k6": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He stands alone on the train roof in the lower middle of the frame, back to the camera, his scarf blowing sideways. Exactly one yellow panel van, small, climbing the exit ramp up and to the right, two red taillights. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k6b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline. There is exactly one person in the whole picture. The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the screen-right side of the picture, a small white hexagon on his left shoulder on the screen-left side. He stands alone on the train roof in the lower middle of the frame, back to the camera, his scarf blowing sideways. Only two tiny red taillights remain at the very top of the exit ramp as the van curves off into the city. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k5": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/916046e1-a70a-4cc3-9b0f-ab14bfb1e464.png",
+   "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: inside the cab of a yellow van at night, seen from behind the two front seats: the steering wheel in front of the left seat, the windshield and the neon city streaking past ahead. There are exactly 2 people in the whole picture. Dex: heavyset, bald, gray-streaked beard, orange goggles pushed up on his forehead, chrome jaw, teal bomber with patches. He sits in the left seat, both hands on the wheel, the back and side of his head toward the camera. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sits in the right seat, turned slightly toward him, holding the glowing cyan chip up in her chrome left hand between the two seats. The neon city streaks past through the windshield. Rain beads on the glass. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "k5b": {
+  "model": "nano-banana-pro",
+  "imageUrls": [
+   "https://cdn.bitebox.gg/public/patchwork/916046e1-a70a-4cc3-9b0f-ab14bfb1e464.png",
+   "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png",
+   "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png"
+  ],
+  "prompt": "Use Image 1 as the place and camera: inside the cab of a yellow van at night, seen from behind the two front seats: the steering wheel in front of the left seat, the windshield and the neon city streaking past ahead. There are exactly 2 people in the whole picture. Dex: heavyset, bald, gray-streaked beard, orange goggles pushed up on his forehead, chrome jaw, teal bomber with patches. He sits in the left seat, one hand on the wheel, turning his head toward her with a smirk. Rin, a woman in her mid-twenties: a chrome robotic left arm on the screen-left side of the picture and a brown-skinned right arm on the screen-right side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers. She sits in the right seat, leaning back laughing, the glowing chip raised in her chrome left hand between the two seats. The neon city streaks past through the windshield. Rain beads on the glass. Blue-black night sky, magenta and cyan neon, steady light. Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style. No text."
+ },
+ "o_run": {
+  "model": "minimax-h3-max",
+  "start": "o_run_a",
+  "end": "o_run_b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "The camera follows right behind her at her speed, so she stays the same size. Rin sprints toward the camera across the rooftop and glances back once. Far behind her across the gap, a thin red line glows in the dark. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "s_tank": {
+  "model": "minimax-h3-max",
+  "start": "s_tank_a",
+  "end": "s_tank_b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin catches her breath against the water tank, looks at the chip in her open chrome hand, the hologram turning above it, and closes her hand around it. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "s_peek": {
+  "model": "minimax-h3-max",
+  "start": "s_peek_a",
+  "end": "s_peek_b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin peers around the water tank. On the far rooftop the Hound drops down and lands in a crouch, facing her. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_loop": {
+  "model": "minimax-h3-max",
+  "start": "k1",
+  "end": "k1",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin stands still at the roof edge, breathing hard, her head turning slightly toward the ladder and back. Steam drifts from the vent. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_jump_a": {
+  "model": "minimax-h3-max",
+  "start": "k1",
+  "end": "j_ladder",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin leaps the short gap to the left, catches the fixed yellow ladder on the side of the billboard and starts sliding down it, feet on the outside of the rails. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_jump_slide": {
+  "model": "minimax-h3-max",
+  "start": "sl_top",
+  "end": "sl_land",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin slides the whole length of the yellow ladder down the side of the building, fast and smooth, and drops into a crouch on the street at its foot. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_jump_b": {
+  "model": "minimax-h3-max",
+  "start": "m_land",
+  "end": "k2",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "The camera follows right behind her at her speed, so she stays the same size. Rin runs up the middle of the market street and slows to a stop at the fork, catching her breath. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_vent_a": {
+  "model": "minimax-h3-max",
+  "start": "k1",
+  "end": "v_in",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin dashes right across the rooftop to the open vent, sits on its rim and swings her legs down inside it. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d1_vent_b": {
+  "model": "minimax-h3-max",
+  "start": "s_out",
+  "end": "c_vent",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin crawls out of the open vent. The Hound steps out of the dark, strides to her and hauls her up by the collar. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d2_loop": {
+  "model": "minimax-h3-max",
+  "start": "k2",
+  "end": "k2",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin stands still at the fork, breathing hard, her head turning slightly toward the crowd and back. The crowd walks and the umbrellas bob. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d2_crowd_a": {
+  "model": "minimax-h3-max",
+  "start": "k2",
+  "end": "c_crowd",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin slips left into the walking crowd and weaves between the umbrellas until only her hair shows. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d2_crowd_b": {
+  "model": "minimax-h3-max",
+  "start": "h_perch_a",
+  "end": "h_perch_b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. The Hound stands at the roof edge looking down at the city, then slowly turns his head toward the glowing train line. Rain falls in the background. His blade stays on his right forearm and his visor stays one thin red line. Nobody speaks."
+ },
+ "d2_alley_a": {
+  "model": "minimax-h3-max",
+  "start": "k2",
+  "end": "a_deep",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin breaks right and runs deep into the dark alley mouth. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d2_alley_b": {
+  "model": "minimax-h3-max",
+  "start": "a_in",
+  "end": "c_alley",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "The camera follows right behind her at her speed, so she stays the same size. Rin runs down the alley. The Hound leaps down from the fire escape and tackles her from behind, and they slam onto the wet ground with the Hound on top, pinning her. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d3_loop": {
+  "model": "minimax-h3-max",
+  "start": "k3",
+  "end": "k3",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin stands still on the platform, breathing, her head turning slightly toward the red-lit door and back toward the ladder. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d3_roof_a": {
+  "model": "minimax-h3-max",
+  "start": "k3",
+  "end": "l_top",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin grabs the fixed yellow ladder and climbs it quickly, hand over hand, to the top of the car. The train and the ladder stay still. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d3_roof_b": {
+  "model": "minimax-h3-max",
+  "start": "p_hound_a",
+  "end": "p_hound_b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "The camera follows right behind her at her speed, so she stays the same size. The Hound sprints down the platform after the moving train and leaps onto the back of the last car. Rain falls in the background. His blade stays on his right forearm and his visor stays one thin red line. Nobody speaks."
+ },
+ "d3_roof_c": {
+  "model": "minimax-h3-max",
+  "start": "roof_a",
+  "end": "k4",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin crouches on the speeding train roof. The yellow van speeds up the highway from behind the camera and pulls in right beside her, its rear doors swinging open, Dex leaning out of the driver's window waving her in. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d3_board_a": {
+  "model": "minimax-h3-max",
+  "start": "k3",
+  "end": "b_door",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin turns left and steps toward the open red-lit door, one foot crossing into the carriage. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d3_board_b": {
+  "model": "minimax-h3-max",
+  "start": "b_aisle",
+  "end": "c_board",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "The camera follows right behind her at her speed, so she stays the same size. Rin sprints down the empty red-lit aisle. The Hound lunges out from the seats, seizes her chrome arm and shoulder and yanks her backward. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "d4_loop": {
+  "model": "minimax-h3-max",
+  "start": "k4",
+  "end": "k4",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. The train and the yellow van race forward together at the same speed, the van right beside Rin with its rear doors open. Dex waves her in. Rin stays crouched. Lane lines stream past below. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Dex stays in the driver's seat. Nobody speaks."
+ },
+ "d4_van_a": {
+  "model": "minimax-h3-max",
+  "start": "k4",
+  "end": "v_inside",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin springs off the train roof in one short hop across the gap and lands inside the van's open cargo bay, catches a door and turns back toward the camera with a grin. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Dex stays in the driver's seat. Nobody speaks."
+ },
+ "d4_van_b": {
+  "model": "minimax-h3-max",
+  "start": "v_inside",
+  "end": "v_exit",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. The van's rear doors swing shut, then the van accelerates away from the camera, pulls far ahead and climbs the exit ramp up and to the right, its red taillights shrinking. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Dex stays in the driver's seat. Nobody speaks."
+ },
+ "d4_run_a": {
+  "model": "minimax-h3-max",
+  "start": "k4",
+  "end": "v_gone",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Dex pulls back inside, the van's rear doors swing shut, and the van accelerates away from the camera and climbs the exit ramp up and to the right while Rin stays crouched on the train roof, her shoulders dropping. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Dex stays in the driver's seat. Nobody speaks."
+ },
+ "d4_run_b": {
+  "model": "minimax-h3-max",
+  "start": "v_gone",
+  "end": "c_run",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Rin watches the taillights go. Behind her the Hound walks up the train roof from the left edge of the frame at his full height, stops behind her and lays his hand on her shoulder. Rain falls in the background. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "f_cab": {
+  "model": "minimax-h3-max",
+  "start": "k5",
+  "end": "k5b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. Dex drives, glances over at Rin and smirks. Rin leans back laughing and lifts the glowing chip between the seats. The city streaks past the windshield. Rain falls in the background. Dex stays in the driver's seat. Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan. Nobody speaks."
+ },
+ "f_hound": {
+  "model": "minimax-h3-max",
+  "start": "k6",
+  "end": "k6b",
+  "input": {
+   "duration": "5",
+   "seed": 11,
+   "prompt_expansion_mode": "disabled"
+  },
+  "prompt": "Camera locked off. The Hound stands still on the speeding train roof, his scarf whipping in the wind, and watches the van climb the ramp until only two red taillights remain. His blade slowly dims. Rain falls in the background. His blade stays on his right forearm and his visor stays one thin red line. Nobody speaks."
+ }
+}

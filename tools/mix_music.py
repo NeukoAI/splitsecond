@@ -14,12 +14,13 @@ sound (a voice line) from another file, and "clip_db" turns a clip's own sound
 up or down before the score goes under it.
 """
 import json
+import os
 import subprocess
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-cfg = json.loads((ROOT / "v2" / "mix.json").read_text())
+cfg = json.loads((ROOT / os.environ.get("MIX", "v2/mix.json")).read_text())
 media = cfg["sources"]  # the unmixed clips, so a re-run never mixes twice
 out = ROOT / "mixed"
 src = Path("/tmp/mix-src")
