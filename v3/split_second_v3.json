@@ -1,0 +1,1070 @@
+{
+ "spec": "0.7",
+ "title": "Split Second",
+ "start": "v_title",
+ "nodes": {
+  "gl_jump": {
+   "type": "image",
+   "title": "glow \u00b7 jump",
+   "ui": {
+    "x": -400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/64e91281-605e-43c1-9505-d2ebb4756ebe.png",
+    "alt": "Jump to the ladder",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_vent": {
+   "type": "image",
+   "title": "glow \u00b7 vent",
+   "ui": {
+    "x": -400,
+    "y": 160
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/66d9b74c-691b-425a-9455-c52a00e48f71.png",
+    "alt": "Drop into the vent",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_crowd": {
+   "type": "image",
+   "title": "glow \u00b7 crowd",
+   "ui": {
+    "x": -400,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/0a826427-18ea-47d7-9166-d4126f065c3f.png",
+    "alt": "Vanish in the crowd",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_alley": {
+   "type": "image",
+   "title": "glow \u00b7 alley",
+   "ui": {
+    "x": -400,
+    "y": 480
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/35fd11b5-fe54-4dc2-8512-77ffa289bc01.png",
+    "alt": "Cut down the alley",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_board": {
+   "type": "image",
+   "title": "glow \u00b7 board",
+   "ui": {
+    "x": -400,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b0efb1b6-b931-4b0c-8a03-dc0357d5a43a.png",
+    "alt": "Board the train",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_roof": {
+   "type": "image",
+   "title": "glow \u00b7 roof",
+   "ui": {
+    "x": -400,
+    "y": 800
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/9f2378c7-3cdf-46ed-8085-d37b9aad162b.png",
+    "alt": "Climb to the roof",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_van": {
+   "type": "image",
+   "title": "glow \u00b7 van",
+   "ui": {
+    "x": -400,
+    "y": 960
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b334cf93-b59b-4d6c-a4e5-cd6f5b806eba.png",
+    "alt": "Jump for the van",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "v_title": {
+   "type": "video",
+   "title": "cold open \u00b7 title",
+   "ui": {
+    "x": 0,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/19ee9942-48c3-4a2a-8b2f-77464dd1f0ce.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 8250,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_title.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_stakes"
+     }
+    ]
+   }
+  },
+  "v_stakes": {
+   "type": "video",
+   "title": "the setup",
+   "ui": {
+    "x": 400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/af387ba3-c318-4429-8c03-845ce71348b9.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10000,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_stakes.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d1_loop"
+     }
+    ],
+    "captions": {
+     "language": "en",
+     "cues": [
+      {
+       "startMs": 0,
+       "endMs": 5000,
+       "text": "That chip is the cure. Forty thousand people in the Lower City are running out of time."
+      },
+      {
+       "startMs": 5000,
+       "endMs": 10000,
+       "text": "The corp that made them sick wants it gone. So they sent the Hound."
+      }
+     ]
+    }
+   }
+  },
+  "v_intro_hound": {
+   "type": "video",
+   "title": "try again \u00b7 the run",
+   "ui": {
+    "x": 800,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/a4bc86d9-6687-4a5e-8764-89f724f89490.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5209,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_intro_hound.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d1_loop"
+     }
+    ]
+   }
+  },
+  "hs_d1_jump": {
+   "type": "trigger",
+   "title": "tap \u00b7 Jump to the ladder",
+   "ui": {
+    "x": 1600,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.105,
+     "y": 0.495
+    },
+    "rect": {
+     "width": 0.154,
+     "height": 0.974
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_jump",
+    "displayInExperience": true
+   },
+   "next": "v_d1_jump"
+  },
+  "hs_d1_vent": {
+   "type": "trigger",
+   "title": "tap \u00b7 Drop into the vent",
+   "ui": {
+    "x": 1600,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.844,
+     "y": 0.57
+    },
+    "rect": {
+     "width": 0.312,
+     "height": 0.324
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_vent",
+    "displayInExperience": true
+   },
+   "next": "v_d1_vent"
+  },
+  "v_d1_loop": {
+   "type": "video",
+   "title": "The Edge \u00b7 decide",
+   "ui": {
+    "x": 1600,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/97072573-4840-4a79-b9a2-c5321577794e.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5209,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d1_loop.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d1_vent"
+     }
+    ],
+    "overlays": [
+     "hs_d1_jump",
+     "hs_d1_vent"
+    ],
+    "captions": {
+     "language": "en",
+     "cues": [
+      {
+       "startMs": 0,
+       "endMs": 5000,
+       "text": "You get a split second. Tap where Rin runs."
+      }
+     ]
+    }
+   }
+  },
+  "v_d1_jump": {
+   "type": "video",
+   "title": "The Edge \u00b7 Jump to the ladder",
+   "ui": {
+    "x": 2000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d88b3cee-7d4a-422f-b1ea-04da6622aac9.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 14209,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d1_jump.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d2_loop"
+     }
+    ]
+   }
+  },
+  "v_d1_vent": {
+   "type": "video",
+   "title": "The Edge \u00b7 caught",
+   "ui": {
+    "x": 2000,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/99c32ec0-417e-4e9d-a16f-a537e0b40cac.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d1_vent.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover"
+     }
+    ]
+   }
+  },
+  "hs_d2_crowd": {
+   "type": "trigger",
+   "title": "tap \u00b7 Vanish in the crowd",
+   "ui": {
+    "x": 2400,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.196,
+     "y": 0.64
+    },
+    "rect": {
+     "width": 0.392,
+     "height": 0.644
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_crowd",
+    "displayInExperience": true
+   },
+   "next": "v_d2_crowd"
+  },
+  "hs_d2_alley": {
+   "type": "trigger",
+   "title": "tap \u00b7 Cut down the alley",
+   "ui": {
+    "x": 2400,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.835,
+     "y": 0.565
+    },
+    "rect": {
+     "width": 0.254,
+     "height": 0.654
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_alley",
+    "displayInExperience": true
+   },
+   "next": "v_d2_alley"
+  },
+  "v_d2_loop": {
+   "type": "video",
+   "title": "The Market \u00b7 decide",
+   "ui": {
+    "x": 2400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/d6e2b452-16d0-4ba7-9366-db4de39c107a.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d2_loop.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d2_alley"
+     }
+    ],
+    "overlays": [
+     "hs_d2_crowd",
+     "hs_d2_alley"
+    ]
+   }
+  },
+  "v_d2_crowd": {
+   "type": "video",
+   "title": "The Market \u00b7 Vanish in the crowd",
+   "ui": {
+    "x": 2800,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ef2f6d64-8337-46fc-b19d-2b83a1c360d9.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d2_crowd.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d3_loop"
+     }
+    ]
+   }
+  },
+  "v_d2_alley": {
+   "type": "video",
+   "title": "The Market \u00b7 caught",
+   "ui": {
+    "x": 2800,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/49c2475e-da80-463e-9499-8e6f5cf7c6fb.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d2_alley.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover"
+     }
+    ]
+   }
+  },
+  "hs_d3_board": {
+   "type": "trigger",
+   "title": "tap \u00b7 Board the train",
+   "ui": {
+    "x": 3200,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.195,
+     "y": 0.505
+    },
+    "rect": {
+     "width": 0.274,
+     "height": 0.614
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_board",
+    "displayInExperience": true
+   },
+   "next": "v_d3_board"
+  },
+  "hs_d3_roof": {
+   "type": "trigger",
+   "title": "tap \u00b7 Climb to the roof",
+   "ui": {
+    "x": 3200,
+    "y": 560
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.835,
+     "y": 0.415
+    },
+    "rect": {
+     "width": 0.294,
+     "height": 0.814
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_roof",
+    "displayInExperience": true
+   },
+   "next": "v_d3_roof"
+  },
+  "v_d3_loop": {
+   "type": "video",
+   "title": "The Platform \u00b7 decide",
+   "ui": {
+    "x": 3200,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b038506e-974f-4a14-9478-bfe82deaadb5.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 3042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d3_loop.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d3_board"
+     }
+    ],
+    "overlays": [
+     "hs_d3_board",
+     "hs_d3_roof"
+    ]
+   }
+  },
+  "v_d3_roof": {
+   "type": "video",
+   "title": "The Platform \u00b7 Climb to the roof",
+   "ui": {
+    "x": 3600,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/4175a042-e5e7-4d13-9bfe-d68e70020c85.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 12709,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d3_roof.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d4_loop"
+     }
+    ]
+   }
+  },
+  "v_d3_board": {
+   "type": "video",
+   "title": "The Platform \u00b7 caught",
+   "ui": {
+    "x": 3600,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/8c9b9557-8547-49e3-a391-5bf4ab3d3967.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 8417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d3_board.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover"
+     }
+    ]
+   }
+  },
+  "hs_d4_van": {
+   "type": "trigger",
+   "title": "tap \u00b7 Jump for the van",
+   "ui": {
+    "x": 4000,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.8025,
+     "y": 0.67
+    },
+    "rect": {
+     "width": 0.389,
+     "height": 0.324
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_van",
+    "displayInExperience": true
+   },
+   "next": "v_d4_van"
+  },
+  "v_d4_loop": {
+   "type": "video",
+   "title": "The Drop \u00b7 decide",
+   "ui": {
+    "x": 4000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/64a1b7ca-e1d6-4e7d-9b1b-5c1895ddffac.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 2042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d4_loop.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_d4_run"
+     }
+    ],
+    "overlays": [
+     "hs_d4_van"
+    ],
+    "captions": {
+     "language": "en",
+     "cues": [
+      {
+       "startMs": 0,
+       "endMs": 2000,
+       "text": "Tap the van before it's gone."
+      }
+     ]
+    }
+   }
+  },
+  "v_d4_van": {
+   "type": "video",
+   "title": "The Drop \u00b7 Jump for the van",
+   "ui": {
+    "x": 4400,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/b21dad79-61a5-4b3f-a2d8-55065898a893.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d4_van.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_finale_van"
+     }
+    ]
+   }
+  },
+  "v_d4_run": {
+   "type": "video",
+   "title": "The Drop \u00b7 caught",
+   "ui": {
+    "x": 4400,
+    "y": 320
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/3ce6c2ad-5198-49eb-bc5b-6d22879cb783.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 10417,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_d4_run.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover"
+     }
+    ]
+   }
+  },
+  "v_finale_van": {
+   "type": "video",
+   "title": "finale van",
+   "ui": {
+    "x": 4800,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/c9ae3a57-6b92-45db-9ccd-c1560fee18db.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5209,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_finale_van.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_finale_hound"
+     }
+    ],
+    "captions": {
+     "language": "en",
+     "cues": [
+      {
+       "startMs": 0,
+       "endMs": 2500,
+       "text": "DEX: Cutting it close, kid."
+      },
+      {
+       "startMs": 2500,
+       "endMs": 5000,
+       "text": "RIN: Close is my job."
+      }
+     ]
+    }
+   }
+  },
+  "v_finale_hound": {
+   "type": "video",
+   "title": "finale hound",
+   "ui": {
+    "x": 5200,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/55e3e259-5a6c-43f6-a2d7-35c9e2b9ad03.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 5209,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_finale_hound.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_win"
+     }
+    ],
+    "captions": {
+     "language": "en",
+     "cues": [
+      {
+       "startMs": 1500,
+       "endMs": 5000,
+       "text": "THE HOUND: Next time, courier."
+      }
+     ]
+    }
+   }
+  },
+  "gl_btn_try": {
+   "type": "image",
+   "title": "button \u00b7 TRY AGAIN",
+   "ui": {
+    "x": 4800,
+    "y": 1400
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/ab2185e7-db16-4494-9f09-f194a8924d3c.png",
+    "alt": "TRY AGAIN",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_btn_over": {
+   "type": "image",
+   "title": "button \u00b7 START OVER",
+   "ui": {
+    "x": 4800,
+    "y": 1560
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/8a410df6-6c0d-4078-97d8-e1a352b6578b.png",
+    "alt": "START OVER",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "gl_btn_play": {
+   "type": "image",
+   "title": "button \u00b7 PLAY AGAIN",
+   "ui": {
+    "x": 4800,
+    "y": 1720
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/8276ddaf-45c8-4a1f-bfc0-6e0a3cb807fd.png",
+    "alt": "PLAY AGAIN",
+    "displayInExperience": false
+   },
+   "next": null
+  },
+  "hs_win_play": {
+   "type": "trigger",
+   "title": "tap \u00b7 PLAY AGAIN",
+   "ui": {
+    "x": 5600,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.9
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_play",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "hs_win2_play": {
+   "type": "trigger",
+   "title": "tap \u00b7 PLAY AGAIN",
+   "ui": {
+    "x": 6000,
+    "y": 320
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.9
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_play",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "v_win": {
+   "type": "video",
+   "title": "DELIVERED",
+   "ui": {
+    "x": 5600,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/e960e592-375f-455f-8e27-1d257d11e338.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_win.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_win_2"
+     }
+    ],
+    "overlays": [
+     "hs_win_play"
+    ]
+   }
+  },
+  "v_win_2": {
+   "type": "video",
+   "title": "DELIVERED (hold)",
+   "ui": {
+    "x": 6000,
+    "y": 0
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/29dff657-25f0-483a-b5b7-1998c664f440.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_win_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_win"
+     }
+    ],
+    "overlays": [
+     "hs_win2_play"
+    ]
+   }
+  },
+  "hs_go_try": {
+   "type": "trigger",
+   "title": "tap \u00b7 TRY AGAIN",
+   "ui": {
+    "x": 4800,
+    "y": 960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.64
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_try",
+    "displayInExperience": true
+   },
+   "next": "v_intro_hound"
+  },
+  "hs_go_over": {
+   "type": "trigger",
+   "title": "tap \u00b7 START OVER",
+   "ui": {
+    "x": 4800,
+    "y": 1200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.76
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_over",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "hs_go2_try": {
+   "type": "trigger",
+   "title": "tap \u00b7 TRY AGAIN",
+   "ui": {
+    "x": 5200,
+    "y": 960
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.64
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_try",
+    "displayInExperience": true
+   },
+   "next": "v_intro_hound"
+  },
+  "hs_go2_over": {
+   "type": "trigger",
+   "title": "tap \u00b7 START OVER",
+   "ui": {
+    "x": 5200,
+    "y": 1200
+   },
+   "props": {
+    "kind": "hotspot",
+    "position": {
+     "x": 0.5,
+     "y": 0.76
+    },
+    "rect": {
+     "width": 0.6,
+     "height": 0.08
+    },
+    "size": 0.4,
+    "active": {
+     "startMs": 0
+    },
+    "onClick": "instant",
+    "image": "gl_btn_over",
+    "displayInExperience": true
+   },
+   "next": "v_title"
+  },
+  "v_gameover": {
+   "type": "video",
+   "title": "GAME OVER",
+   "ui": {
+    "x": 4800,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/650264c1-5189-48df-90ae-2907b9296d57.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_gameover.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover_2"
+     }
+    ],
+    "overlays": [
+     "hs_go_try",
+     "hs_go_over"
+    ]
+   }
+  },
+  "v_gameover_2": {
+   "type": "video",
+   "title": "GAME OVER (hold)",
+   "ui": {
+    "x": 5200,
+    "y": 640
+   },
+   "props": {
+    "src": "https://cdn.bitebox.gg/public/patchwork/projects/57b4f3234cd643bfc6f92d7d97c40c9b10e6c060b43f6f0b0745e67d5ce00c2e/375eb290-636b-4765-8038-c8eb55d6ea36.mp4",
+    "width": 576,
+    "height": 1024,
+    "durationMs": 4042,
+    "displayInExperience": false,
+    "exits": [
+     {
+      "id": "exit.v_gameover_2.autoplay",
+      "label": "Storyline",
+      "mode": "autoplay",
+      "next": "v_gameover"
+     }
+    ],
+    "overlays": [
+     "hs_go2_try",
+     "hs_go2_over"
+    ]
+   }
+  }
+ }
+}

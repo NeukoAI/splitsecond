@@ -1,0 +1,193 @@
+{
+ "title": "Split Second",
+ "logline": "Rin is carrying the cure for 40,000 people. The Hound wants it buried. Every choice is a split second. Choose wrong and you flatline.",
+ "decisions": [
+  {
+   "id": "d1",
+   "name": "The Edge",
+   "keyframe": "k1",
+   "safe": "jump",
+   "targets": {
+    "jump": {
+     "label": "Jump to the ladder",
+     "side": "left"
+    },
+    "vent": {
+     "label": "Drop into the vent",
+     "side": "right"
+    }
+   },
+   "timeout": "vent"
+  },
+  {
+   "id": "d2",
+   "name": "The Market",
+   "keyframe": "k2",
+   "safe": "crowd",
+   "targets": {
+    "crowd": {
+     "label": "Vanish in the crowd",
+     "side": "left"
+    },
+    "alley": {
+     "label": "Cut down the alley",
+     "side": "right"
+    }
+   },
+   "timeout": "alley"
+  },
+  {
+   "id": "d3",
+   "name": "The Platform",
+   "keyframe": "k3",
+   "safe": "roof",
+   "targets": {
+    "board": {
+     "label": "Board the train",
+     "side": "left"
+    },
+    "roof": {
+     "label": "Climb to the roof",
+     "side": "right"
+    }
+   },
+   "timeout": "board"
+  },
+  {
+   "id": "d4",
+   "name": "The Drop",
+   "keyframe": "k4",
+   "safe": "van",
+   "targets": {
+    "van": {
+     "label": "Jump for the van",
+     "side": "right"
+    }
+   },
+   "timeout": "run"
+  }
+ ],
+ "scenes": [
+  {
+   "id": "title",
+   "sec": 8.208
+  },
+  {
+   "id": "stakes",
+   "sec": 9.958,
+   "captions": [
+    [
+     0,
+     5000,
+     "That chip is the cure. Forty thousand people in the Lower City are running out of time."
+    ],
+    [
+     5000,
+     10000,
+     "The corp that made them sick wants it gone. So they sent the Hound."
+    ]
+   ]
+  },
+  {
+   "id": "intro_hound",
+   "sec": 5.167
+  },
+  {
+   "id": "d1_loop",
+   "sec": 5.167,
+   "captions": [
+    [
+     0,
+     5000,
+     "You get a split second. Tap where Rin runs."
+    ]
+   ]
+  },
+  {
+   "id": "d1_jump",
+   "sec": 14.167
+  },
+  {
+   "id": "d1_vent",
+   "sec": 10.375
+  },
+  {
+   "id": "d2_loop",
+   "sec": 4.0
+  },
+  {
+   "id": "d2_crowd",
+   "sec": 10.375
+  },
+  {
+   "id": "d2_alley",
+   "sec": 10.375
+  },
+  {
+   "id": "d3_loop",
+   "sec": 3.0
+  },
+  {
+   "id": "d3_roof",
+   "sec": 12.667
+  },
+  {
+   "id": "d3_board",
+   "sec": 8.375
+  },
+  {
+   "id": "d4_loop",
+   "sec": 2.0,
+   "captions": [
+    [
+     0,
+     2000,
+     "Tap the van before it's gone."
+    ]
+   ]
+  },
+  {
+   "id": "d4_van",
+   "sec": 10.375
+  },
+  {
+   "id": "d4_run",
+   "sec": 10.375
+  },
+  {
+   "id": "finale_van",
+   "sec": 5.167,
+   "captions": [
+    [
+     0,
+     2500,
+     "DEX: Cutting it close, kid."
+    ],
+    [
+     2500,
+     5000,
+     "RIN: Close is my job."
+    ]
+   ]
+  },
+  {
+   "id": "finale_hound",
+   "sec": 5.167,
+   "captions": [
+    [
+     1500,
+     5000,
+     "THE HOUND: Next time, courier."
+    ]
+   ]
+  },
+  {
+   "id": "win",
+   "sec": 4
+  },
+  {
+   "id": "gameover",
+   "sec": 4
+  }
+ ]
+}
