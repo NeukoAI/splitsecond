@@ -104,3 +104,8 @@ r3_rin_b https://cdn.bitebox.gg/public/patchwork/02495d9d-9135-45ee-bd6e-a6cea9a
 r3_hound_f https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png
 r3_hound_b https://cdn.bitebox.gg/public/patchwork/c4f1c047-d409-4f7e-beb3-583c838c5407.png
 r3_dex_f https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png
+p3_roofrun https://cdn.bitebox.gg/public/patchwork/5c9faddd-8d1a-4e03-86cd-63efca97bd02.png
+p3_roofedge https://cdn.bitebox.gg/public/patchwork/1a38ed1a-b7ce-4324-8e96-3e1b9b7bd5fc.png
+p3_platform https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png
+p3_carriage https://cdn.bitebox.gg/public/patchwork/8f3dd533-2f03-4ec9-8a13-53096cc730ea.png
+p3_cab https://cdn.bitebox.gg/public/patchwork/f9ae3a4d-849d-4ec6-bcd1-1e6ee5918b1c.png
