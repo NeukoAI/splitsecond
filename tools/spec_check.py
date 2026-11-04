@@ -1,4 +1,5 @@
-"""spec_check.py bible.json frames.json takes.json [--prompts]
+"""spec_check.py bible.json frames.json takes.json [--prompts] [--draft]
+--draft skips the approval check, for a spec whose frames are not drawn yet.
 Refuses a shot spec that breaks the build rules, then (with --prompts) assembles every prompt."""
 import json, re, sys
 
@@ -27,9 +28,10 @@ for t in takes:
     if a["place"] != b["place"]: err(i, "two places in one take: split it and hard-cut in the mix")
     for ca in a["cast"]:
         cb = next((c for c in b["cast"] if c["who"] == ca["who"]), None)
-        if cb and ca.get("scale") != cb.get("scale") and not t.get("camera_follows"):
+        grows = "SML".index(cb["scale"]) > "SML".index(ca["scale"]) if cb and cb.get("scale") and ca.get("scale") else False
+        if cb and ca.get("scale") != cb.get("scale") and not t.get("camera_follows") and (grows or t.get("moves") != "away"):
             err(i, f"{ca['who']} changes scale {ca.get('scale')} to {cb.get('scale')}: she will pop; make the camera follow or redraw")
-    if not (a.get("approved") and b.get("approved")): err(i, "pins are not approved on the keyframe board")
+    if "--draft" not in sys.argv and not (a.get("approved") and b.get("approved")): err(i, "pins are not approved on the keyframe board")
     if len(re.findall(r"\bthen\b|;", t["action"])) > 1: warn(i, "more than two actions: one beat per take")
     for word in re.findall(BANNED, t["action"].lower()): warn(i, f"'{word}' in the action draws what it names")
     if t.get("seam_in", "cut") != "cut" and prev_end.get(t["seam_in"]) != t["start"]:

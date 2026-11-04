@@ -1,0 +1,66 @@
+{
+ "style": "Flat cel-shaded neon anime, thick black ink lines, hard-edged shadows, every person and crowd drawn in the same crisp style.",
+ "sky": "Blue-black night sky, magenta and cyan neon, steady light.",
+ "ambient": "Rain falls in the background.",
+ "places": {
+  "roof_run": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/5c9faddd-8d1a-4e03-86cd-63efca97bd02.png",
+   "description": "a wide flat rain-slick rooftop at night, a round water tank on the right, a gap and a taller rooftop in the far background, the neon city beyond."
+  },
+  "roof_edge": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/1ee3a3bc-c6c1-4ce4-905e-544166770e36.png",
+   "description": "a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder down its side; on the right an open square metal vent; the neon city below."
+  },
+  "alley": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/d54aaca5-4e9e-4ec5-9c17-9c719598a10a.png",
+   "description": "a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent grate low on the left wall, puddles reflecting neon."
+  },
+  "market": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/e05243ad-cc3c-4b7d-8d4c-a19b16f0d29f.png",
+   "description": "a night market street that forks: a dense crowd under glowing umbrellas on the left, the dark mouth of an alley on the right, red lanterns overhead."
+  },
+  "platform": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/099b5a47-8e3c-4293-a3e5-f0b44a134532.png",
+   "description": "an elevated train platform at night: a graffiti-covered train on the left with one open door lit red inside, a fixed yellow steel ladder up the side of the car on the right, a yellow edge line on the wet platform."
+  },
+  "carriage": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/8f3dd533-2f03-4ec9-8a13-53096cc730ea.png",
+   "description": "inside a dark empty subway carriage at night: the aisle runs straight away from the camera, rows of seats on both sides, grab poles, steady red emergency light."
+  },
+  "train_roof": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/5cc29fbf-2190-4c52-ab2a-9f1feafa3865.png",
+   "description": "the top of a speeding elevated train at night seen from behind, a parallel highway on the right, an exit ramp curving up and to the right far ahead, the neon skyline."
+  },
+  "cab": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/916046e1-a70a-4cc3-9b0f-ab14bfb1e464.png",
+   "description": "inside the cab of a yellow van at night, seen from behind the two front seats: the steering wheel in front of the left seat, the windshield and the neon city streaking past ahead."
+  }
+ },
+ "characters": {
+  "rin": {
+   "ref_front": "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png",
+   "ref_back": "https://cdn.bitebox.gg/public/patchwork/02495d9d-9135-45ee-bd6e-a6cea9a197b2.png",
+   "card": "Rin: a chrome robotic left arm on the {left} side of the picture and a brown-skinned right arm on the {right} side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers.",
+   "locks": "Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan."
+  },
+  "hound": {
+   "ref_front": "https://cdn.bitebox.gg/public/patchwork/7240de16-bfc8-48b1-adaf-e81a32f12e3f.png",
+   "ref_back": "https://cdn.bitebox.gg/public/patchwork/2501b7fd-d448-4709-8a8c-36f1ef6841db.png",
+   "card": "The Hound: tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, a glowing red blade along his right forearm on the {right} side of the picture, a small white hexagon on his left shoulder on the {left} side.",
+   "locks": "His blade stays on his right forearm and his visor stays one thin red line."
+  },
+  "dex": {
+   "ref_front": "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png",
+   "ref_back": "https://cdn.bitebox.gg/public/patchwork/1680f695-595e-40f1-92ce-82db1bbc5c2a.png",
+   "card": "Dex: heavyset, bald, gray-streaked beard, orange goggles pushed up on his forehead, chrome jaw, teal bomber with patches.",
+   "locks": "Dex stays in the driver's seat."
+  }
+ },
+ "reuse": {
+  "title": "v2.9 title clip, trimmed to 3 s",
+  "win": "v2 DELIVERED card",
+  "gameover": "v2 FLATLINED card",
+  "voice": "v2 audited stakes voice track (Dex), under setup a and b",
+  "score": "https://cdn.bitebox.gg/public/patchwork/af31fdd3-f1a6-41f5-9b45-d0123e798494.wav"
+ }
+}

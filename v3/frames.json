@@ -1,0 +1,553 @@
+[
+ {
+  "id": "o_run_a",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist."
+   }
+  ],
+  "picture": "A small black drone with one red light hovers just above the far roof edge behind her, its red light pointing at the sky."
+ },
+ {
+  "id": "o_run_b",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist, glancing back over her shoulder."
+   }
+  ],
+  "picture": "A small black drone with one red light hovers close behind her above the roof, and its red cone of light falls across her back."
+ },
+ {
+  "id": "s_tank_a",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She sits on the wet roof with her back against the water tank, knees up, catching her breath, her chrome hand open in her lap with the glowing cyan chip on the palm and a small cyan DNA hologram floating above it."
+   }
+  ],
+  "picture": "The water tank fills the right side of the frame."
+ },
+ {
+  "id": "s_tank_b",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She sits on the wet roof with her back against the water tank, knees up, her chrome hand closed tight around the glowing chip, looking up and off to the side, alert."
+   }
+  ],
+  "picture": "The water tank fills the right side of the frame."
+ },
+ {
+  "id": "s_peek_a",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches at the left edge of the water tank in the foreground, back to the camera, peering around it toward the far rooftop."
+   }
+  ],
+  "picture": "The far rooftop across the gap is empty and wet."
+ },
+ {
+  "id": "s_peek_b",
+  "place": "roof_run",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches at the left edge of the water tank in the foreground, back to the camera, peering around it toward the far rooftop."
+   },
+   {
+    "who": "hound",
+    "facing": "camera",
+    "scale": "S",
+    "position": "He crouches on the far rooftop across the gap, one hand on the roof, just landed, facing her."
+   }
+  ],
+  "picture": "A small black drone with one red light hovers at the Hound's shoulder."
+ },
+ {
+  "id": "k1",
+  "place": "roof_edge",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She stands at the roof edge in the center of the frame, back to the camera, between the billboard and the vent."
+   }
+  ],
+  "picture": "Two small black drones hover over the vent and sweep it with red cones of light."
+ },
+ {
+  "id": "j_ladder",
+  "place": "roof_edge",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She hangs on the yellow ladder down the side of the billboard, partway down, hands and feet on the outside of the rails, back to the camera."
+   }
+  ],
+  "picture": "Two small black drones sweep the vent with red cones of light. The center of the rooftop is empty."
+ },
+ {
+  "id": "v_in",
+  "place": "roof_edge",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "S",
+    "position": "She sits on the rim of the open vent on the right, legs down inside it, gripping its edge, back to the camera."
+   }
+  ],
+  "picture": "Two small black drones hover over the vent. The center of the rooftop is empty."
+ },
+ {
+  "id": "h_perch_a",
+  "place": "roof_edge",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He stands at the roof edge in the center of the frame, back to the camera, looking down at the city."
+   }
+  ],
+  "picture": "A small black drone with one red light hovers at his shoulder. Far across the city an elevated train line glows on its tracks."
+ },
+ {
+  "id": "h_perch_b",
+  "place": "roof_edge",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He stands at the roof edge in the center of the frame, back to the camera, his head turned toward the elevated train line on the right."
+   }
+  ],
+  "picture": "A small black drone with one red light hovers at his shoulder, its red light pointing toward the train line."
+ },
+ {
+  "id": "m_land",
+  "place": "market",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She runs up the middle of the street toward the fork, in the lower part of the frame, back to the camera."
+   }
+  ],
+  "picture": "The crowd walks under the umbrellas. One small black drone hovers over the alley mouth on the right, its red cone of light on the alley floor."
+ },
+ {
+  "id": "k2",
+  "place": "market",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She stands at the fork in the middle of the street, back to the camera, between the crowd on the left and the alley on the right."
+   }
+  ],
+  "picture": "The crowd walks under the umbrellas. One small black drone hovers over the alley mouth on the right, its red cone of light on the alley floor."
+ },
+ {
+  "id": "c_crowd",
+  "place": "market",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "S",
+    "position": "She is deep in the crowd on the left, half hidden between a magenta umbrella and a cyan umbrella, only her yellow-tipped hair and one shoulder showing."
+   }
+  ],
+  "picture": "The drone's red cone of light sweeps across the umbrellas to the left of her."
+ },
+ {
+  "id": "a_deep",
+  "place": "market",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "S",
+    "position": "She runs deep into the alley mouth on the right, small, under the drone, back to the camera."
+   }
+  ],
+  "picture": "The drone's red cone of light falls on her."
+ },
+ {
+  "id": "s_out",
+  "place": "alley",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She crawls out of the vent grate low on the left wall on her hands and knees, toward the camera."
+   }
+  ],
+  "picture": "Steam curls out of the grate. A small black drone hovers above her, its red cone of light on her."
+ },
+ {
+  "id": "c_vent",
+  "place": "alley",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She is half out of the grate, struggling, her chrome arm pushing against him."
+   },
+   {
+    "who": "hound",
+    "facing": "camera",
+    "scale": "M",
+    "position": "He stands over her and hauls her up by the collar of her jacket with his left hand."
+   }
+  ],
+  "picture": "Steam curls out of the grate. The drone's red cone of light is on them both."
+ },
+ {
+  "id": "a_in",
+  "place": "alley",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She runs down the middle of the alley away from the camera."
+   }
+  ],
+  "picture": "A small black drone hovers above her, its red cone of light on the puddles around her."
+ },
+ {
+  "id": "c_alley",
+  "place": "alley",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She is jerked to a stop in the middle of the alley, back to the camera."
+   },
+   {
+    "who": "hound",
+    "facing": "camera",
+    "scale": "M",
+    "position": "He has dropped from the fire escape right beside her and grips her shoulder with his left hand."
+   }
+  ],
+  "picture": "The drone's red cone of light is on them both."
+ },
+ {
+  "id": "k3",
+  "place": "platform",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She stands on the platform in the center of the frame, back to the camera, between the open red-lit door on the left and the ladder on the right."
+   }
+  ],
+  "picture": "Inside the open door a small red drone light glows in the dark carriage."
+ },
+ {
+  "id": "l_top",
+  "place": "platform",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She is high on the yellow ladder on the right, near the top of the car, both hands on the rails, back to the camera."
+   }
+  ],
+  "picture": "Inside the open door a small red drone light glows. The platform below is empty."
+ },
+ {
+  "id": "b_door",
+  "place": "platform",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She steps through the open red-lit door on the left, one foot inside, back to the camera."
+   }
+  ],
+  "picture": "The red drone light glows inside the carriage. The platform behind her is empty."
+ },
+ {
+  "id": "p_hound_a",
+  "place": "platform",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He sprints down the middle of the empty platform after the train, back to the camera."
+   }
+  ],
+  "picture": "The train is pulling away to the left, its door closed, the ladder moving with the car."
+ },
+ {
+  "id": "p_hound_b",
+  "place": "platform",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He is in mid-leap off the end of the platform onto the back of the last car, back to the camera."
+   }
+  ],
+  "picture": "The train is farther along the track, the last car close."
+ },
+ {
+  "id": "b_aisle",
+  "place": "carriage",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She runs down the middle of the aisle away from the camera."
+   }
+  ],
+  "picture": "Far down the aisle a small black drone hovers, its red light filling the carriage."
+ },
+ {
+  "id": "c_board",
+  "place": "carriage",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She is yanked backward off balance in the aisle, one sneaker off the floor."
+   },
+   {
+    "who": "hound",
+    "facing": "camera",
+    "scale": "M",
+    "position": "He has lunged out from the seats on the right and grips her chrome arm and her shoulder."
+   }
+  ],
+  "picture": "The drone's red light fills the carriage."
+ },
+ {
+  "id": "roof_a",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches on the left half of the train roof in the lower part of the frame, back to the camera."
+   }
+  ],
+  "picture": "The highway beside the train is empty, wet lane lines streaming past."
+ },
+ {
+  "id": "k4",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches on the left half of the train roof in the lower part of the frame, back to the camera, ready to jump right."
+   },
+   {
+    "who": "dex",
+    "facing": "camera",
+    "scale": "S",
+    "position": "He leans out of the van's driver's window on its left side, near the top right of the van, waving her in."
+   }
+  ],
+  "picture": "Exactly one boxy bright-yellow panel van drives on the highway directly beside her, level with her, filling the lower right of the frame, seen from behind, both rear doors wide open on an empty cargo bay. The highway ahead is empty up to the exit ramp."
+ },
+ {
+  "id": "v_inside",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "camera",
+    "scale": "M",
+    "position": "She kneels inside the van's open cargo bay facing back toward the camera, one hand on a door, grinning."
+   },
+   {
+    "who": "dex",
+    "facing": "camera",
+    "scale": "S",
+    "position": "He leans out of the driver's window, looking back."
+   }
+  ],
+  "picture": "Exactly one yellow panel van beside the train, rear doors open. The train roof is empty."
+ },
+ {
+  "id": "v_exit",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [],
+  "picture": "Exactly one yellow panel van, small and far ahead, climbing the exit ramp up and to the right, rear doors shut, two red taillights. The train roof is empty."
+ },
+ {
+  "id": "v_gone",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches alone on the left half of the train roof, back to the camera, shoulders dropped, watching the van go."
+   }
+  ],
+  "picture": "Exactly one yellow panel van, small and far ahead, climbing the exit ramp up and to the right, rear doors shut, two red taillights."
+ },
+ {
+  "id": "c_run",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She crouches on the left half of the train roof, back to the camera."
+   },
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He stands right behind her on the roof, back to the camera, his left hand on her shoulder."
+   }
+  ],
+  "picture": "The van's taillights are tiny at the top of the exit ramp."
+ },
+ {
+  "id": "k6",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He stands alone on the train roof in the lower middle of the frame, back to the camera, his scarf blowing sideways."
+   }
+  ],
+  "picture": "Exactly one yellow panel van, small, climbing the exit ramp up and to the right, two red taillights."
+ },
+ {
+  "id": "k6b",
+  "place": "train_roof",
+  "approved": false,
+  "cast": [
+   {
+    "who": "hound",
+    "facing": "away",
+    "scale": "M",
+    "position": "He stands alone on the train roof in the lower middle of the frame, back to the camera, his scarf blowing sideways."
+   }
+  ],
+  "picture": "Only two tiny red taillights remain at the very top of the exit ramp as the van curves off into the city."
+ },
+ {
+  "id": "k5",
+  "place": "cab",
+  "approved": false,
+  "cast": [
+   {
+    "who": "dex",
+    "facing": "away",
+    "scale": "M",
+    "position": "He sits in the left seat, both hands on the wheel, the back and side of his head toward the camera."
+   },
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She sits in the right seat, turned slightly toward him, holding the glowing cyan chip up in her chrome left hand between the two seats."
+   }
+  ],
+  "picture": "The neon city streaks past through the windshield. Rain beads on the glass."
+ },
+ {
+  "id": "k5b",
+  "place": "cab",
+  "approved": false,
+  "cast": [
+   {
+    "who": "dex",
+    "facing": "away",
+    "scale": "M",
+    "position": "He sits in the left seat, one hand on the wheel, turning his head toward her with a smirk."
+   },
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "M",
+    "position": "She sits in the right seat, leaning back laughing, the glowing chip raised in her chrome left hand between the two seats."
+   }
+  ],
+  "picture": "The neon city streaks past through the windshield. Rain beads on the glass."
+ }
+]
