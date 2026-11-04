@@ -3,7 +3,7 @@
   "id": "o_run",
   "start": "o_run_a",
   "end": "o_run_b",
-  "action": "Rin sprints toward the camera across the rooftop, glancing back once. Behind her the drone rises over the far edge and swings its red cone of light down onto her back.",
+  "action": "Rin sprints toward the camera across the rooftop and glances back once. Far behind her across the gap, a thin red line glows in the dark.",
   "sec": 5,
   "seed": 11,
   "camera_follows": true
@@ -20,7 +20,7 @@
   "id": "s_peek",
   "start": "s_peek_a",
   "end": "s_peek_b",
-  "action": "Rin peers around the water tank. On the far rooftop the Hound drops down and lands in a crouch, facing her, the drone settling at his shoulder.",
+  "action": "Rin peers around the water tank. On the far rooftop the Hound drops down and lands in a crouch, facing her.",
   "sec": 5,
   "seed": 11
  },
@@ -28,7 +28,7 @@
   "id": "d1_loop",
   "start": "k1",
   "end": "k1",
-  "action": "Rin stands still at the roof edge, breathing hard, her head turning slightly toward the ladder and back. The drones sweep the vent with their red light.",
+  "action": "Rin stands still at the roof edge, breathing hard, her head turning slightly toward the ladder and back. Steam drifts from the vent.",
   "sec": 5,
   "seed": 11,
   "loop": true
@@ -37,10 +37,18 @@
   "id": "d1_jump_a",
   "start": "k1",
   "end": "j_ladder",
-  "action": "Rin leaps the short gap to the left, catches the fixed yellow ladder and slides down it, feet on the outside of the rails, coming to rest partway down.",
+  "action": "Rin leaps the short gap to the left, catches the fixed yellow ladder on the side of the billboard and starts sliding down it, feet on the outside of the rails.",
   "sec": 5,
   "seed": 11,
   "seam_in": "d1_loop"
+ },
+ {
+  "id": "d1_jump_slide",
+  "start": "sl_top",
+  "end": "sl_land",
+  "action": "Rin slides the whole length of the yellow ladder down the side of the building, fast and smooth, and drops into a crouch on the street at its foot.",
+  "sec": 5,
+  "seed": 11
  },
  {
   "id": "d1_jump_b",
@@ -65,7 +73,7 @@
   "id": "d1_vent_b",
   "start": "s_out",
   "end": "c_vent",
-  "action": "Rin crawls out of the grate under the drone's red light. The Hound steps out of the dark, strides to her and hauls her up by the collar.",
+  "action": "Rin crawls out of the open vent. The Hound steps out of the dark, strides to her and hauls her up by the collar.",
   "sec": 5,
   "seed": 11
  },
@@ -73,7 +81,7 @@
   "id": "d2_loop",
   "start": "k2",
   "end": "k2",
-  "action": "Rin stands still at the fork, breathing hard, her head turning slightly toward the crowd and back. The crowd walks, umbrellas bob, the drone holds its red light on the alley floor.",
+  "action": "Rin stands still at the fork, breathing hard, her head turning slightly toward the crowd and back. The crowd walks and the umbrellas bob.",
   "sec": 5,
   "seed": 11,
   "loop": true
@@ -82,7 +90,7 @@
   "id": "d2_crowd_a",
   "start": "k2",
   "end": "c_crowd",
-  "action": "Rin slips left into the walking crowd and weaves between the umbrellas until only her hair shows. The drone's red cone sweeps across the umbrellas beside her.",
+  "action": "Rin slips left into the walking crowd and weaves between the umbrellas until only her hair shows.",
   "sec": 5,
   "seed": 11,
   "seam_in": "d2_loop",
@@ -92,7 +100,7 @@
   "id": "d2_crowd_b",
   "start": "h_perch_a",
   "end": "h_perch_b",
-  "action": "The Hound stands at the roof edge looking down at the city, then slowly turns his head toward the glowing train line. The drone at his shoulder turns its red light the same way.",
+  "action": "The Hound stands at the roof edge looking down at the city, then slowly turns his head toward the glowing train line.",
   "sec": 5,
   "seed": 11
  },
@@ -100,7 +108,7 @@
   "id": "d2_alley_a",
   "start": "k2",
   "end": "a_deep",
-  "action": "Rin breaks right and runs deep into the alley mouth, under the drone's red light.",
+  "action": "Rin breaks right and runs deep into the dark alley mouth.",
   "sec": 5,
   "seed": 11,
   "seam_in": "d2_loop",
@@ -110,7 +118,7 @@
   "id": "d2_alley_b",
   "start": "a_in",
   "end": "c_alley",
-  "action": "Rin runs down the alley. The Hound drops from the fire escape beside her and grabs her shoulder, jerking her to a stop.",
+  "action": "Rin runs down the alley. The Hound leaps down from the fire escape and tackles her from behind, and they slam onto the wet ground with the Hound on top, pinning her.",
   "sec": 5,
   "seed": 11,
   "camera_follows": true
@@ -119,7 +127,7 @@
   "id": "d3_loop",
   "start": "k3",
   "end": "k3",
-  "action": "Rin stands still on the platform, breathing, her head turning slightly toward the red-lit door and back toward the ladder. The red light inside the carriage glows steadily.",
+  "action": "Rin stands still on the platform, breathing, her head turning slightly toward the red-lit door and back toward the ladder.",
   "sec": 5,
   "seed": 11,
   "loop": true
@@ -163,7 +171,7 @@
   "id": "d3_board_b",
   "start": "b_aisle",
   "end": "c_board",
-  "action": "Rin sprints down the aisle toward the red light. The Hound lunges out from the seats, seizes her chrome arm and shoulder and yanks her backward.",
+  "action": "Rin sprints down the empty red-lit aisle. The Hound lunges out from the seats, seizes her chrome arm and shoulder and yanks her backward.",
   "sec": 5,
   "seed": 11,
   "camera_follows": true

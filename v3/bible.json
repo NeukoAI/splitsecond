@@ -4,16 +4,16 @@
  "ambient": "Rain falls in the background.",
  "places": {
   "roof_run": {
-   "plate": "https://cdn.bitebox.gg/public/patchwork/5c9faddd-8d1a-4e03-86cd-63efca97bd02.png",
-   "description": "a wide flat rain-slick rooftop at night, a round water tank on the right, a gap and a taller rooftop in the far background, the neon city beyond."
+   "plate": "https://cdn.bitebox.gg/public/patchwork/0c9b65b8-283a-467f-9690-a96e7b3d3936.png",
+   "description": "a wide flat rain-slick rooftop at night, a round water tank on the right, a square vent jutting out of the side of the right-hand wall, a gap and a taller rooftop in the far background, the neon city beyond."
   },
   "roof_edge": {
-   "plate": "https://cdn.bitebox.gg/public/patchwork/1ee3a3bc-c6c1-4ce4-905e-544166770e36.png",
-   "description": "a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder down its side; on the right an open square metal vent; the neon city below."
+   "plate": "https://cdn.bitebox.gg/public/patchwork/885df1b9-a209-499a-b218-29b940c557f2.png",
+   "description": "a rooftop edge at night: on the left a billboard with a wordless glowing cyan can ad and a fixed yellow steel ladder bolted flat against the billboard's side panel, running on down the building; on the right an open square metal vent; the neon city below."
   },
   "alley": {
-   "plate": "https://cdn.bitebox.gg/public/patchwork/d54aaca5-4e9e-4ec5-9c17-9c719598a10a.png",
-   "description": "a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent grate low on the left wall, puddles reflecting neon."
+   "plate": "https://cdn.bitebox.gg/public/patchwork/2df2b1a4-c87e-40c9-8e76-3ca3a7098fd9.png",
+   "description": "a narrow back alley at night behind the market: brick walls, a fire escape on the right wall, a square vent low on the left wall with its grate hanging open, puddles reflecting neon."
   },
   "market": {
    "plate": "https://cdn.bitebox.gg/public/patchwork/e05243ad-cc3c-4b7d-8d4c-a19b16f0d29f.png",
@@ -34,13 +34,17 @@
   "cab": {
    "plate": "https://cdn.bitebox.gg/public/patchwork/916046e1-a70a-4cc3-9b0f-ab14bfb1e464.png",
    "description": "inside the cab of a yellow van at night, seen from behind the two front seats: the steering wheel in front of the left seat, the windshield and the neon city streaking past ahead."
+  },
+  "ladder_side": {
+   "plate": "https://cdn.bitebox.gg/public/patchwork/2b86cb90-4cb6-4e03-910f-3808f1aa9e3a.png",
+   "description": "the side of a tall building at night seen from across the market street: a fixed yellow steel ladder runs the full height of the wall, from a billboard at the roof edge straight down to the street; glowing umbrellas on the street below."
   }
  },
  "characters": {
   "rin": {
    "ref_front": "https://cdn.bitebox.gg/public/patchwork/7fb00289-b2c9-4298-9fd5-e54015199cf9.png",
-   "ref_back": "https://cdn.bitebox.gg/public/patchwork/02495d9d-9135-45ee-bd6e-a6cea9a197b2.png",
-   "card": "Rin: a chrome robotic left arm on the {left} side of the picture and a brown-skinned right arm on the {right} side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers.",
+   "ref_back": "https://cdn.bitebox.gg/public/patchwork/7601355e-972c-458c-b32b-001caabb1911.png",
+   "card": "Rin, a woman in her mid-twenties: a chrome robotic left arm on the {left} side of the picture and a brown-skinned right arm on the {right} side; black hair shaved on her left side and a long fringe with acid-yellow tips on her right side; only her left eye glows cyan; black bomber with magenta lining and one big glowing cyan lightning bolt across its back; charcoal cargo pants; plain white chunky sneakers.",
    "locks": "Her chrome left arm stays chrome, only her left eye glows, and the bolt on her jacket stays cyan."
   },
   "hound": {

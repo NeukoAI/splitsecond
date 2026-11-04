@@ -2,15 +2,24 @@
 
 Locked before anything is drawn. Every frame and take is checked against this page and `RUBRIC.md` (v2, unchanged).
 
-## The one rule of the world
+## The one rule of the game
 
-The Hound sees through his red drones. Wherever a red drone light points, he is already on his way. Every decision shows one red drone on the wrong choice, so a viewer who learns the rule can win, and the rule is readable with the sound off.
+You get a split second. Every decision runs on a visible timer, and the timer is the pressure: hesitate and the Hound has you. No tap plays the capture.
+
+| Decision | Timer |
+|---|---|
+| D1 The Edge | 5 s |
+| D2 The Market | 4 s |
+| D3 The Platform | 3 s |
+| D4 The Drop | 2 s |
+
+Nothing on screen marks the right choice. The pattern a viewer can feel by D3, never stated: the Hound corners Rin in tight spaces (the vent, the alley, the carriage), and open ground keeps her alive. Every capture makes sense afterward.
 
 ## Cast
 
 | Who | Look (from the references) | Sides | Locks in every take |
 |---|---|---|---|
-| Rin, 19, courier | Black hair shaved on her left, long fringe on her right with acid-yellow tips; glowing cyan LEFT eye; chrome robotic LEFT arm; black bomber with magenta lining and one big glowing cyan lightning bolt across the back; black crop top; charcoal cargo pants; plain white chunky sneakers. Nothing on her back. | Facing camera: chrome arm and glowing eye on screen-right, fringe on screen-left. From behind: chrome arm screen-left, fringe screen-right. | Her chrome left arm stays chrome; only her left eye glows; the bolt on her jacket stays cyan. |
+| Rin, a woman in her mid-twenties, courier | Black hair shaved on her left, long fringe on her right with acid-yellow tips; glowing cyan LEFT eye; chrome robotic LEFT arm; black bomber with magenta lining and one big glowing cyan lightning bolt across the back; black crop top; charcoal cargo pants; plain white chunky sneakers. Nothing on her back. | Facing camera: chrome arm and glowing eye on screen-right, fringe on screen-left. From behind: chrome arm screen-left, fringe screen-right. | Her chrome left arm stays chrome; only her left eye glows; the bolt on her jacket stays cyan. |
 | The Hound, corp hunter | Tall and lean, matte black bodysuit, smooth faceless helmet with one thin red visor slit, crimson scarf, red blade along his RIGHT forearm, small white hexagon on his LEFT shoulder. Never bulky. | Facing camera: blade screen-left. From behind: blade screen-right. | His blade stays on his right forearm; his visor stays one thin red line. |
 | Dex, Rin's fixer | Heavyset, bald, gray-streaked beard, orange goggles on his forehead, chrome jaw, teal bomber with patches. Only ever in the van. | | |
 
@@ -19,17 +28,17 @@ References: one front view and one back view each (Dex front only), plain backgr
 ## Hero props
 
 - **The chip:** a small flat chip that glows cyan, carried in her chrome left hand. When she opens her hand, a small cyan DNA hologram floats above it.
-- **Red drones:** small black quad drones, one red light each, a red cone of light where they look. They are the clue.
 - **The van:** one boxy bright-yellow panel van, two rear doors, driver's window on its LEFT side. It drives the same way as the train, away from camera. Seen from behind in every shot outside the cab. Once it leaves, it never comes back.
-- **The ladder:** fixed yellow steel. It never moves.
+- **The ladder:** fixed yellow steel, bolted flat to the billboard's side panel and running the full height of the building to the market street. It never moves.
 
 ## Places (one empty plate each)
 
 | Place | Plate | Camera |
 |---|---|---|
-| roof_run | Wide flat rooftop at night, water tank on the right, a taller rooftop across a gap in the far background | Low, looking back the way she came |
-| roof_edge | Rooftop edge; billboard with a wordless glowing-can ad and a fixed yellow ladder on the left; open square vent on the right | Behind her, at shoulder height |
-| alley | Narrow back alley behind the market, fire escape on the right wall, a vent grate low on the left wall, puddles | Down the alley |
+| roof_run | Wide flat rooftop at night, water tank on the right, a square vent jutting out of the right-hand wall, a taller rooftop across a gap in the far background | Low, looking back the way she came |
+| roof_edge | Rooftop edge; billboard with a wordless glowing-can ad on the left, the fixed yellow ladder flush against its side panel; open square vent on the right | Behind her, at shoulder height |
+| alley | Narrow back alley behind the market, fire escape on the right wall, a vent low on the left wall with its grate hanging open, puddles | Down the alley |
+| ladder_side | The full height of the billboard building from across the market street, the ladder running from the billboard to the street | Low across the street, looking up |
 | market | Market street fork: umbrella crowd on the left, dark alley mouth on the right | Behind her, raised |
 | platform | Elevated platform, train on the left with one open red-lit door, fixed yellow ladder up the side of the car on the right | Behind her |
 | carriage | Inside the dark empty carriage, aisle straight away from camera, seats both sides, red emergency light | Down the aisle |

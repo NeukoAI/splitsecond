@@ -11,7 +11,7 @@
     "position": "She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist."
    }
   ],
-  "picture": "A small black drone with one red light hovers just above the far roof edge behind her, its red light pointing at the sky."
+  "picture": "The far rooftop behind her is dark and wet."
  },
  {
   "id": "o_run_b",
@@ -25,7 +25,7 @@
     "position": "She sprints toward the camera across the middle of the rooftop, the cyan chip glowing in her clenched chrome fist, glancing back over her shoulder."
    }
   ],
-  "picture": "A small black drone with one red light hovers close behind her above the roof, and its red cone of light falls across her back."
+  "picture": "Far behind her across the gap, one thin red line glows in the dark on the far rooftop."
  },
  {
   "id": "s_tank_a",
@@ -87,7 +87,7 @@
     "position": "He crouches on the far rooftop across the gap, one hand on the roof, just landed, facing her."
    }
   ],
-  "picture": "A small black drone with one red light hovers at the Hound's shoulder."
+  "picture": "Rain falls between the two rooftops."
  },
  {
   "id": "k1",
@@ -101,7 +101,7 @@
     "position": "She stands at the roof edge in the center of the frame, back to the camera, between the billboard and the vent."
    }
   ],
-  "picture": "Two small black drones hover over the vent and sweep it with red cones of light."
+  "picture": "The open vent on the right steams in the rain."
  },
  {
   "id": "j_ladder",
@@ -112,10 +112,38 @@
     "who": "rin",
     "facing": "away",
     "scale": "M",
-    "position": "She hangs on the yellow ladder down the side of the billboard, partway down, hands and feet on the outside of the rails, back to the camera."
+    "position": "She grips the yellow ladder on the side panel of the billboard, just below its top, sliding down, hands and feet on the outside of the rails, back to the camera."
    }
   ],
-  "picture": "Two small black drones sweep the vent with red cones of light. The center of the rooftop is empty."
+  "picture": "The open vent on the right steams in the rain. The center of the rooftop is empty."
+ },
+ {
+  "id": "sl_top",
+  "place": "ladder_side",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "S",
+    "position": "She slides down the yellow ladder near the top of the building, hands and feet on the outside of the rails, back to the camera."
+   }
+  ],
+  "picture": "The market street at the bottom of the frame is busy with umbrellas."
+ },
+ {
+  "id": "sl_land",
+  "place": "ladder_side",
+  "approved": false,
+  "cast": [
+   {
+    "who": "rin",
+    "facing": "away",
+    "scale": "S",
+    "position": "She lands in a crouch on the street at the foot of the yellow ladder, back to the camera, one hand on the ground."
+   }
+  ],
+  "picture": "The ladder above her is empty all the way up to the billboard."
  },
  {
   "id": "v_in",
@@ -129,7 +157,7 @@
     "position": "She sits on the rim of the open vent on the right, legs down inside it, gripping its edge, back to the camera."
    }
   ],
-  "picture": "Two small black drones hover over the vent. The center of the rooftop is empty."
+  "picture": "The center of the rooftop is empty."
  },
  {
   "id": "h_perch_a",
@@ -143,7 +171,7 @@
     "position": "He stands at the roof edge in the center of the frame, back to the camera, looking down at the city."
    }
   ],
-  "picture": "A small black drone with one red light hovers at his shoulder. Far across the city an elevated train line glows on its tracks."
+  "picture": "Far across the city an elevated train line glows on its tracks."
  },
  {
   "id": "h_perch_b",
@@ -157,7 +185,7 @@
     "position": "He stands at the roof edge in the center of the frame, back to the camera, his head turned toward the elevated train line on the right."
    }
   ],
-  "picture": "A small black drone with one red light hovers at his shoulder, its red light pointing toward the train line."
+  "picture": "Far across the city an elevated train line glows on its tracks."
  },
  {
   "id": "m_land",
@@ -171,7 +199,7 @@
     "position": "She runs up the middle of the street toward the fork, in the lower part of the frame, back to the camera."
    }
   ],
-  "picture": "The crowd walks under the umbrellas. One small black drone hovers over the alley mouth on the right, its red cone of light on the alley floor."
+  "picture": "The crowd walks under the umbrellas. The alley mouth on the right is dark."
  },
  {
   "id": "k2",
@@ -185,7 +213,7 @@
     "position": "She stands at the fork in the middle of the street, back to the camera, between the crowd on the left and the alley on the right."
    }
   ],
-  "picture": "The crowd walks under the umbrellas. One small black drone hovers over the alley mouth on the right, its red cone of light on the alley floor."
+  "picture": "The crowd walks under the umbrellas. The alley mouth on the right is dark."
  },
  {
   "id": "c_crowd",
@@ -199,7 +227,7 @@
     "position": "She is deep in the crowd on the left, half hidden between a magenta umbrella and a cyan umbrella, only her yellow-tipped hair and one shoulder showing."
    }
   ],
-  "picture": "The drone's red cone of light sweeps across the umbrellas to the left of her."
+  "picture": "The crowd walks on around her under the umbrellas."
  },
  {
   "id": "a_deep",
@@ -210,10 +238,10 @@
     "who": "rin",
     "facing": "away",
     "scale": "S",
-    "position": "She runs deep into the alley mouth on the right, small, under the drone, back to the camera."
+    "position": "She runs deep into the alley mouth on the right, small, back to the camera."
    }
   ],
-  "picture": "The drone's red cone of light falls on her."
+  "picture": "The alley swallows her in shadow."
  },
  {
   "id": "s_out",
@@ -227,7 +255,7 @@
     "position": "She crawls out of the vent grate low on the left wall on her hands and knees, toward the camera."
    }
   ],
-  "picture": "Steam curls out of the grate. A small black drone hovers above her, its red cone of light on her."
+  "picture": "Steam curls out of the open vent."
  },
  {
   "id": "c_vent",
@@ -247,7 +275,7 @@
     "position": "He stands over her and hauls her up by the collar of her jacket with his left hand."
    }
   ],
-  "picture": "Steam curls out of the grate. The drone's red cone of light is on them both."
+  "picture": "Steam curls out of the open vent."
  },
  {
   "id": "a_in",
@@ -261,7 +289,7 @@
     "position": "She runs down the middle of the alley away from the camera."
    }
   ],
-  "picture": "A small black drone hovers above her, its red cone of light on the puddles around her."
+  "picture": "Neon reflects in the puddles around her."
  },
  {
   "id": "c_alley",
@@ -272,16 +300,16 @@
     "who": "rin",
     "facing": "away",
     "scale": "M",
-    "position": "She is jerked to a stop in the middle of the alley, back to the camera."
+    "position": "She is slammed face down on the wet ground in the middle of the alley, head away from the camera, arms out."
    },
    {
     "who": "hound",
-    "facing": "camera",
+    "facing": "away",
     "scale": "M",
-    "position": "He has dropped from the fire escape right beside her and grips her shoulder with his left hand."
+    "position": "He has tackled her from behind and pins her down, one knee on the ground beside her, both hands on her shoulders."
    }
   ],
-  "picture": "The drone's red cone of light is on them both."
+  "picture": "Water splashes up from the puddle around them."
  },
  {
   "id": "k3",
@@ -295,7 +323,7 @@
     "position": "She stands on the platform in the center of the frame, back to the camera, between the open red-lit door on the left and the ladder on the right."
    }
   ],
-  "picture": "Inside the open door a small red drone light glows in the dark carriage."
+  "picture": "Inside the open door the empty carriage glows red."
  },
  {
   "id": "l_top",
@@ -309,7 +337,7 @@
     "position": "She is high on the yellow ladder on the right, near the top of the car, both hands on the rails, back to the camera."
    }
   ],
-  "picture": "Inside the open door a small red drone light glows. The platform below is empty."
+  "picture": "Inside the open door the empty carriage glows red. The platform below is empty."
  },
  {
   "id": "b_door",
@@ -323,7 +351,7 @@
     "position": "She steps through the open red-lit door on the left, one foot inside, back to the camera."
    }
   ],
-  "picture": "The red drone light glows inside the carriage. The platform behind her is empty."
+  "picture": "The empty carriage glows red inside. The platform behind her is empty."
  },
  {
   "id": "p_hound_a",
@@ -365,7 +393,7 @@
     "position": "She runs down the middle of the aisle away from the camera."
    }
   ],
-  "picture": "Far down the aisle a small black drone hovers, its red light filling the carriage."
+  "picture": "The steady red emergency light fills the empty carriage."
  },
  {
   "id": "c_board",
@@ -385,7 +413,7 @@
     "position": "He has lunged out from the seats on the right and grips her chrome arm and her shoulder."
    }
   ],
-  "picture": "The drone's red light fills the carriage."
+  "picture": "The steady red emergency light fills the carriage."
  },
  {
   "id": "roof_a",
