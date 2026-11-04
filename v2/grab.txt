@@ -157,3 +157,10 @@ kf2_a_deep https://cdn.bitebox.gg/public/patchwork/655e4cbd-f362-4f1f-bed6-e9f25
 kf2_c_alley https://cdn.bitebox.gg/public/patchwork/2f2b1b89-bf1b-4ea4-a264-a555dc2c3c12.png
 kf2_p_hound_a https://cdn.bitebox.gg/public/patchwork/6b96c321-6bbe-4ffa-baa9-0b5b195fba2b.png
 kf2_p_hound_b https://cdn.bitebox.gg/public/patchwork/3e59c023-40e8-4e85-85cb-84af1f470f91.png
+kf3_s_peek_b https://cdn.bitebox.gg/public/patchwork/35fa6def-942c-4a6d-b7f0-6a4133643efc.png
+kf3_k6 https://cdn.bitebox.gg/public/patchwork/4f64de40-5ae5-40f8-b4e7-88d57a2e342f.png
+kf3_o_run_b https://cdn.bitebox.gg/public/patchwork/53920aa2-8ce5-432a-a651-72d76cd004cc.png
+kf3_c_board2 https://cdn.bitebox.gg/public/patchwork/131ba1cf-329b-4b1f-95f1-895183c1503c.png
+kf3_c_alley3 https://cdn.bitebox.gg/public/patchwork/29e51765-8816-44a4-9100-dafdd1ca89db.png
+kf3_c_vent2 https://cdn.bitebox.gg/public/patchwork/b368c310-de88-45dc-8376-98e9ea25d753.png
+kf3_c_run https://cdn.bitebox.gg/public/patchwork/3dccb2d5-7dc5-47cc-8be1-47d3adfbfaa1.png
