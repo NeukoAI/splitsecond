@@ -70,7 +70,7 @@
  "scenes": [
   {
    "id": "title",
-   "sec": 8.208
+   "sec": 6.792
   },
   {
    "id": "stakes",
@@ -90,7 +90,7 @@
   },
   {
    "id": "intro_hound",
-   "sec": 5.167
+   "sec": 3.708
   },
   {
    "id": "d1_loop",
@@ -105,7 +105,7 @@
   },
   {
    "id": "d1_jump",
-   "sec": 14.167
+   "sec": 11.042
   },
   {
    "id": "d1_vent",
